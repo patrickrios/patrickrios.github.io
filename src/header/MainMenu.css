@@ -1,0 +1,6 @@
+.main-menu{float:left;width:100%;background-color: rgba(34,45,50, .97) /*#222D32*/;position:fixed;z-index:10;}
+	
+	.menu-logo{float:left;margin-left:12%;padding:10px 0;color: #8AE133; font-weight:400;font-size:1.20em;}
+	.menu-logo-white-text{color:#CAD7D8;} .menu-logo-blue-text{color:#4D7FB6;}
+	
+	.main-menu ul{float:right;margin-right:12%;}

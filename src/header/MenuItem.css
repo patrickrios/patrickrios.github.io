@@ -1,0 +1,14 @@
+.main-menu-item{
+    float:left;
+    margin:0 15px;
+}
+.main-menu-item a{
+    float:left;
+    color:#ECECFB;
+    font-size:1.110em;
+    padding:10px 0;
+    font-weight:300;
+}
+.main-menu-item .current-section{
+    border-bottom:2px solid #8AE133;
+}

@@ -1,0 +1,8 @@
+.top-header{
+    background-color:#eee;
+    background-image: url("./img/header-bg.png");
+    float:left;
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+}
