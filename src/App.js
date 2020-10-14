@@ -1,11 +1,16 @@
 import React from 'react';
 import Header from './header/Header'
+import About from './about/AboutMe'
+import './App.css'
 
 class App extends React.Component{
   
   render(){
     return(
-      <Header />
+        <div id="wrapper">
+          <Header/>
+          <About />
+        </div>
     )
   }
 }

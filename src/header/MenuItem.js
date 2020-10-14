@@ -3,7 +3,7 @@ import './MenuItem.css'
 
 const MenuItem = (props) => {
     return (
-        <li className="main-menu-item"><a>{props.texto}</a></li>
+        <li className="main-menu-item"><a>{props.text}</a></li>
     );
 };
 
