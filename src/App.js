@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './header/Header'
-import About from './about/AboutMe'
+import Header from './sections/header/Header'
+import About from './sections/about/AboutMe'
+import Experience from './sections/exp/Experience'
 import './App.css'
 
 class App extends React.Component{
@@ -10,6 +11,7 @@ class App extends React.Component{
         <div id="wrapper">
           <Header/>
           <About />
+          <Experience />
         </div>
     )
   }

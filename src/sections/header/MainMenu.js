@@ -1,11 +1,11 @@
 import React from 'react';
-import './MainMenu.css'
+import './styles/MainMenu.css'
 import MenuItem from './MenuItem'
 
 const MainMenu = () => {
     return (
         <nav className="main-menu">
-			<a className="menu-logo">
+			<a className="menu-logo" href="/">
 				@patrickrios:<span className="menu-logo-blue-text">~</span><span className="menu-logo-white-text">$</span>
 			</a>
 			<ul>

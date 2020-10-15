@@ -1,9 +1,9 @@
 import React from 'react';
-import './MenuItem.css'
+import './styles/MenuItem.css'
 
 const MenuItem = (props) => {
     return (
-        <li className="main-menu-item"><a>{props.text}</a></li>
+        <li className="main-menu-item"><a href="/">{props.text}</a></li>
     );
 };
 

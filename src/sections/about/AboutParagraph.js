@@ -1,5 +1,5 @@
 import React from 'react';
-import './paragraph.css'
+import './styles/paragraph.css'
 
 function AboutParagraph(props) {
     return (

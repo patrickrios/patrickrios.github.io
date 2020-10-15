@@ -1,9 +1,9 @@
 import React from 'react';
-import './about.css';
+import './styles/about.css';
 import profile from './profile-picture-min.png';
 import Paragraph from './AboutParagraph';
 
-function AboutMe() {
+function AboutMe() {    
     return (
         <div id="about">
             <img src={profile} alt="Profile"className="about-profile-picture" />

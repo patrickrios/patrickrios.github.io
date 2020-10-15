@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logo.css'
+import './styles/Logo.css'
 import LogoIcon from './img/logo-dorito-min.png'
 
 const Logo = () => {
