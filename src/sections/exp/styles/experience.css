@@ -1,18 +1,19 @@
 #experience{
     float:left;
     width: 100%;
-    padding:0 10%;
+    padding:0 10% 50px;
 }
 
 .experience-wrapper{
     width:100%;
-    background-color:#fff;
-    border: 1px solid #eee;
-    border-radius:5px;
+    background-color:#fafafa;
     display: flex;
     flex-direction:row;
+    border:1px solid #eee;
+    border-radius:6px;
+    overflow: hidden;
 }
 
-.experience-wrapper:last-child{
+div.experience-wrapper #experience-card:last-child{
     border-right: none;
 }
