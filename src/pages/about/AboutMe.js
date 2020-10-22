@@ -11,11 +11,11 @@ function AboutMe() {
                 <Paragraph 
                     title="About me" 
                     subtitle="I'm a software developer from Dourados, Mato Grosso do Sul, Brazil"
-                    paragraph="I have a large interest in artificial intelligence, GNU/Linux, games, tools and solutions for bussiness."
+                    paragraph="Everyday improving my knowledge and skills, to offer the most high quality work."
                 />
                 <Paragraph 
                     title="What i do?"
-                    paragraph="I design and develop apps for web, desktop and mobile devices. Using all my skills and experience to create nice and powerful softwares."
+                    paragraph="I design and develop apps for web, desktop and mobile devices. Using all my experience to build nice and powerful softwares."
                 />
             </div>
         </div>

@@ -1,26 +1,27 @@
 import React from 'react';
 import './styles/portfolio.css'
 import Item from './Item'
+import patrickImg from './images/patrickrios2.png';
+import salesImg from './images/salesmanager2.png';
+import ucbillImg from './images/ucbillmanager2.png';
 
 function Portfolio() {
     const items = [
         {
             id: 0,
-            bgID: "patrick-rios",
+            img : patrickImg,
             name: "Patrick Rios",
             desc: "ReactJS App",
             repo: "https://github.com/patrickrios/patrickrios.github.io"
-        },
-        {
+        },{
             id: 1,
-            bgID: "sales-manager",
+            img : salesImg,
             name: "Sales Manager",
             desc: "JavaFX, MySQL",
             repo: "https://github.com/patrickrios/patrickrios.github.io"
-        },
-        {
+        },{
             id: 2,
-            bgID: "invoice-manager",
+            img : ucbillImg,
             name: "Invoice Manager",
             desc: "JavaFX, MySQL",
             repo: "https://github.com/patrickrios/patrickrios.github.io"

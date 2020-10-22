@@ -9,10 +9,10 @@ const MainMenu = () => {
 				@patrickrios:<span className="menu-logo-blue-text">~</span><span className="menu-logo-white-text">$</span>
 			</a>
 			<ul>
-                <MenuItem text="About me" target="#about" />
+                <MenuItem text="About me"   target="#about" />
                 <MenuItem text="Experience" target="#experience" />
-                <MenuItem text="Portfolio" target="#portfolio" />
-                <MenuItem text="Contact me" />
+                <MenuItem text="Portfolio"  target="#portfolio" />
+                <MenuItem text="Contact me" target="#contact" />
 			</ul>
 		</nav>
     );

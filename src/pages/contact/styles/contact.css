@@ -1,0 +1,10 @@
+#contact{
+    float: left;
+    width:100%;
+    padding:20px 10%;
+}
+
+#contact h2{
+    font-size: 2.2em;
+    margin-bottom:20px;
+}
