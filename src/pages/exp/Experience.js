@@ -75,6 +75,7 @@ function Experience() {
             <div className="experience-wrapper">
                 { cards.map( card => renderCard(card) ) }
             </div>
+            <span>Icons by author from Noun Project</span>
         </div>
     );
 }

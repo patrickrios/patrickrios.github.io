@@ -7,8 +7,8 @@ function Contact() {
     return (
         <div id="contact">
             <h2>@contact:~$</h2>
-            <Form />
             <Social />
+            <Form />
         </div>
     );
 }

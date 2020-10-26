@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/form.css'
 
 function Form() {
+    
     return (
         <div id="form">
             <h3>Send me a message</h3>

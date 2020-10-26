@@ -10,7 +10,7 @@ const MainMenu = () => {
 			</a>
 			<ul>
                 <MenuItem text="About me"   target="#about" />
-                <MenuItem text="Experience" target="#experience" />
+                <MenuItem text="Skills" target="#experience" />
                 <MenuItem text="Portfolio"  target="#portfolio" />
                 <MenuItem text="Contact me" target="#contact" />
 			</ul>

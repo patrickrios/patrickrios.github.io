@@ -11,7 +11,7 @@ function Portfolio() {
             id: 0,
             img : patrickImg,
             name: "Patrick Rios",
-            desc: "ReactJS App",
+            desc: "React App",
             repo: "https://github.com/patrickrios/patrickrios.github.io"
         },{
             id: 1,

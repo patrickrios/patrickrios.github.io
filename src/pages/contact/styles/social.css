@@ -1,4 +1,38 @@
 #social{
     float: left;
-    width:45%;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-medias-links{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-medias-links a{
+    padding:10px 12px;
+    font-size:1.5em;
+    color: #000;
+    border-radius: 100%;
+    margin:0 8px;
+    background-color: #ebebeb;
+}
+.social-medias-links a:hover{
+    color:#74cf47;
+    transition: color .45s;
+    transition: transform .30s;
+    background-color:#e3e3e3;
+    transform: scale(110%);
+}
+
+
+.social-medias-links .facebook-link{
+    padding:10px 16px;
+}
+
+.social-medias-links .linked-link{
+    padding:10px 14px;
 }
