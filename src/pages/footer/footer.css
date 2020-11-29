@@ -1,0 +1,21 @@
+#footer{
+    float:left;
+    width: 100%;
+    padding:40px 0;
+    background-color: #eee;
+    margin-top:20px;
+}
+
+#footer span{
+    float: left;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+.react-bg{
+    background-color: #61dafb;
+    padding:5px;
+    border-radius:3px;
+    margin-left:5px;
+}

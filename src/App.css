@@ -8,3 +8,33 @@
     height: 100%;
     position: relative;
 }
+
+.section-title{
+    font-size:1.782em;
+    padding:5px 0 20px;
+    float: left;
+}
+
+.cursor-blink-dark, .cursor-blink-light{
+    width:15px;
+    height:26px;
+    display: block;
+    animation: blinker .99s linear infinite;
+    margin-left:8px;
+    float: left;
+    margin-top:10px;
+}
+
+.cursor-blink-dark{
+    background-color:#000;
+}
+
+.cursor-blink-light{
+    background-color:#ececec;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

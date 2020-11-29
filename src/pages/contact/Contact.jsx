@@ -6,8 +6,10 @@ import Social from './Social'
 function Contact() {
     return (
         <div id="contact">
-            <h2>@contact:~$</h2>
-            <Social />
+            <div className="contact-title">
+                <h2 className="section-title">@contact:~$</h2>
+            </div>
+            <Social/>
             <Form />
         </div>
     );

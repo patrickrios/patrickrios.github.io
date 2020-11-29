@@ -10,3 +10,28 @@
     flex-direction: column;
     margin-left:50px;
 }
+
+.about-profile-picture{
+    width:320px;
+    border-radius:100%;
+    height: min-content;
+    background-color: #b550ce;
+    background-image: url('../images/6715.jpg');
+    background-size: cover;
+    background-position:center;
+}
+
+.download-resume{
+    width: max-content;
+    padding:10px 15px;
+    background-color: #fff;
+    border:1px solid #009cf0;
+    color: #167DFF;
+    font-size:.8em;
+    border-radius:30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.download-resume:hover{
+    background-color: #EAFAFF;
+}

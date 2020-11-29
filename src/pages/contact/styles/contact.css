@@ -4,7 +4,7 @@
     padding:45px 10% 30px;
 }
 
-#contact h2{
-    font-size: 1.85em;
-    margin-bottom:20px;
+.contact-title{
+    width:100%;
+    float: left;
 }

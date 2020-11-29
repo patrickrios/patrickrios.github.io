@@ -13,15 +13,19 @@ function Experience() {
             id: 0,
             icon: frontIcon,
             title: "Frontend", 
-            description: "Visual language are treated with relevance in projects of mine, offering a good experience and usability to my users.",
+            description: "Making the UI Design a high-quality experience and usability to my users.",
             topics: [
                 {
-                    title: "Languages and frameworks", 
-                    items: ["Js, HTML, CSS"]
+                    title: "Basics", 
+                    items: ["Javascript, Typescript, HTML, CSS"]
                 },
                 {
-                    title: "Activities", 
-                    items: ["Prototyping, implement"]
+                    title: "Libraries", 
+                    items: ["ReactJS, Material UI, Bootstrap"]
+                },
+                {
+                    title: "Tools", 
+                    items: ["Figma, Adobe Illustrator"]
                 }
             ]
         },
@@ -30,11 +34,15 @@ function Experience() {
             id: 1,
             icon: backIcon,
             title: "Backend", 
-            description: "I dominate the most important programming languages of market",
+            description: "Design, implementation, optimization and maintenance of software systems",
             topics: [
                 {
                     title: "Programming languages", 
                     items: ["Java, C, C++, PHP, Python"]
+                },
+                {
+                    title: "Libraries", 
+                    items: ["JavaFX, NodeJS"]
                 },
                 {
                     title: "Databases", 
@@ -47,17 +55,18 @@ function Experience() {
             id: 2,
             icon: projIcon,
             title: "Design and project", 
-            description: "All software engineer activities, creating a new project or adding funcs to an existing project",
+            description: "Software engineer activities and project management",
             topics: [
                 {
                     title: "Activities", 
                     items:[
-                        "System requirement management", 
+                        "Requirements management",
+                        "Tasks management",
                         "Data modeling using UML 2.0",
                         "Database structure project",
-                        "Testing and bugs reports",
+                        "Debbuging and bug fixing",
                         "Deploy and maintenance",
-                        "Supporting"
+                        "Mentoring other team members"
                     ]
                 }
             ]
@@ -72,10 +81,11 @@ function Experience() {
 
     return (
         <div id="experience">
+            <h2 className="section-title">@skills:~$</h2>
             <div className="experience-wrapper">
                 { cards.map( card => renderCard(card) ) }
             </div>
-            <span>Icons by author from Noun Project</span>
+            <span className="icons-credit">Icons by <a href="https://thenounproject.com/undelivered/">un·delivered</a> from <a href="https://thenounproject.com/">Noun Project</a></span>
         </div>
     );
 }

@@ -33,7 +33,7 @@ function Portfolio() {
     }
     return (
         <div id="portfolio">
-            <span className="menu-logo">
+            <span className="menu-logo section-title">
 				@portfolio:<span className="menu-logo-blue-text">~</span><span className="menu-logo-white-text">$</span>
 			</span>
             <div className="portfolio-wrapper">

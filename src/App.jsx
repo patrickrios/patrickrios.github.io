@@ -4,6 +4,7 @@ import About from './pages/about/AboutMe'
 import Experience from './pages/exp/Experience'
 import Portfolio from './pages/portfolio/Portfolio'
 import Contact from './pages/contact/Contact'
+import Footer from './pages/footer/Footer'
 import './App.css'
 
 class App extends React.Component{
@@ -16,6 +17,7 @@ class App extends React.Component{
           <Experience />
           <Portfolio />
           <Contact />
+          <Footer />
         </div>
     )
   }

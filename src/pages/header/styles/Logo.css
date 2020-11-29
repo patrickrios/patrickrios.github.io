@@ -13,20 +13,3 @@
     font-size:3.75em;
     padding:7% 20px;
 }
-
-.cursor-blink {
-    width:2.47vw;
-    height:8px;
-    display: block;
-    background-color:#ECECFB;
-    animation: blinker .8s linear infinite;
-    float: right;
-    transform: translateY(-230%);
-    margin-left: 20px;
-}
-  
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-}

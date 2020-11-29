@@ -1,17 +1,20 @@
 import React from 'react';
 import './styles/social.css';
-import Logo from './images/contact-logo-min.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { faPiedPiperAlt} from '@fortawesome/free-brands-svg-icons'
 
 function Social() {
     return (
         <div id="social">
-            <img src={Logo} alt="Bottom logo"/>
-            <div className="social-medias-links">
+            <div className="social-wrapper">
+                <div className="social-medias">
+                <h2 className="social-piper-icon"><FontAwesomeIcon icon={faPiedPiperAlt}/></h2>
+                <h3>Follow me</h3>
+                <div className="social-links">
                 <a href="https://github.com/patrickrios">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -24,7 +27,10 @@ function Social() {
                 <a href="https://www.linkedin.com/in/patrickriosio/" className="linked-link">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
+                </div>
             </div>
+            </div>
+            
         </div>
     );
 }
