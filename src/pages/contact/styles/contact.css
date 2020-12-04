@@ -1,10 +1,16 @@
 #contact{
     float: left;
     width:100%;
-    padding:45px 10% 30px;
+    padding:45px 7% 30px;
 }
 
 .contact-title{
     width:100%;
     float: left;
+}
+
+@media all and (min-width:768px){
+    #contact{
+        padding:45px 10% 30px;
+    }
 }

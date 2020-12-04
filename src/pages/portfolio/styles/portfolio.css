@@ -3,13 +3,24 @@
     background-image: url('../images/port-bg2.png');
     background-color:#222D32;
     float: left;
-    padding:20px 10% 40px;
+    padding:25px 7% 40px;
 }
 
 #portfolio .portfolio-wrapper{
     width:100%;
     display: grid;
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: 100%;
     grid-gap:2% 3.5%;
     margin-top:60px;
+}
+
+@media all and (min-width:768px){
+    #portfolio{
+        padding:50px 10% 40px;
+    }
+    #portfolio .portfolio-wrapper{
+        grid-template-columns: 31% 31% 31%;
+        grid-gap:2% 3.5%;
+        margin-top:60px;
+    }
 }

@@ -5,7 +5,7 @@ import LogoIcon from './img/logo-dorito-min.png'
 const Logo = () => {
     return (
         <div className="main-logo">
-			<img src={LogoIcon} alt="Logo icon"/>
+			<img src={LogoIcon} alt="Logo icon" className="logo-icon"/>
 			<h2 className="logo-title">
                 Software <br/>
                 Analyst <br/>

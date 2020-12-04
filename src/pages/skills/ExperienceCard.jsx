@@ -13,12 +13,12 @@ function ExperienceCard(props) {
     }
     return (
         <div id="experience-card">
-            <img src={props.card.icon} alt="Card icon" />
             <h2>{props.card.title}</h2>
             <p className="exp-description">{props.card.description}</p>
             { props.card.topics.map( topic => renderTopic(topic) ) }
         </div>
     );
 }
+//<img src={props.card.icon} alt="Card icon" />
 
 export default ExperienceCard;

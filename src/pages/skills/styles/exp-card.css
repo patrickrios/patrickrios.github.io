@@ -1,15 +1,11 @@
 #experience-card{
-    width: 33.33%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding:0 25px 30px;
-    border-right:1px solid #eee;
-}
-
-#experience-card:hover{
-    background-color: #f8f8f8;
+    padding:20px 25px 55px;
+    border-bottom:1px solid #eee;
 }
 
 #experience-card img{
@@ -18,7 +14,7 @@
 
 #experience-card h2{
     font-size:1.575em;
-    line-height:2.2em;
+    line-height:2.6em;
     color: rgba(34,45,50, .9);
 }
 
@@ -38,4 +34,15 @@
     color: #374045;
     font-size:1.125em;
     margin-top:10px;
+}
+
+@media all and (min-width:768px){
+    #experience-card{
+        width: 33.33%;
+        border-right:1px solid #eee;
+        border-bottom:none;
+    }
+    #experience-card:hover{
+        background-color: #f8f8f8;
+    }
 }

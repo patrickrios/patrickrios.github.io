@@ -8,19 +8,19 @@ import ucbillImg from './images/ucbillmanager2.png';
 function Portfolio() {
     const items = [
         {
-            id: 0,
+            key: 0,
             img : patrickImg,
             name: "Patrick Rios",
             desc: "React App",
             repo: "https://github.com/patrickrios/patrickrios.github.io"
         },{
-            id: 1,
+            key: 1,
             img : salesImg,
             name: "Sales Manager",
             desc: "JavaFX, MySQL",
             repo: "https://github.com/patrickrios/patrickrios.github.io"
         },{
-            id: 2,
+            key: 2,
             img : ucbillImg,
             name: "Invoice Manager",
             desc: "JavaFX, MySQL",
@@ -32,7 +32,7 @@ function Portfolio() {
         return <Item datas={item} />
     }
     return (
-        <div id="portfolio">
+        <div id="portfolio" className="default-padding">
             <span className="menu-logo section-title">
 				@portfolio:<span className="menu-logo-blue-text">~</span><span className="menu-logo-white-text">$</span>
 			</span>

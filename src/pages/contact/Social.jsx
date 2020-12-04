@@ -5,14 +5,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-import { faPiedPiperAlt} from '@fortawesome/free-brands-svg-icons'
 
 function Social() {
+    
     return (
         <div id="social">
             <div className="social-wrapper">
                 <div className="social-medias">
-                <h2 className="social-piper-icon"><FontAwesomeIcon icon={faPiedPiperAlt}/></h2>
                 <h3>Follow me</h3>
                 <div className="social-links">
                 <a href="https://github.com/patrickrios">

@@ -21,7 +21,7 @@ function Experience() {
                 },
                 {
                     title: "Libraries", 
-                    items: ["ReactJS, Material UI, Bootstrap"]
+                    items: ["ReactJS, JQuery, Material UI, Bootstrap"]
                 },
                 {
                     title: "Tools", 
@@ -85,9 +85,8 @@ function Experience() {
             <div className="experience-wrapper">
                 { cards.map( card => renderCard(card) ) }
             </div>
-            <span className="icons-credit">Icons by <a href="https://thenounproject.com/undelivered/">un·delivered</a> from <a href="https://thenounproject.com/">Noun Project</a></span>
         </div>
     );
 }
-
+//<span className="icons-credit">Icons by <a href="https://thenounproject.com/undelivered/">un·delivered</a> from <a href="https://thenounproject.com/">Noun Project</a></span>
 export default Experience;

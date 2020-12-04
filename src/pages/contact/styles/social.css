@@ -1,11 +1,11 @@
 #social{
     float: left;
-    width:40%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:#fafafa;
-    height: 83vh;
+    height: 45vh;
 }
 
 .social-wrapper{
@@ -43,7 +43,6 @@
 
 .social-piper-icon{
     font-size:5.5em;
-    transform: rotateY(180deg);
 }
 
 .social-links a{
@@ -68,4 +67,11 @@
 
 .social-links .linked-link{
     padding:10px 14px;
+}
+
+@media all and (min-width:768px){
+    #social{
+        width:40%;
+        height: 83vh;
+    }
 }

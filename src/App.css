@@ -16,13 +16,13 @@
 }
 
 .cursor-blink-dark, .cursor-blink-light{
-    width:15px;
-    height:26px;
+    width:12px;
+    height:18px;
     display: block;
     animation: blinker .99s linear infinite;
     margin-left:8px;
-    float: left;
-    margin-top:10px;
+    float: right;
+    margin-top:3px;
 }
 
 .cursor-blink-dark{
@@ -30,7 +30,7 @@
 }
 
 .cursor-blink-light{
-    background-color:#ececec;
+    background-color:#68717c;
 }
   
 @keyframes blinker {

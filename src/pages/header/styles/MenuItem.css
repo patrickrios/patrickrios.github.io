@@ -1,14 +1,38 @@
 .main-menu-item{
     float:left;
-    margin:0 15px;
+    margin:0 13px;
 }
 .main-menu-item a{
     float:left;
+    background-color: rgba(255,255,255,.05);
+    border:1px solid #ddd;
+    border-radius:30px;
     color:#ECECFB;
     font-size:1.110em;
-    padding:12px 0;
+    padding:12px 45px;
     font-weight:300;
+    cursor: pointer;
+    margin:15px 0;
 }
-.main-menu-item .current-section{
-    border-bottom:2px solid #8AE133;
+
+
+@media all and (min-width:768px){
+    .main-menu-item .current-section{
+        border-bottom:2px solid #8AE133;
+    }
+    
+    .active-menu-item{
+        color: #8AE133 !important;
+    }
+
+    .main-menu-item a{
+        float:left;
+        background-color: transparent;
+        border:none;
+        color:#ECECFB;
+        font-weight:300;
+        cursor: pointer;
+        margin:0;
+        padding:0;
+    }
 }

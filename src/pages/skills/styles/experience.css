@@ -1,0 +1,38 @@
+#experience{
+    float:left;
+    width: 100%;
+    padding:20px 5% 30px;
+    margin-top:25px;
+    background-color:#f5f7f9;
+}
+
+.experience-wrapper{
+    width:100%;
+    background-color:#fff;
+    display: flex;
+    flex-direction:column;
+    border:1px solid #eee;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+div.experience-wrapper #experience-card:last-child{
+    border-right: none;
+}
+
+#experience .icons-credit{
+    float: left;
+    margin-top:12px;
+}
+
+@media all and (min-width:768px){
+    #experience{
+        padding:50px 10% 50px;
+        background-color:#fff;
+        margin-top:0px;
+    }
+    .experience-wrapper{
+        flex-direction:row;
+        background-color:#fafafa;
+    }
+}

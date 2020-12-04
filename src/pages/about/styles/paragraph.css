@@ -1,7 +1,7 @@
 .about-paragraph{
     float:left;
     max-width:580px;
-    margin-bottom:25px;
+    margin-top:15px;
 }
 
 .about-paragraph h3{
@@ -15,11 +15,31 @@
     color: #9797a5;
     font-size: 1.175em;
     font-weight: 400;
-    line-height: 1.850em;
+    line-height: 1.350em;
+    margin-bottom:12px;
 }
 
 .about-paragraph p{
     color: #374045;
     font-size: 1.25em;
     line-height: 1.35em;
+}
+
+.about-paragraph h3, 
+.about-paragraph h5,
+.about-paragraph p{text-align:center;}
+    
+
+@media all and (min-width:768px){
+    .about-paragraph{
+        margin-top:0;
+        margin-bottom:25px;
+    }
+    .about-paragraph h5{        
+        line-height: 1.850em;
+        margin-bottom:0;
+    }
+    .about-paragraph h3, 
+    .about-paragraph h5,
+    .about-paragraph p{text-align:left;}
 }

@@ -1,23 +1,98 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/form.css'
+import emailjs from 'emailjs-com'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope as envelope } from '@fortawesome/free-solid-svg-icons'
+import { faMeh as failIcon, faSmileWink as successIcon} from '@fortawesome/free-regular-svg-icons'
 
 function Form() {
-    
+
+    const [sending, toggle]  = useState(null)
+    const processing = <SendingCard/>
+
+    const addSending = () => {
+        toggle(processing)
+    }
+    const removeSending = () =>{
+        toggle(null)
+    }
+
+    const sleep = (delay) => new Promise( (resolve) => setTimeout(resolve, delay) )
+
+    const renderResult = async(comp) =>{
+        await sleep(2000) 
+        toggle( comp )
+    }
+
+    function sendRequest(e){       
+        let name =  e.target[0].value;
+        emailjs.sendForm('service_0q6ft3b', 'template_xajx4ps', e.target, 'user_gSIMqzfrjn9KOhHx57Aci')
+            .then(() => {
+                renderResult( <SuccessResult name={name}/>  );
+            }, () => {
+                renderResult( <FailResult /> );
+            }
+        );
+        e.target.reset();
+    }
+
+    function sendEmail(e){
+        e.preventDefault()
+        addSending()
+        sendRequest(e)
+    }
+
     return (
-        <div id="form">
+        <form id="form" onSubmit={sendEmail}>
             <h3>Send me a message</h3>
             <legend>Your name</legend>
-            <input type="text" placeholder="insert you name" />
+            <input type="text" placeholder="First or complete name" name="name" required/>
             <br/>
             <legend>Your e-mail</legend>
-            <input type="mail" placeholder="insert you email" />
+            <input type="mail" placeholder="Your best email" name="email" required/>
             <br/>
-            <legend>Your name</legend>
-            <textarea placeholder="Tell me something"></textarea>
+            <legend>Type a message</legend>
+            <textarea placeholder="Tell me something" name="message" required></textarea>
             <br/>
-            <button>Send</button>
-        </div>
+            <button className="send-button" type="submit">Send</button>
+            {sending}
+        </form>
     );
+
+    function SendingCard(){
+        return(
+            <div id="processing-send-email">
+                <FontAwesomeIcon icon={envelope}  className="envelope-icon"/>
+                <span className="sending">Sending</span>
+            </div>
+        );
+    }
+    
+    function SuccessResult(props){
+        return(
+            <div id="processing-send-email">
+                <div className="send-result-wrapper">
+                    <FontAwesomeIcon icon={successIcon} className="wink-icon" />
+                    <span className="send-success">Thank you <b>{props.name}</b>.</span>
+                    <span className="send-success">I'll reply it soon as possible.</span>
+                    <button className="send-success-button" type="button" onClick={removeSending}>Okay</button>
+                </div>
+            </div>
+        );
+    }
+    
+    function FailResult(){
+        return(
+            <div id="processing-send-email">
+                <div className="send-result-wrapper">
+                    <FontAwesomeIcon icon={failIcon} className="meh-icon" />
+                    <span className="send-fail">Oops...</span>
+                    <span className="send-fail">something went wrong.</span>
+                    <button className="send-fail-button" type="button" onClick={removeSending}>Try it again</button>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Form;

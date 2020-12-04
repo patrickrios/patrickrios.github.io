@@ -1,8 +1,14 @@
 .top-header{
     background-color:#eee;
-    background-image: url("./img/header-bg.png");
+    background-image: url("./img/mobile-header-bg.png");
     float:left;
     width: 100% !important;
     height: 100% !important;
     position: relative;
+}
+
+@media all and (min-width:768px){
+    .top-header{
+        background-image: url("./img/header-bg.png");
+    }
 }

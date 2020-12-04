@@ -5,7 +5,7 @@ import Logo from './Logo'
 
 function Header() {
     return (
-        <header className="top-header">
+        <header className="top-header" id="head">
             <MainMenu />
             <Logo/>
         </header>
