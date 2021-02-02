@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles/form.css'
 import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope as envelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope as envelope, faPaperPlane as paper } from '@fortawesome/free-solid-svg-icons'
 import { faMeh as failIcon, faSmileWink as successIcon} from '@fortawesome/free-regular-svg-icons'
 
 function Form() {
@@ -20,7 +20,7 @@ function Form() {
     const sleep = (delay) => new Promise( (resolve) => setTimeout(resolve, delay) )
 
     const renderResult = async(comp) =>{
-        await sleep(2000) 
+        await sleep(200) 
         toggle( comp )
     }
 
@@ -51,10 +51,10 @@ function Form() {
             <legend>Your e-mail</legend>
             <input type="mail" placeholder="Your best email" name="email" required/>
             <br/>
-            <legend>Type a message</legend>
+            <legend>Type your message</legend>
             <textarea placeholder="Tell me something" name="message" required></textarea>
             <br/>
-            <button className="send-button" type="submit">Send</button>
+            <button className="send-button" type="submit"><FontAwesomeIcon icon={paper}/> send email</button>
             {sending}
         </form>
     );

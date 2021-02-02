@@ -1,15 +1,14 @@
 import React from 'react';
 import './styles/about.css';
-import profile from './images/profile-transparent.png';
 import Paragraph from './AboutParagraph';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
-import resume from './RESUME-PATRICK-RIOS.pdf';
+import resume from './Patrick-Fernandes-Rios-Resume.pdf';
+import LogoAbout from './logo-bottom.png';
 
 function AboutMe() {    
     return (
         <div id="about">
-            <img src={profile} alt="Profile"className="about-profile-picture" />
             <div className="about-columns">
                 <Paragraph 
                     title="About me" 
@@ -20,8 +19,9 @@ function AboutMe() {
                     title="What i do?"
                     paragraph="I design and implement applications for web, desktop and mobile devices. Using all my skills and experience to build nice and powerful softwares."
                 />
-                <a className="download-resume" href={resume} download="RESUME"><FontAwesomeIcon icon={faDownload}/> Download resume</a>
+                <a className="download-resume" href={resume}><FontAwesomeIcon icon={faDownload}/> Download pdf resume</a>
             </div>
+            <img src={LogoAbout} alt="logo about"  className="about-logo" />
         </div>
     );
 }

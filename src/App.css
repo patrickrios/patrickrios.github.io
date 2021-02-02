@@ -14,27 +14,3 @@
     padding:5px 0 20px;
     float: left;
 }
-
-.cursor-blink-dark, .cursor-blink-light{
-    width:12px;
-    height:18px;
-    display: block;
-    animation: blinker .99s linear infinite;
-    margin-left:8px;
-    float: right;
-    margin-top:3px;
-}
-
-.cursor-blink-dark{
-    background-color:#000;
-}
-
-.cursor-blink-light{
-    background-color:#68717c;
-}
-  
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-}

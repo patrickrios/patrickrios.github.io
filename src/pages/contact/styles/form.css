@@ -40,21 +40,19 @@
 }
 
 #form .send-button{
-    background-color: #167DFF;
+    background-color:#46cc6e;
     border:none;
-    padding:13px 45px;
+    padding:13px 23px;
     color:#fff;
-    font-size:20px;
-    border-radius:30px;
-    width: min-content;
+    font-size:1.2em;
+    border-radius:.4rem;
+    width: fit-content;
     cursor: pointer;
+    margin-top:5px;
 }
 
 #form .send-button:hover{
-    background-color: #0b67db;
-    transition: background-color .5s;
-    transition: transform .3s;
-    transform: scale(103%);
+    background-color: #2dad53;
 }
 
 #processing-send-email{

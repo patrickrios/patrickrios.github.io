@@ -1,30 +1,33 @@
-import React from 'react';
+import React from 'react'
 import './styles/portfolio.css'
 import Item from './Item'
-import patrickImg from './images/patrickrios2.png';
-import salesImg from './images/salesmanager2.png';
-import ucbillImg from './images/ucbillmanager2.png';
+import PtrScreen from './images/patrickrios-screenshot.png'
+import SaleScreen from './images/sales-screenshot.png'
+import BillScreen from './images/bills.png'
 
 function Portfolio() {
     const items = [
         {
             key: 0,
-            img : patrickImg,
-            name: "Patrick Rios",
+            img : PtrScreen,
+            name: "Patrick Rios Website",
             desc: "React App",
-            repo: "https://github.com/patrickrios/patrickrios.github.io"
+            repo: "https://github.com/patrickrios/patrickrios.github.io",
+            style: "project-patrickrios"
         },{
             key: 1,
-            img : salesImg,
+            img : SaleScreen,
             name: "Sales Manager",
-            desc: "JavaFX, MySQL",
-            repo: "https://github.com/patrickrios/patrickrios.github.io"
+            desc: "Desktop app, JavaFX, MySQL",
+            repo: "https://github.com/patrickrios/sistema-controle-vendas-javafx",
+            style: "project-sales"
         },{
             key: 2,
-            img : ucbillImg,
+            img : BillScreen,
             name: "Invoice Manager",
-            desc: "JavaFX, MySQL",
-            repo: "https://github.com/patrickrios/patrickrios.github.io"
+            desc: "Desktop app, JavaFX, MySQL",
+            repo: "https://github.com/patrickrios/UCBillManager-App",
+            style: "project-bill-manager"
         }
     ]
 

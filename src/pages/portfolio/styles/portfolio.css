@@ -1,6 +1,5 @@
 #portfolio{
     width:100%;
-    background-image: url('../images/port-bg2.png');
     background-color:#222D32;
     float: left;
     padding:25px 7% 40px;
@@ -13,6 +12,7 @@
     grid-gap:2% 3.5%;
     margin-top:60px;
 }
+
 
 @media all and (min-width:768px){
     #portfolio{

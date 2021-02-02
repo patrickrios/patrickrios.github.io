@@ -1,6 +1,7 @@
 .top-header{
     background-color:#eee;
     background-image: url("./img/mobile-header-bg.png");
+    background-size: cover;
     float:left;
     width: 100% !important;
     height: 100% !important;
@@ -9,6 +10,6 @@
 
 @media all and (min-width:768px){
     .top-header{
-        background-image: url("./img/header-bg.png");
+        background-image: url("./img/dev-bg-02-min.png");
     }
 }
