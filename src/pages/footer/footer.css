@@ -5,35 +5,34 @@
     background-color: #eee;
     margin-top:20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
 #footer span{
-    font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
     margin: 10px 0;
 }
 
-.react-bg, .coffee-bg{
-    padding:3px 5px;
-    border-radius:3px;
-    margin:0 3px;
-}
-.react-bg{
-    background-color: #61dafb;
+.footer-icon{
+    color:#76c22a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.28em;
 }
 
-.coffee-bg{
-    background-color:#f4d673;
+.footer-icon img{
+    margin-right:5px;
 }
+
 
 @media all and (min-width:768px){
     #footer{
         padding:40px 10%;
-        align-items: flex-start;
-        flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     .copyright{
         float: left;

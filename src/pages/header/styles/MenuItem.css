@@ -4,10 +4,10 @@
 }
 .main-menu-item a{
     float:left;
-    background-color: rgba(255,255,255,.05);
-    border:1px solid #ddd;
+    background-color: #5d97d621;
+    border:1px solid #5d97d62a;
     border-radius:30px;
-    color:#ECECFB;
+    color:#a1fc47;
     font-size:1.110em;
     padding:12px 45px;
     font-weight:300;

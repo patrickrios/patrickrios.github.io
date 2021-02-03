@@ -19,7 +19,7 @@
 
 #form input, textarea{
     background-color: #ECECFB;
-    border:2px solid #ECECFB;
+    border:2px solid #e7e7fc;
     padding:15px;
     border-radius:5px;
     margin-bottom: 13px;
@@ -40,9 +40,9 @@
 }
 
 #form .send-button{
-    background-color:#46cc6e;
+    background-color:#36be5f;
     border:none;
-    padding:13px 23px;
+    padding:15px 20px;
     color:#fff;
     font-size:1.2em;
     border-radius:.4rem;
@@ -52,7 +52,7 @@
 }
 
 #form .send-button:hover{
-    background-color: #2dad53;
+    background-color: #26a04a;
 }
 
 #processing-send-email{

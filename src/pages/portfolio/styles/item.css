@@ -11,6 +11,7 @@
     height:170px;
     position: relative;
     overflow: hidden;
+    border-bottom:1px solid #f8f1f1;
 }
 .portfolio-item header img{
     max-width:80%;
@@ -31,33 +32,37 @@
     padding:15px 8%;
 }
 .portfolio-items-wrapper h3{
-    font-size: 26px;
+    font-size: 1.45em;
     float: left;
     width:100%;
 }
 
 .portfolio-items-wrapper p{
     float: left;
-    font-size: 18px;
-    color:#4D4D65;
+    font-size: 1.1em;
+    color:#606083;
     margin:10px 0;
     width: 100%;
 }
 
 .portfolio-items-wrapper a{
     float: left;
-    background-color:#009cf0;
-    font-size: 16px;
-    color: #EAFAFF;
-    padding:7px 10px;
-    border-radius:20px;
+    width:100%;
+    background-color:#009cf018;
+    border:1px solid #069ff15d;
+    font-size: 1.0em;
+    color: #3164b1;
+    padding:12px 10px;
+    border-radius:.4rem;
     margin:5px 0 3px;
-    transition:ease-in .3s;
+    transition:ease-in .2s;
+    text-align: center;
+    opacity:.85;
 }
 
 .portfolio-items-wrapper a:hover{
-    background-color:rgb(26, 25, 25);
-    font-size: 16px;
+    background-color:#009cf02c;
+    opacity: 1;
 }
 
 .project-patrickrios{

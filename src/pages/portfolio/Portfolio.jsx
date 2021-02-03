@@ -3,7 +3,7 @@ import './styles/portfolio.css'
 import Item from './Item'
 import PtrScreen from './images/patrickrios-screenshot.png'
 import SaleScreen from './images/sales-screenshot.png'
-import BillScreen from './images/bills.png'
+import DevFinance from './images/dev-finances.png'
 
 function Portfolio() {
     const items = [
@@ -23,10 +23,10 @@ function Portfolio() {
             style: "project-sales"
         },{
             key: 2,
-            img : BillScreen,
-            name: "Invoice Manager",
-            desc: "Desktop app, JavaFX, MySQL",
-            repo: "https://github.com/patrickrios/UCBillManager-App",
+            img : DevFinance,
+            name: "dev.finances",
+            desc: "Web app, HTML, CSS, Javascript",
+            repo: "https://github.com/patrickrios/dev-finances-maratona-discover",
             style: "project-bill-manager"
         }
     ]
