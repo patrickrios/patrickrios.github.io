@@ -22,19 +22,5 @@ const Logo = () => {
 		</div>
     );
 };
-/** 
- * <div>
-                <h2 className="logo-title">Hello visitor <span className="cursor-blink-light"></span></h2>
-                <p className="logo-subtitle">Can i code<br/>for you?</p> 
-                <Link to="about" className="logo-action" smooth={true}>
-                    Know more <FontAwesomeIcon icon={faArrowDown} />
-                </Link>
-            </div> 
-
-            <picture>
-                <source media="(min-width:650px)" srcset={LogoIcon} />
-			    <img src={LogoMobile} alt="Logo icon" className="about-profile-picture"/>
-            </picture>
-*/
 
 export default Logo;

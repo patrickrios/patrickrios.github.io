@@ -1,21 +1,83 @@
 #about{
     width: 100%;
-    padding:60px 12% 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 8.5rem 0 5rem;
 }
 
 .about-columns{
-    display: flex;
-    flex-direction: column;
-    margin-left:0;
-    align-items: center;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    gap:1.5rem;
 }
 
-.about-logo{
-    display: none;
-    max-height: 350px;
+.card-bg{
+    background-color: var(--card-bg);
+}
+
+.aboutme-card{
+    padding:3rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    border-radius:.4rem;
+}
+
+.about-desc{
+    align-items: center;
+    justify-content: center;
+    padding-top:7rem;
+    position: relative;
+}
+
+.about-desc img{
+    position: absolute;
+    top:-25%;
+}
+
+.about-desc p{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.10rem;
+}
+
+.about-stack-card{
+    display: flex;
+}
+
+.about-what{
+    display: grid;
+    grid-row: 1fr 1fr;
+    gap:1rem;
+}
+
+.about-what > div{
+    display: flex;
+    align-items: center;
+    border-radius: .4rem;
+}
+
+.about-web{
+    border-bottom: 1px solid var(--web-color);
+    color: var(--web-color);
+}
+
+.about-desk{
+    border-bottom: 1px solid var(--desk-color);
+    color: var(--desk-color);
+}
+
+.about-web p, .about-desk p{
+    padding:0 2rem;
+    font-size: 1.05rem;
+}
+
+.about-card-title{
+    background-color: rgba(0,0,0,.05);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 2.3rem;
 }
 
 .download-resume{
@@ -31,33 +93,18 @@
     font-weight: 500;
 }
 
+.download-resume svg{
+    margin-right:5px;
+}
+
 .download-resume:hover{
     background-color: #1684c0;
 }
 
 @media all and (min-width:768px){
-    #about{
-        width: 100%;
-        padding:60px 10% 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about-profile-picture{
-        width:320px;
-        border-radius:100%;
-    }
-
     .about-columns{
-        align-items: flex-start;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto auto;
     }
 
-    .download-resume{
-        margin-top:0;
-    }
-
-    .about-logo{
-        display: block;
-    }
 }

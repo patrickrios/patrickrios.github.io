@@ -1,28 +1,39 @@
 import React from 'react';
 import './styles/about.css';
-import Paragraph from './AboutParagraph';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 import resume from './Patrick-Fernandes-Rios-Resume.pdf';
-import LogoAbout from './logo-bottom.png';
+import LogoAbout from './images/about-desc-logo.png';
+import WebIcon from './images/bi_laptop.svg'
+import DeskIcon from './images/mi_computer.svg'
+import StackCard from './StackCard';
 
 function AboutMe() {    
     return (
-        <div id="about">
-            <div className="about-columns">
-                <Paragraph 
-                    title="About me" 
-                    subtitle="I'm a software developer from Dourados, Mato Grosso do Sul, Brazil"
-                    paragraph="Everyday improving myself to offer the most high-quality work that i can do."
-                />
-                <Paragraph 
-                    title="What i do?"
-                    paragraph="I design and implement applications for web, desktop and mobile devices. Using all my skills and experience to build nice and powerful softwares."
-                />
-                <a className="download-resume" href={resume}><FontAwesomeIcon icon={faDownload}/> Download pdf resume</a>
+        <section id="about" >
+            <div className="center-container about-columns">
+                <div className="aboutme-card about-desc card-bg">
+                    <img src={LogoAbout} />
+                    <p>Sou apaixonado por programação e design. Sou capaz de projetar e criar interfaces de usuário para websites e aplicativos. Atualmente estudo backend e banco de dados.</p>
+                    <a href={resume} className="download-resume">
+                        <FontAwesomeIcon icon={faDownload} />
+                        Download CV
+                    </a>
+                </div>
+                <div  className="about-what">
+                    <StackCard icon={WebIcon} 
+                        title="frontend" 
+                        text="html, css, javascript, typescript, reactjs, figma" 
+                        borderClass="about-web"
+                    />
+                    <StackCard icon={DeskIcon} 
+                        title="backend" 
+                        text="node.js, php, typeorm, sql, sqlite, mysql, gnu/linux" 
+                        borderClass="about-desk" 
+                    />
+                </div> 
             </div>
-            <img src={LogoAbout} alt="logo about"  className="about-logo" />
-        </div>
+        </section>
     );
 }
 

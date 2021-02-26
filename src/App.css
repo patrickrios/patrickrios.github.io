@@ -6,11 +6,16 @@
 
 :root{
     --background:#2B3539;
+    --card-bg: #222B2F;
+    --text-color: #A9B5D3;
+
+    --web-color:#8C3BEF;
+    --desk-color: #F19272;
 }
 
 .center-container{
-    width:80%;
-    margin-left:10%;
+    width:90%;
+    margin:0 5%;
 }
 
 .mobile-only{
@@ -27,6 +32,10 @@
     }
     .mobile-only{
         display: none;
+    }
+    .center-container{
+        width:75%;
+        margin:0 12.5%;
     }
 }
 
