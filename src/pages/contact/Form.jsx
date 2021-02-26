@@ -54,7 +54,7 @@ function Form() {
             <legend>Type your message</legend>
             <textarea placeholder="Tell me something" name="message" required></textarea>
             <br/>
-            <button className="send-button" type="submit"><FontAwesomeIcon icon={paper}/> send email</button>
+            <button className="send-button" type="submit"><FontAwesomeIcon icon={paper}/> send message</button>
             {sending}
         </form>
     );

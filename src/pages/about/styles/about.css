@@ -15,6 +15,7 @@
 
 .about-logo{
     display: none;
+    max-height: 350px;
 }
 
 .download-resume{
@@ -40,6 +41,7 @@
         padding:60px 10% 0;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .about-profile-picture{
@@ -56,7 +58,6 @@
     }
 
     .about-logo{
-        margin-left:9%;
         display: block;
     }
 }

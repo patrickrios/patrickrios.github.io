@@ -2,17 +2,13 @@ import React from 'react';
 
 import './styles/experience.css';
 import Card from './ExperienceCard';
-import frontIcon from './images/frontend-icon.svg';
-import backIcon  from './images/backend-icon.svg';
-import projIcon  from './images/project-icon.svg'
 
 function Experience() {
 
     const cards = [
         { 
             id: 0,
-            icon: frontIcon,
-            title: "Frontend", 
+            title: "WEB", 
             description: "Making the UI Design a high-quality experience and usability to my users.",
             topics: [
                 {
@@ -24,6 +20,14 @@ function Experience() {
                     items: ["ReactJS, JQuery, Material UI, Bootstrap"]
                 },
                 {
+                    title: "Back-end",
+                    items: ["PHP, NodeJS, RestAPI"]
+                },
+                {
+                    title: "Frameworks",
+                    items: ["Wordpress"]
+                },
+                {
                     title: "Tools", 
                     items: ["Figma, Adobe Illustrator"]
                 }
@@ -32,41 +36,47 @@ function Experience() {
 
         { 
             id: 1,
-            icon: backIcon,
-            title: "Backend", 
+            title: "DESKTOP", 
             description: "Design, implementation, optimization and maintenance of software systems",
             topics: [
                 {
                     title: "Programming languages", 
-                    items: ["Java, C, C++, PHP, Python"]
+                    items: ["Java, C, C++"]
                 },
                 {
-                    title: "Libraries", 
-                    items: ["JavaFX, NodeJS"]
+                    title: "Libraries",
+                    items: ["JavaFX, Spring"]
+                },
+                {
+                    title: "OS", 
+                    items: ["GNU/Linux, Windows"]
                 },
                 {
                     title: "Databases", 
-                    items: ["Relational databases MySQL and PostgreSQL"]
+                    items: ["SQL, MySQL & PostgreSQL"]
                 }
             ]
         },
 
         { 
             id: 2,
-            icon: projIcon,
-            title: "Design and project", 
+            title: "TOOLS", 
             description: "Software engineer activities and project management",
             topics: [
                 {
-                    title: "Activities", 
+                    title: "Dev tools", 
                     items:[
-                        "Requirements management",
-                        "Tasks management",
-                        "Data modeling using UML 2.0",
-                        "Database structure project",
-                        "Debbuging and bug fixing",
-                        "Deploy and maintenance",
-                        "Mentoring other team members"
+                        "Git & Github",
+                        "Intellij IDEA",
+                        "VS Code",
+                        "SceneBuilder"
+                    ]
+                },{
+                    title: "Project tools",
+                    items:[
+                        "Trello",
+                        "Todoist",
+                        "ArgoUML"
                     ]
                 }
             ]
@@ -81,7 +91,7 @@ function Experience() {
 
     return (
         <div id="experience">
-            <h2 className="section-title">@skills:~$</h2>
+            <h2 className="section-title">My coding skills</h2>
             <div className="experience-wrapper">
                 { cards.map( card => renderCard(card) ) }
             </div>

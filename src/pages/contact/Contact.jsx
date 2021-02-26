@@ -7,7 +7,7 @@ function Contact() {
     return (
         <div id="contact">
             <div className="contact-title">
-                <h2 className="section-title">@contact:~$</h2>
+                <h2 className="section-title">Did you liked what you saw? Contact me!</h2>
             </div>
             <Social/>
             <Form />

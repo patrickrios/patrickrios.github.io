@@ -37,7 +37,7 @@ function Portfolio() {
     return (
         <div id="portfolio" className="default-padding">
             <span className="menu-logo section-title">
-				@portfolio:<span className="menu-logo-blue-text">~</span><span className="menu-logo-white-text">$</span>
+				<span className="menu-logo-white-text">Some projects of mine</span>
 			</span>
             <div className="portfolio-wrapper">
                 { items.map(item => renderItem(item) ) }

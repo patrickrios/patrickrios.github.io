@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-import ContactProfile from './images/contact-logo-min.png'
+import ContactProfile from './images/social-logo-large-min.png'
 
 function Social() {
     

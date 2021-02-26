@@ -7,6 +7,17 @@
     height: 100% !important;
     position: relative;
 }
+.header-chevron-down{
+    position: absolute;
+    bottom:2.3rem;
+    left:50%;
+    transform: translateX(-50%);
+    opacity:.5;
+}
+.header-chevron-down:hover{
+    cursor: pointer;
+    opacity:.9;
+}
 
 @media all and (min-width:768px){
     .top-header{

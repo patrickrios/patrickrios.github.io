@@ -1,114 +1,51 @@
 :root{
-    --logo-action:#26ffe2;
+    --logo-action:#4fb442;
+    --logo-action-hover: #3c9430;
 }
 
 .main-logo{
     position: absolute;
-    width:100%;
-    height:100%;
-    z-index:5;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
     justify-content: center;
+    align-items: center;
+    width: max-content;
+    left:50%;
+    top:48%;
+    transform: translate(-50%,-50%);
+    max-width: 80%;
+}
+.logo-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.logo-desc{
+    display: flex;
+    flex-direction: row;
+}
+.logo-desc .logo-icon{
+    margin-right:1.5rem;
+}
+.logo-desc h1{
+    color:#DFE6FA;
+    line-height: 1.45em;
+}
+.logo-desc p{
+    color:#A9B5D3;
+    font-size:1.15em;
+    line-height:1.55em;
+    display: flex;
+    align-items: center;
+}
+.logo-desc p img{
+    margin-right:.3rem;
 }
 
-.logo-icon{
-    max-width: min-content;
-    min-width:min-content;
-}
-
-.logo-title{
-    color:#c1c1ec;
-    font-size:1.25em;
-    text-align: left;
-    font-weight:400;
-    margin-bottom:7px;
-    float: left;
-}
-
-.logo-subtitle{
-    color:#ECECFB;
-    margin-bottom:30px;
-    font-size:1.83em;
-    text-align: left;
-}
-
-.about-profile-picture{
-    width:182px;
-    border-radius:100%;
-    height: fit-content;
-    max-height:fit-content;
-    background-color: #fafafa;
-    background-image: url('../img/6715.jpg');
-    background-size: cover;
-    background-position:center;
-    margin-bottom:15px;
-}
-
-.logo-action{
-    background-color:  rgba(38, 255, 226, .05);
-    color:var(--logo-action);
-    border-radius:.4rem;
-    border: 2px solid var(--logo-action);
-    padding:6px 12px;
-    font-size:1.0em;
-    cursor: pointer;
-    opacity:.65;
-}
-
-.logo-action:hover{
-    opacity:1;
-}
-
-.logo-action svg{
-    font-size:.72em;
-    margin:0 4px;
-}
-
-.cursor-blink-light{
-    width:12px;
-    height:4px;
-    display: block;
-    animation: blinker 1s linear infinite;
-    margin-left:5px;
-    float: right;
-    margin-top:16px;
-}
-
-.cursor-blink-light{
-    background-color:#c1c1ec;
-}
-  
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-}
 
 @media all and (min-width: 768px){
     .main-logo{
         flex-direction:row;
-    }
-    .logo-title{
-        font-size:1.72em;
-    }
-    .logo-subtitle{
-        font-size:3.72em;
-        margin-bottom:45px;
-    }
-    .about-profile-picture{
-        width:280px;
-        margin-left:30px;
-    }
-    .logo-action{
-        font-size:1.3em;
-        padding:12px 20px;
-    }
-    .cursor-blink-light{
-        width:21px;
-        height:5px;
-        margin-left:10px;
-        margin-top:22px;
     }
 }
