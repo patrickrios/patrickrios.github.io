@@ -28,9 +28,11 @@
 .logo-desc .logo-icon{
     margin-right:1.5rem;
 }
+
 .logo-desc h1{
     color:#DFE6FA;
     line-height: 1.45em;
+    text-align: center;
 }
 .logo-desc p{
     color:#A9B5D3;
@@ -38,6 +40,7 @@
     line-height:1.55em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .logo-desc p img{
     margin-right:.3rem;
@@ -47,5 +50,8 @@
 @media all and (min-width: 768px){
     .main-logo{
         flex-direction:row;
+    }
+    .logo-desc p{
+        justify-content: flex-start;
     }
 }

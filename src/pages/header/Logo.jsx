@@ -12,7 +12,7 @@ const Logo = () => {
 			    <img src={ProfilePic} alt="Developer profile"/>
             </div>
             <div className="logo-desc">
-                <img src={Logomark} alt="Patrick Rios Logo" className="logo-icon"/>
+                <img src={Logomark} alt="Patrick Rios Logo" className="logo-icon desk-only"/>
                 <div>
                     <h1>Software Developer</h1>
                     <p><img src={LogoStack} alt="Ícone stack"/>Frontend | Backend | UI Designer</p>

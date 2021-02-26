@@ -13,6 +13,23 @@
     margin-left:10%;
 }
 
+.mobile-only{
+    display:block;
+}
+
+.desk-only{
+    display:none;
+}
+
+@media (min-width: 768px){
+    .desk-only{
+        display: block;
+    }
+    .mobile-only{
+        display: none;
+    }
+}
+
 @media( max-width: 1080px){
     html{
         font-size:93.75%;
