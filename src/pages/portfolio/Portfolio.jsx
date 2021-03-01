@@ -1,49 +1,38 @@
 import React from 'react'
 import './styles/portfolio.css'
-import Item from './Item'
-import PtrScreen from './images/patrickrios-screenshot.png'
-import SaleScreen from './images/sales-screenshot.png'
-import DevFinance from './images/dev-finances.png'
+import Project from './Project'
+import DevFinance from './images/dev-finance-snap.png'
+import DevFinanceLogo from './images/dev-finances-logo.png'
 
 function Portfolio() {
-    const items = [
+    const projects = [
         {
             key: 0,
-            img : PtrScreen,
-            name: "Patrick Rios Website",
-            desc: "React App",
-            repo: "https://github.com/patrickrios/patrickrios.github.io",
-            style: "project-patrickrios"
-        },{
-            key: 1,
-            img : SaleScreen,
-            name: "Sales Manager",
-            desc: "Desktop app, JavaFX, MySQL",
-            repo: "https://github.com/patrickrios/sistema-controle-vendas-javafx",
-            style: "project-sales"
-        },{
-            key: 2,
-            img : DevFinance,
+            logo: DevFinanceLogo,
+            snap : DevFinance,
             name: "dev.finances",
-            desc: "Web app, HTML, CSS, Javascript",
+            desc: "Web app para guardar transações financeiras. Este projeto foi desenvolvido durante as aulas da Maratona Discover da Rocketseat",
+            techs: ['javascript', 'html', 'css'],
+            level: "beginner",
             repo: "https://github.com/patrickrios/dev-finances-maratona-discover",
             style: "project-bill-manager"
         }
     ]
 
     const renderItem = (item) =>{
-        return <Item datas={item} />
+        return <Project datas={item} />
     }
+
     return (
-        <div id="portfolio" className="default-padding">
-            <span className="menu-logo section-title">
-				<span className="menu-logo-white-text">Some projects of mine</span>
-			</span>
-            <div className="portfolio-wrapper">
-                { items.map(item => renderItem(item) ) }
+        <section id="portfolio" >
+            <div className="center-container">
+                <h2>Alguns dos meus projetos</h2>
+                <div className="portfolio-wrapper">
+                    { projects.map(item => renderItem(item) ) }
+                </div>
             </div>
-        </div>
+        </section>
     );
 }
-
+ 
 export default Portfolio;

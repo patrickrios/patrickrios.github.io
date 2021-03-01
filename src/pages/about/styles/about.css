@@ -1,7 +1,7 @@
 #about{
     width: 100%;
     display: flex;
-    padding: 8.5rem 0 5rem;
+    padding: 8.5rem 0 7rem;
 }
 
 .about-columns{
@@ -36,7 +36,9 @@
 .about-desc p{
     color: var(--text-color);
     text-align: center;
-    font-size: 1.10rem;
+    font-size: 1.15rem;
+    line-height: 1.85rem;
+    max-width: 90%;
 }
 
 .about-stack-card{
@@ -67,7 +69,7 @@
 
 .about-web p, .about-desk p{
     padding:0 2rem;
-    font-size: 1.05rem;
+    font-size: 1.10rem;
 }
 
 .about-card-title{
@@ -83,7 +85,7 @@
 .download-resume{
     width: max-content;
     padding:13px 16px;
-    background-color: #2498d6;
+    background-color: #225fd8;
     color: #ddf1f7;
     font-size:.87em;
     border-radius:.4rem;
@@ -98,7 +100,7 @@
 }
 
 .download-resume:hover{
-    background-color: #1684c0;
+    background-color: #134ab9;
 }
 
 @media all and (min-width:768px){

@@ -68,6 +68,10 @@ a{
     text-decoration: none;
 }
 
+h2{
+    color:#94ABC0;
+}
+
 #wrapper{
     float: left;
     width:100%;

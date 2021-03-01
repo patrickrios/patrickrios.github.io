@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 import resume from './Patrick-Fernandes-Rios-Resume.pdf';
 import LogoAbout from './images/about-desc-logo.png';
-import WebIcon from './images/bi_laptop.svg'
-import DeskIcon from './images/mi_computer.svg'
+import WebIcon from './images/frontend-icon.svg'
+import DeskIcon from './images/backend-icon.svg'
 import StackCard from './StackCard';
 
 function AboutMe() {    
@@ -13,8 +13,8 @@ function AboutMe() {
         <section id="about" >
             <div className="center-container about-columns">
                 <div className="aboutme-card about-desc card-bg">
-                    <img src={LogoAbout} />
-                    <p>Sou apaixonado por programação e design. Sou capaz de projetar e criar interfaces de usuário para websites e aplicativos. Atualmente estudo backend e banco de dados.</p>
+                    <img src={LogoAbout} alt="Ícone header about"/>
+                    <p>Sou apaixonado por programação e design. Sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente estudo backend e banco de dados.</p>
                     <a href={resume} className="download-resume">
                         <FontAwesomeIcon icon={faDownload} />
                         Download CV
@@ -23,7 +23,7 @@ function AboutMe() {
                 <div  className="about-what">
                     <StackCard icon={WebIcon} 
                         title="frontend" 
-                        text="html, css, javascript, typescript, reactjs, figma" 
+                        text="html, css, javascript, typescript, reactjs, nextjs, context api, figma" 
                         borderClass="about-web"
                     />
                     <StackCard icon={DeskIcon} 
