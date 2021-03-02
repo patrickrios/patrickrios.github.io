@@ -4,14 +4,13 @@
     border-radius:.7rem;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding:1.4rem 1.5rem;
 }
 .project-about{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .project-about header{
     position: relative;
@@ -19,10 +18,14 @@
     flex-direction: row;
 }
 
+.project-logo{
+    filter: brightness(0.85);
+}
+
 .techs-list{
     margin-left:10px;
     padding:0 .5rem;
-    border-left: 1px solid #606668;
+    border-left: 1px solid #454b4d;
     display: flex;
     align-items: center;
 }
@@ -41,76 +44,50 @@
 
 .project-description{
     color:#969EB2;
-    max-width:70%;
-    font-size: 1.15rem;
+    font-size: 1.10rem;
     line-height: 1.80rem;
+    margin:1rem 0 1.5rem;
 }
 
 .project-links a{
-    padding:.5rem .7rem;
-    border-radius:.4rem;
-    color:#fff;
+    padding:.4rem .6rem;
+    border-radius:.3rem;
     margin-right:.5rem;
+    color: #eeeeee;
+    opacity:.85;
+    font-size:.9rem;
+}
+.project-links a:hover{
+    opacity:1;
+}
+
+.project-links a svg{
+    margin-right:5px;
 }
 
 .project-live-demo{
-    background-color:#26AB5B;
+    background:#6fc245;
 }
 
 .project-source-code{
-    background-color: #F48433;
+    background: var(--web-color);
 }
 
 .project-snap img{
     min-width: min-content;
-}
-
-.portfolio-items-wrapper{
-    float: left;
-    width:100%;
-}
-.portfolio-items-wrapper h3{
-    font-size: 1.45em;
-    float: left;
-    width:100%;
-}
-
-.portfolio-items-wrapper p{
-    float: left;
-    font-size: 1.1em;
-    color:#606083;
-    margin:10px 0;
-    width: 100%;
-}
-
-.portfolio-items-wrapper a{
-    float: left;
-    width:100%;
-    background-color:#009cf018;
-    border:1px solid #069ff15d;
-    font-size: 1.0em;
-    color: #3164b1;
-    padding:12px 10px;
-    border-radius:.4rem;
-    margin:5px 0 3px;
-    transition:ease-in .2s;
-    text-align: center;
     opacity:.85;
 }
 
-.portfolio-items-wrapper a:hover{
-    background-color:#009cf02c;
-    opacity: 1;
-}
 
-.project-patrickrios{
-    background-image: linear-gradient(to right, #0083B0, #00B4DB);
-}
-
-.project-sales{
-    background-image: linear-gradient(to right, #ff249c, #fc7272);
-}
-
-.project-bill-manager{
-    background-image: linear-gradient(to right,#11998e, #0ff085);
+@media(min-width:768px){
+    .portfolio-item{
+        flex-direction: row;
+    }
+    .project-description{
+        max-width:70%;
+        margin:0;
+    }
+    .project-about{
+        justify-content: space-between;
+    }
 }
