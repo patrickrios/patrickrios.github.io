@@ -6,11 +6,11 @@ import Social from './Social'
 function Contact() {
     return (
         <div id="contact">
-            <div className="contact-title">
-                <h2 className="section-title">Did you liked what you saw? Contact me!</h2>
-            </div>
-            <Social/>
+            <h2 className="section-title">
+                Se você tem alguma proposta ou deseja trabalhar comigo, me envie uma mensagem
+            </h2>
             <Form />
+            <Social />
         </div>
     );
 }

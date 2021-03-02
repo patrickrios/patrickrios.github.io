@@ -1,81 +1,43 @@
 #social{
-    float: left;
-    width:100%;
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:#fafafa;
-    height: 70vh;
-}
-
-.social-wrapper{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(207, 87, 243);
-    /*background-image: url('../images/tiles6.jpeg');*/
-    background-image: url('../../header/img/6715.jpg');
-    background-size: cover;
-    position: relative;
-    display:flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    overflow: hidden;
+    align-items:center;
+    margin-top:4rem;
 }
 
-.social-medias{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: min-content;
-    z-index:2;
-}
-
-
-.social-links{
-    display: grid;
-    grid-template-columns:50fr 50fr;
-}
-
-.social-links a{
-    padding:10px 12px;
+#social .social-link{
     font-size:1.7em;
     border-radius:.4rem;
-    margin:5px;
-    background-color:#fff;
-}
-.social-links a:hover{
-    transition: opacity .3s;
-    opacity:1;
-}
-
-
-.social-links .facebook-link{
-    padding:10px 16px;
-    color: #2f2dac;
+    margin:0 .7rem;
+    background-color:#1c2427;
+    width:60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .3s;
 }
 
-.social-links .linked-link{
-    padding:10px 14px;
+#social .social-link:hover{
+    background-color:#161c1f;
+}
+
+.facebook-link{
+    color: #5B59D9;
+}
+
+.linked-link{
     color:#2d9ba3;
 }
 
-.social-links .insta-link{
+.insta-link{
     color: #ca4686;
 }
 
-.social-links .github-link{
-    color: #414c69;
-}
-
-.contact-profile{
-    margin-bottom:10px;
+.github-link{
+    color: #9AA8B5;
 }
 
 @media all and (min-width:768px){
-    #social{
-        width:40%;
-        height: 83vh;
-    }
+    
 }

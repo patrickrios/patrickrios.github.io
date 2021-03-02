@@ -1,29 +1,19 @@
 #form{
-    float: right;
     width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top:25px;
-}
-#form h3{
-    margin-bottom:15px;
-    font-size:1.6em;
-}
-#form legend{
-    color:#525259;
-    font-weight:500;
-    font-size: 19px;
-    margin-bottom: 5px;
+    justify-content: center;
 }
 
 #form input, textarea{
-    background-color: #ECECFB;
-    border:2px solid #e7e7fc;
+    background-color: #ccd9dd;
+    border:1px solid #d0d0e4;
     padding:15px;
-    border-radius:5px;
+    border-radius:7px;
     margin-bottom: 13px;
     font-size: 19px;
+    color: #3e3e55;
 }
 
 #form input:focus, textarea:focus{
@@ -36,23 +26,26 @@
 }
 
 #form input::placeholder, textarea::placeholder{
-    color: #B9B9C8;
+    color: #9c9cb4;
 }
 
 #form .send-button{
-    background-color:#36be5f;
+    background-color:#4C1FCC;
     border:none;
-    padding:15px 20px;
-    color:#fff;
+    padding:1.2rem 1.4rem;
+    color:#f0f0f0;
     font-size:1.2em;
     border-radius:.4rem;
-    width: fit-content;
     cursor: pointer;
-    margin-top:5px;
+    margin-top:1rem;
 }
 
 #form .send-button:hover{
-    background-color: #26a04a;
+    background-color: #4826a7;
+}
+
+#form .send-button svg{
+    margin-right: .5rem;
 }
 
 #processing-send-email{
@@ -142,8 +135,9 @@
 }
 
 @media all and (min-width:768px){
-    #form{
-        width: 55%;
-        margin-top:0;
+    #form .send-button{
+        width: fit-content;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }

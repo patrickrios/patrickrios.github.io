@@ -44,17 +44,16 @@ function Form() {
 
     return (
         <form id="form" onSubmit={sendEmail}>
-            <h3>Send me a message</h3>
-            <legend>Your name</legend>
             <input type="text" placeholder="First or complete name" name="name" required/>
             <br/>
-            <legend>Your e-mail</legend>
             <input type="mail" placeholder="Your best email" name="email" required/>
             <br/>
-            <legend>Type your message</legend>
             <textarea placeholder="Tell me something" name="message" required></textarea>
             <br/>
-            <button className="send-button" type="submit"><FontAwesomeIcon icon={paper}/> send message</button>
+            <button className="send-button" type="submit">
+                <FontAwesomeIcon icon={paper}/> 
+                Enviar mensagem
+            </button>
             {sending}
         </form>
     );
