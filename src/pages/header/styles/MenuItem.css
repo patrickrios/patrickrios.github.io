@@ -1,17 +1,15 @@
-:root{
-    --menu-item-text: rgba(186, 204, 238, 0.62);
-}
 
 .main-menu-item{
-    padding:.6rem 1.3rem;
+    padding:1rem 1.3rem;
     border-radius:7px;
     margin:.5rem 0;
     cursor: pointer;
-    background-color: rgba(255,255,255,.1);
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.212);
     color: var(--menu-item-text);
+    text-align: center;
 }
 .main-menu-item a{
-    /*#a1fc47*/
     font-size:1.35rem;
     font-weight:300;
     color: var(--menu-item-text);
@@ -27,6 +25,7 @@
         border-radius: 0;
         margin:0 .7rem;
         background: none;
+        width: auto;
     }
     .main-menu-item a{
         font-size:1.15rem;

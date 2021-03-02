@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-#form input, textarea{
+#form input, #form textarea{
     background-color: #ccd9dd;
     border:1px solid #d0d0e4;
     padding:15px;
@@ -16,7 +16,7 @@
     color: #3e3e55;
 }
 
-#form input:focus, textarea:focus{
+#form input:focus, #form textarea:focus{
     border-color: #167DFF;
     background-color:#fdfdfd;
 }
@@ -26,7 +26,7 @@
 }
 
 #form input::placeholder, textarea::placeholder{
-    color: #9c9cb4;
+    color: #84849b;
 }
 
 #form .send-button{

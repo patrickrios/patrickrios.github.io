@@ -22,10 +22,10 @@ const MainMenu = () => {
         <nav className="main-menu">
             <button className="mobile-menu-button" onClick={showMenu}><FontAwesomeIcon icon={faBars}/></button>
 			<ul className={mobileMenu}>
-                <MenuItem text="Home" target="head" hide={showMenu} />
-                <MenuItem text="About"   target="about" hide={showMenu}/>
-                <MenuItem text="Portfolio"  target="portfolio" hide={showMenu}/>
-                <MenuItem text="Contact" target="contact" hide={showMenu}/>
+                <MenuItem text="Início" target="head" hide={showMenu} />
+                <MenuItem text="Sobre"   target="about" hide={showMenu}/>
+                <MenuItem text="Portifólio"  target="portfolio" hide={showMenu}/>
+                <MenuItem text="Contato" target="contact" hide={showMenu}/>
 			</ul>
         </nav>
     );

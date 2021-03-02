@@ -44,11 +44,11 @@ function Form() {
 
     return (
         <form id="form" onSubmit={sendEmail}>
-            <input type="text" placeholder="First or complete name" name="name" required/>
+            <input type="text" placeholder="Seu nome completo" name="name" required/>
             <br/>
-            <input type="mail" placeholder="Your best email" name="email" required/>
+            <input type="mail" placeholder="Seu melhor email" name="email" required/>
             <br/>
-            <textarea placeholder="Tell me something" name="message" required></textarea>
+            <textarea placeholder="Sua mensagem para mim..." name="message" required></textarea>
             <br/>
             <button className="send-button" type="submit">
                 <FontAwesomeIcon icon={paper}/> 

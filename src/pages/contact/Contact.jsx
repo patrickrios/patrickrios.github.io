@@ -7,7 +7,7 @@ function Contact() {
     return (
         <div id="contact">
             <h2 className="section-title">
-                Se você tem alguma proposta ou deseja trabalhar comigo, me envie uma mensagem
+                Se você tem alguma proposta ou deseja trabalhar comigo, não hesite, me envie sua mensagem
             </h2>
             <Form />
             <Social />
