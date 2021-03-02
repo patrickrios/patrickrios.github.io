@@ -1,46 +1,21 @@
 #footer{
-    float:left;
     width: 100%;
-    padding:20px 0;
-    background-color: #eee;
-    margin-top:20px;
+    padding:1rem 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    background: var(--dark-bg);
 }
 
 #footer span{
     font-weight: 400;
     margin: 10px 0;
-}
-
-.footer-icon{
-    color:#76c22a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:1.28em;
-}
-
-.footer-icon img{
-    margin-right:5px;
+    color: var(--text-color);
 }
 
 
 @media all and (min-width:768px){
     #footer{
-        padding:40px 10%;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .copyright{
-        float: left;
-        margin-left: 10%;
-    }
-    
-    .made-with{
-        float:right;
-        margin-right:10%;
+        padding:2rem 0;
     }
 }

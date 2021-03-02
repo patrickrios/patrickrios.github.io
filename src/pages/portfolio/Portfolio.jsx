@@ -15,7 +15,7 @@ function Portfolio() {
             name: "dev.finances",
             desc: "Web app para guardar transações financeiras. Este projeto foi desenvolvido durante as aulas da Maratona Discover da Rocketseat",
             techs: ['javascript', 'html', 'css'],
-            level: "beginner",
+            level: "Básico",
             repo: "https://github.com/patrickrios/dev-finances-maratona-discover",
             live: "https://patrickrios.github.io/dev-finances-maratona-discover/"
         },
@@ -26,7 +26,7 @@ function Portfolio() {
             name: "NPS-API",
             desc: "NPS é uma API para criar pesquisas de satisfação do consumidor. Com ela é possível enviar pesquisas por e-mail para usuários cadastrados e salvar sua resposta.",
             techs: ['nodejs', 'typescript', 'sqlite'],
-            level: "intermediate",
+            level: "Intermediário",
             repo: "https://github.com/patrickrios/NPS-API",
             live : null
         }

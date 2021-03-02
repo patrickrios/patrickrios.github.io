@@ -13,7 +13,7 @@ function Social() {
              <a href="https://github.com/patrickrios" className="social-link github-link">
                 <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://www.linkedin.com/in/patrickriosio/" className="social-link linked-link">
+            <a href="https://www.linkedin.com/in/patrickriosf/" className="social-link linked-link">
                 <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
             <a href="https://www.facebook.com/profile.php?id=100001905463519" className="social-link facebook-link">

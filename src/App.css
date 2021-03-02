@@ -8,6 +8,7 @@
     --background:#2B3539;
     --card-bg: #222B2F;
     --text-color: #A9B5D3;
+    --dark-bg:#273236;
 
     --web-color:#8C3BEF;
     --desk-color: #F19272;
@@ -80,9 +81,7 @@ h2{
 }
 
 .section-title{
-    font-size:1.582em;
-    padding:5px 0 50px;
-    float: left;
+    padding:5px 0 25px;
     width:100%;
     text-align: center;
 }
