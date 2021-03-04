@@ -5,6 +5,8 @@ import DevFinance from './images/dev-finance-snap.png'
 import DevFinanceLogo from './images/dev-finances-logo.png'
 import NpsLogo from './images/nps-api-logo.png'
 import NpsSnap from './images/nps-api-snap.png'
+import MoveitLogo from './images/moveit-logo.png'
+import MoveitSnap from './images/moveit-snap.png'
 
 function Portfolio() {
     const projects = [
@@ -13,7 +15,7 @@ function Portfolio() {
             logo: DevFinanceLogo,
             snap : DevFinance,
             name: "dev.finances",
-            desc: "Web app para guardar transações financeiras. Este projeto foi desenvolvido durante as aulas da Maratona Discover da Rocketseat",
+            desc: "Web app para guardar transações financeiras. Este projeto foi desenvolvido durante as aulas da Maratona Discover da Rocketseat.",
             techs: ['javascript', 'html', 'css'],
             level: "Básico",
             repo: "https://github.com/patrickrios/dev-finances-maratona-discover",
@@ -29,6 +31,17 @@ function Portfolio() {
             level: "Intermediário",
             repo: "https://github.com/patrickrios/NPS-API",
             live : null
+        },
+        {
+            key: 2,
+            logo: MoveitLogo,
+            snap : MoveitSnap,
+            name: "Moveit",
+            desc: "O moveit é um web app, que propõe pequenos e rápidos desafios, em um determinado intervalo de tempo. Complete os desafios para ganhar experiência e subir de nível.",
+            techs: ['react','nextjs', 'typescript'],
+            level: "Intermediário",
+            repo: "https://github.com/patrickrios/moveit",
+            live : "https://moveit-patrickrios.vercel.app/"
         }
     ]
 
