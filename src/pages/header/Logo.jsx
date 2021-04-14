@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Logo.css'
 import ProfilePic from './img/header-profile-picture.png'
-import Logomark from './img/Logomark.svg'
+import Logomark from './img/Logomarca.svg'
 import LogoMapMarker from './img/logo-map-marker.svg'
 import LogoStack from './img/logo-stack.svg'
 
