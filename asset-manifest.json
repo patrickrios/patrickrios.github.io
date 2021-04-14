@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/patrickrios.github.io/static/css/main.8c7a3df4.chunk.css",
+    "main.js": "/patrickrios.github.io/static/js/main.0f406125.chunk.js",
+    "main.js.map": "/patrickrios.github.io/static/js/main.0f406125.chunk.js.map",
+    "runtime-main.js": "/patrickrios.github.io/static/js/runtime-main.895ec8b2.js",
+    "runtime-main.js.map": "/patrickrios.github.io/static/js/runtime-main.895ec8b2.js.map",
+    "static/js/2.a4ab6310.chunk.js": "/patrickrios.github.io/static/js/2.a4ab6310.chunk.js",
+    "static/js/2.a4ab6310.chunk.js.map": "/patrickrios.github.io/static/js/2.a4ab6310.chunk.js.map",
+    "index.html": "/patrickrios.github.io/index.html",
+    "precache-manifest.01f057f13df0d7661bbef91f028c3978.js": "/patrickrios.github.io/precache-manifest.01f057f13df0d7661bbef91f028c3978.js",
+    "service-worker.js": "/patrickrios.github.io/service-worker.js",
+    "static/css/main.8c7a3df4.chunk.css.map": "/patrickrios.github.io/static/css/main.8c7a3df4.chunk.css.map",
+    "static/js/2.a4ab6310.chunk.js.LICENSE.txt": "/patrickrios.github.io/static/js/2.a4ab6310.chunk.js.LICENSE.txt",
+    "static/media/Logomarca.svg": "/patrickrios.github.io/static/media/Logomarca.f3dbae4f.svg",
+    "static/media/Patrick-Fernandes-Rios-Curriculo.pdf": "/patrickrios.github.io/static/media/Patrick-Fernandes-Rios-Curriculo.34058d99.pdf",
+    "static/media/about-desc-logo.png": "/patrickrios.github.io/static/media/about-desc-logo.08365965.png",
+    "static/media/backend-icon.svg": "/patrickrios.github.io/static/media/backend-icon.a33e03ac.svg",
+    "static/media/frontend-icon.svg": "/patrickrios.github.io/static/media/frontend-icon.df2651b0.svg",
+    "static/media/Header.css": "/patrickrios.github.io/static/media/mobile-header-bg.c0c2eafc.png",
+    "static/media/header-chevron.svg": "/patrickrios.github.io/static/media/header-chevron.6ca73cd3.svg",
+    "static/media/header-profile-picture.png": "/patrickrios.github.io/static/media/header-profile-picture.cdb683e2.png",
+    "static/media/logo-map-marker.svg": "/patrickrios.github.io/static/media/logo-map-marker.e404463a.svg",
+    "static/media/logo-stack.svg": "/patrickrios.github.io/static/media/logo-stack.3e4f9309.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.895ec8b2.js",
+    "static/js/2.a4ab6310.chunk.js",
+    "static/css/main.8c7a3df4.chunk.css",
+    "static/js/main.0f406125.chunk.js"
+  ]
+}
