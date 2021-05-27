@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "019d378fa5bfa62061f4b6a1a32ff289",
+    "revision": "7518d678030d6d555e89f7a7b0db72cf",
     "url": "/patrickrios.github.io/index.html"
   },
   {
-    "revision": "02360b9a35b3797ed49b",
-    "url": "/patrickrios.github.io/static/css/main.8c7a3df4.chunk.css"
+    "revision": "86f005e694b3f3192477",
+    "url": "/patrickrios.github.io/static/css/main.27ac24c2.chunk.css"
   },
   {
     "revision": "4af154899df7151cabba",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patrickrios.github.io/static/js/2.a4ab6310.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "02360b9a35b3797ed49b",
-    "url": "/patrickrios.github.io/static/js/main.0f406125.chunk.js"
+    "revision": "86f005e694b3f3192477",
+    "url": "/patrickrios.github.io/static/js/main.7453c6df.chunk.js"
   },
   {
     "revision": "e8f94aedd6b3e436be6f",
@@ -44,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patrickrios.github.io/static/media/frontend-icon.df2651b0.svg"
   },
   {
+    "revision": "2717ce256f5af0869ad20804ad5eccad",
+    "url": "/patrickrios.github.io/static/media/glitch-logo.2717ce25.webm"
+  },
+  {
     "revision": "26519ea38b8341db404172cf84c17fca",
     "url": "/patrickrios.github.io/static/media/header-bg.26519ea3.png"
   },
   {
     "revision": "6ca73cd3092fbb93977c4926462e4f15",
     "url": "/patrickrios.github.io/static/media/header-chevron.6ca73cd3.svg"
-  },
-  {
-    "revision": "cdb683e24f0c2b8199a7d500f850a47e",
-    "url": "/patrickrios.github.io/static/media/header-profile-picture.cdb683e2.png"
   },
   {
     "revision": "e404463ab12d134ec5852f637ea8019a",
