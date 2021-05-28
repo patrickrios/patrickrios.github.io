@@ -2,7 +2,9 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
+
 
 :root{
     --background:#2B3539;
@@ -56,13 +58,13 @@
         font-size:87.5%;
     }
 }
-
 body{
     background: var(--background);
+    overflow-x: hidden;
 }
 
 body, input, textarea, button{
-    font:400 1rem 'Inter', sans-serif;
+    font:400 1rem 'Nunito', sans-serif;
 }
 
 
@@ -73,10 +75,25 @@ button{
 a{
     color: inherit;
     text-decoration: none;
+    color:#09C;
 }
 
 h2{
     color:#94ABC0;
+}
+
+img, video, iframe{
+    max-width:100%;
+}
+
+body, html, #root{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+li{
+    list-style:none;
 }
 
 #wrapper{

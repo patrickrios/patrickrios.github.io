@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
@@ -7,29 +7,31 @@ import LogoAbout from './images/about-desc-logo.png';
 import WebIcon from './images/frontend-icon.svg'
 import DeskIcon from './images/backend-icon.svg'
 import StackCard from './StackCard';
+import { AppContext } from '../../contexts/AppContext';
 
 function AboutMe() {    
+    const { about, lang } = useContext(AppContext)
     return (
         <section id="about" >
             <div className="center-container about-columns">
                 <div className="aboutme-card about-desc card-bg">
                     <img src={LogoAbout} alt="Ícone header about"/>
-                    <p>Sou apaixonado por programação e design. Sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente estudo backend e banco de dados.</p>
+                    <p>{about.description[lang]}</p>
                     <a href={resume} className="download-resume">
                         <FontAwesomeIcon icon={faDownload} />
-                        Download CV
+                        {about.download[lang]} CV
                     </a>
-                </div>
+                </div> 
                 <div  className="about-what">
                     <StackCard icon={WebIcon} 
-                        title="frontend" 
-                        text="html, css, javascript, typescript, reactjs, nextjs, context api, figma" 
+                        title="FRONTEND" 
                         borderClass="about-web"
+                        stack={about.stack.front}
                     />
                     <StackCard icon={DeskIcon} 
-                        title="backend" 
-                        text="node.js, php, typeorm, sql, sqlite, mysql, gnu/linux" 
+                        title="BACKEND" 
                         borderClass="about-desk" 
+                        stack={about.stack.back}
                     />
                 </div> 
             </div>

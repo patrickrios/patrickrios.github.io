@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './styles/form.css'
 import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope as envelope, faPaperPlane as paper } from '@fortawesome/free-solid-svg-icons'
 import { faMeh as failIcon, faSmileWink as successIcon} from '@fortawesome/free-regular-svg-icons'
+import { AppContext } from '../../contexts/AppContext';
 
 function Form() {
 
@@ -42,17 +43,19 @@ function Form() {
         sendRequest(e)
     }
 
+    const {contact, lang} = useContext(AppContext)
+
     return (
         <form id="form" onSubmit={sendEmail}>
-            <input type="text" placeholder="Seu nome completo" name="name" required/>
+            <input type="text" placeholder={contact.inputName[lang]} name="name" required/>
             <br/>
-            <input type="mail" placeholder="Seu melhor email" name="email" required/>
+            <input type="mail" placeholder={contact.inputEmail[lang]} name="email" required/>
             <br/>
-            <textarea placeholder="Sua mensagem para mim..." name="message" required></textarea>
+            <textarea placeholder={contact.inputMessage[lang]} name="message" required></textarea>
             <br/>
             <button className="send-button" type="submit">
                 <FontAwesomeIcon icon={paper}/> 
-                Enviar mensagem
+                {contact.sendButton[lang]}
             </button>
             {sending}
         </form>

@@ -1,8 +1,8 @@
 {
-  "name": "patrickrios.githb.io",
+  "name": "patrickrios.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://patrickrios.github.io/patrickrios.github.io",
+  "homepage": "http://patrickrios.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",

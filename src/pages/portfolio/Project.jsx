@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles/project.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome' 
 import { faEye as preview } from '@fortawesome/free-regular-svg-icons'
 import {faGithub as github}  from '@fortawesome/free-brands-svg-icons'
+import { AppContext } from '../../contexts/AppContext';
 
 function Project(props) {
+
+    const { portfolio, lang } = useContext(AppContext)
 
     function renderIcon( name ){
         return(
@@ -23,24 +26,24 @@ function Project(props) {
                         {
                             props.datas.techs.map( icon =>renderIcon(icon))
                         }
-                        <span className="desk-only">{props.datas.level}</span>
+                        <span className="desk-only">{props.datas.level[lang]}</span>
                     </div>
                 </header>
                 <p className="project-description">
-                    {props.datas.desc}
+                    {props.datas.desc[lang]}
                 </p>
                 <div className="project-links">
                     {
                         (props.datas.live !== null) &&
                         <a href={props.datas.live} className="project-live-demo">
                             <FontAwesomeIcon icon={preview} /> 
-                            Live preview
+                            {portfolio.demo[lang]}
                         </a>
                     }
                     
                     <a href={props.datas.repo} className="project-source-code">
                         <FontAwesomeIcon icon={github} /> 
-                        Source code
+                        {portfolio.source[lang]}
                     </a>
                 </div>
             </div> 

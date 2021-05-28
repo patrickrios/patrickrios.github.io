@@ -54,8 +54,15 @@
 
 .about-what > div{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     border-radius: .4rem;
+}
+
+.stack-items{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:.5rem 1rem;
 }
 
 .about-web{
@@ -68,19 +75,30 @@
     color: var(--desk-color);
 }
 
-.about-web p, .about-desk p{
-    padding:0 2rem;
-    font-size: 1.10rem;
+.about-web span, 
+.about-desk span{
+    padding:.4rem .6rem;
+    font-size:.5rem 1.0rem;
+    background: rgba(0, 0, 0, 0.05);
+    margin:.4rem 0 0 .4rem;
+    border-radius:.5rem;
+    opacity:.8;
+    color: var(--text-color);
 }
 
 .about-card-title{
-    background-color: rgba(0,0,0,.05);
-    height:100%;
+    background-color: rgba(0,0,0,.075);
+    width:100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding:0 2.3rem;
+    padding:.5rem 2rem;
+    gap:.5rem;
+}
+
+.about-card-title h3{
+    font-weight:500;
+    font-size:1.0rem;
 }
 
 .download-resume{

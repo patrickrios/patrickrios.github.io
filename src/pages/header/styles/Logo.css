@@ -21,6 +21,9 @@
     align-items: center;
     margin-bottom:1rem;
 }
+.logo-picture > video{
+    border-radius: 230px;
+}
 .logo-desc{
     display: flex;
     flex-direction: row;

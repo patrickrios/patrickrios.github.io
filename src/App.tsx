@@ -5,11 +5,13 @@ import Portfolio from './pages/portfolio/Portfolio'
 import Contact from './pages/contact/Contact'
 import Footer from './pages/footer/Footer'
 import './App.css'
+import AppProvider from './contexts/AppContext';
 
 class App extends React.Component{
   
   render(){
     return(
+      <AppProvider>
         <div id="wrapper">
           <Header/>
           <About/>
@@ -17,6 +19,7 @@ class App extends React.Component{
           <Contact/>
           <Footer/>
         </div>
+      </AppProvider>
     )
   }
 }

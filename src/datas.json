@@ -1,0 +1,152 @@
+{
+    "menu":{
+        "home":{
+            "pt-br": "Início",
+            "eng": "Home"
+        },
+        "about":{
+            "pt-br": "Sobre",
+            "eng": "About"
+        },
+        "portfolio":{
+            "pt-br": "Portifólio",
+            "eng": "Portfolio"
+        },
+        "contact":{
+            "pt-br": "Contato",
+            "eng": "Contact"
+        }
+    },
+
+    "logo":{
+        "locale":{
+            "pt-br": "Brasil",
+            "eng": "Brazil"
+        }
+    },
+
+    "about":{
+        "description":{
+            "pt-br": "Sou um programador com uma paixão por design. Sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente estudo backend e banco de dados.",
+            "eng": "I'm a software developer with a passion for design. I can create modern user interfaces for websites and applications. Nowadays i'm studying backend and database."
+        },
+        "download":{
+            "pt-br": "Baixar",
+            "eng": "Download"
+        },
+        "stack":{
+            "front":[
+                ["JavaScript", "/techs/javascript.svg"],
+                ["TypeScript", "/techs/typescript.svg"],
+                ["ReactJS", "/techs/react.svg"],
+                ["NodeJS", "/techs/node.svg"],
+                ["NextJS", "/techs/next.svg"], 
+                ["FIGMA", "/techs/figma.svg"]
+            ],
+            "back":[
+                ["Express(JS)", "/techs/express.svg"],
+                ["Java", "/techs/java.svg"],
+                ["JavaFX", "/techs/fx.svg"],
+                ["TypeORM", "/techs/typeorm.png"],
+                ["SQL", "/techs/database.svg"],
+                ["SQLite", "/techs/sqlite.svg"],
+                ["MySQL", "/techs/mysql.svg"],
+                ["GNU/Linux", "/techs/mint.svg"]
+            ]
+        }
+    },
+
+
+    "portfolio":{
+        "title":{
+            "pt-br": "Alguns dos meus projetos",
+            "eng": "Some projects of mine"
+        },
+        "projects":[
+            {
+                "key": 0,
+                "logo": "/projects/dev-finances-logo.png",
+                "snap" : "/projects/dev-finance-snap.png",
+                "name": "dev.finances",
+                "desc": {
+                    "pt-br": "Web app para guardar transações financeiras. Controle suas finanças, salvando suas receitas e despesas e tenha um balanço mensal de todas elas.",
+                    "eng": "Web app to store finances transactions. Manage your transactions, save your incomes and expenses to generate a monthly balance."
+                },
+                "techs": ["javascript", "html", "css"],
+                "level": {
+                    "pt-br":"Básico",
+                    "eng": "Beginner"
+                },
+                "repo": "https://github.com/patrickrios/dev-finances-maratona-discover",
+                "live": "https://patrickrios.github.io/dev-finances-maratona-discover/"
+            },
+            {
+                "key": 1,
+                "logo": "/projects/nps-api-logo.png",
+                "snap" : "/projects/nps-api-snap.png",
+                "name": "NPS-API",
+                "desc": {
+                    "pt-br": "NPS é uma API para criar pesquisas de satisfação do consumidor. Com ela é possível enviar pesquisas por e-mail para usuários cadastrados e salvar suas respostas.",
+                    "eng": "NPS is an API to create surveys &  manage. You can send surveys by e-mail to registered users and take yours answers."
+                },
+                "techs": ["nodejs", "typescript", "sqlite"],
+                "level": {
+                    "pt-br": "Intermediário",
+                    "eng": "Intermediate"
+                },
+                "repo": "https://github.com/patrickrios/NPS-API",
+                "live" : null
+            },
+            {
+                "key": 2,
+                "logo": "/projects/moveit-logo.png",
+                "snap" : "/projects/moveit-snap.png",
+                "name": "Moveit",
+                "desc": {
+                    "pt-br": "O moveit é um web app, que propõe pequenos e rápidos desafios, em um determinado intervalo de tempo. Complete os desafios para ganhar experiência e subir de nível.",
+                    "eng": "Moveit is a web app, which proposes small and quick challenges, in a certain time interval. Complete the challenges to gain experience and level up."
+                },
+                "techs": ["react","nextjs", "typescript"],
+                "level": {
+                    "pt-br": "Intermediário",
+                    "eng": "Intermediate"
+                },
+                "repo": "https://github.com/patrickrios/moveit",
+                "live": "https://moveit-patrickrios.vercel.app/"
+            }
+        ],
+        "demo":{
+            "pt-br": "Demonstração",
+            "eng": "Live preview"
+        },
+        "source":{
+            "pt-br": "Código fonte",
+            "eng": "Source code"
+        }
+    },
+    
+
+    "contact":{
+        "title":{
+            "pt-br": "Se você tem alguma proposta ou deseja trabalhar comigo, não hesite, me envie sua mensagem",
+            "eng": "If you have a proposal or wanna work with me, send me a message"
+        },
+        "inputName":{
+            "pt-br": "Seu nome completo",
+            "eng": "Full name"
+        },
+        "inputEmail":{
+            "pt-br": "Seu melhor email",
+            "eng": "Your best email"
+        },
+        "inputMessage":{
+            "pt-br": "Sua mensagem",
+            "eng": "Your message"
+        },
+        "sendButton":{
+            "pt-br": "Enviar mensagem",
+            "eng": "Send message"
+        }
+    }
+
+}
