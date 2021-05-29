@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21ea1235167a98f14e52c5117d152671",
+    "revision": "f73c6d9517c65991477567b190cd913a",
     "url": "/index.html"
   },
   {
-    "revision": "b02029711311dccfd6ed",
+    "revision": "aa1a5a1bfc647eef0a01",
     "url": "/static/css/main.c9f1c544.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ff1cefa0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b02029711311dccfd6ed",
-    "url": "/static/js/main.f58e763d.chunk.js"
+    "revision": "aa1a5a1bfc647eef0a01",
+    "url": "/static/js/main.60882e4f.chunk.js"
   },
   {
     "revision": "cfef6c182d259d02af4f",
@@ -44,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/frontend-icon.df2651b0.svg"
   },
   {
-    "revision": "2717ce256f5af0869ad20804ad5eccad",
-    "url": "/static/media/glitch-logo.2717ce25.webm"
-  },
-  {
     "revision": "26519ea38b8341db404172cf84c17fca",
     "url": "/static/media/header-bg.26519ea3.png"
   },
   {
     "revision": "6ca73cd3092fbb93977c4926462e4f15",
     "url": "/static/media/header-chevron.6ca73cd3.svg"
+  },
+  {
+    "revision": "cdb683e24f0c2b8199a7d500f850a47e",
+    "url": "/static/media/header-profile-picture.cdb683e2.png"
   },
   {
     "revision": "e404463ab12d134ec5852f637ea8019a",
