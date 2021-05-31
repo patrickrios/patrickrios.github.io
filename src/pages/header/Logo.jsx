@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './styles/Logo.css'
-import ProfilePic from './img/glitch-logo.webm'
+import ProfilePic from './img/header-profile-picture.png'
 import Logomark from './img/Logomarca.svg'
 import LogoMapMarker from './img/logo-map-marker.svg'
 import LogoStack from './img/logo-stack.svg'
@@ -13,9 +13,7 @@ const Logo = () => {
     return (
         <div className="main-logo">
             <div className="logo-picture">
-                <video autoPlay loop width="230" height="230">
-                    <source src={ProfilePic} />
-                </video>
+                <img src={ProfilePic} alt="Profile" />
             </div>
             <div className="logo-desc">
                 <img src={Logomark} alt="Patrick Rios Logo" className="logo-icon desk-only"/>

@@ -60,12 +60,12 @@ function Form() {
             {sending}
         </form>
     );
-
+    ////SuccessResult({name: "Elon"})
     function SendingCard(){
         return(
             <div id="processing-send-email">
                 <FontAwesomeIcon icon={envelope}  className="envelope-icon"/>
-                <span className="sending">Sending</span>
+                <span className="sending">{contact.send[lang]}</span>
             </div>
         );
     }
@@ -75,8 +75,8 @@ function Form() {
             <div id="processing-send-email">
                 <div className="send-result-wrapper">
                     <FontAwesomeIcon icon={successIcon} className="wink-icon" />
-                    <span className="send-success">Thank you <b>{props.name}</b>.</span>
-                    <span className="send-success">I'll reply it soon as possible.</span>
+                    <span className="send-success">{contact.sendCongrats[lang]} <b>{props.name}</b>.</span>
+                    <span className="send-success">{contact.sendMessage[lang]}</span>
                     <button className="send-success-button" type="button" onClick={removeSending}>Okay</button>
                 </div>
             </div>
@@ -89,8 +89,8 @@ function Form() {
                 <div className="send-result-wrapper">
                     <FontAwesomeIcon icon={failIcon} className="meh-icon" />
                     <span className="send-fail">Oops...</span>
-                    <span className="send-fail">something went wrong.</span>
-                    <button className="send-fail-button" type="button" onClick={removeSending}>Try it again</button>
+                    <span className="send-fail">{contact.sendFail[lang]}</span>
+                    <button className="send-fail-button" type="button" onClick={removeSending}>{contact.sendFailAction[lang]}</button>
                 </div>
             </div>
         );

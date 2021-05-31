@@ -27,8 +27,8 @@
 
     "about":{
         "description":{
-            "pt-br": "Sou um programador com uma paixão por design. Sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente estudo backend e banco de dados.",
-            "eng": "I'm a software developer with a passion for design. I can create modern user interfaces for websites and applications. Nowadays i'm studying backend and database."
+            "pt-br": "Sou um programador com uma paixão por design. No frontend, sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente no backend, eu estudo criação de API's REST com express e banco de dados.",
+            "eng": "I'm a programmer with a passion for design. In frontend, i can create modern UI's for websites and app's. Nowadays in backend, i'm studying API's REST development & database."
         },
         "download":{
             "pt-br": "Baixar",
@@ -44,14 +44,14 @@
                 ["FIGMA", "/techs/figma.svg"]
             ],
             "back":[
-                ["Express(JS)", "/techs/express.svg"],
+                ["Express", "/techs/express.svg"],
                 ["Java", "/techs/java.svg"],
                 ["JavaFX", "/techs/fx.svg"],
-                ["TypeORM", "/techs/typeorm.png"],
+                ["TypeORM", "/techs/database.svg"],
                 ["SQL", "/techs/database.svg"],
                 ["SQLite", "/techs/sqlite.svg"],
                 ["MySQL", "/techs/mysql.svg"],
-                ["GNU/Linux", "/techs/mint.svg"]
+                ["GNU/Linux", "/techs/linux.svg"]
             ]
         }
     },
@@ -146,6 +146,26 @@
         "sendButton":{
             "pt-br": "Enviar mensagem",
             "eng": "Send message"
+        },
+        "send":{
+            "pt-br": "Enviando",
+            "eng": "Sending"
+        },
+        "sendCongrats":{
+            "pt-br": "Obrigado",
+            "eng": "Thank you"
+        },
+        "sendMessage":{
+            "pt-br": "Responderei assim que possível.",
+            "eng": "I'll reply it soon as possible."
+        },
+        "sendFail":{
+            "pt-br": "Algo saiu errado.",
+            "eng": "something went wrong."
+        },
+        "sendFailAction":{
+            "pt-br": "Tentar novamente",
+            "eng": "Try it again"
         }
     }
 

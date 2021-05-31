@@ -24,7 +24,7 @@ function AboutMe() {
                 </div> 
                 <div  className="about-what">
                     <StackCard icon={WebIcon} 
-                        title="FRONTEND" 
+                        title="FRONTEND/UI" 
                         borderClass="about-web"
                         stack={about.stack.front}
                     />
