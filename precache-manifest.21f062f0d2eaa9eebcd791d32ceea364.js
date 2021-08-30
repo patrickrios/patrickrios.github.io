@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "93335dd4b0ecee9e4dde7112a06c9d4e",
+    "revision": "9658ebf57c9ac35bbad0843ebdd05c8f",
     "url": "/index.html"
   },
   {
-    "revision": "f7393945e150c8b1db59",
+    "revision": "13db358656e2fe8133e5",
     "url": "/static/css/main.506d16df.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.ff1cefa0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f7393945e150c8b1db59",
-    "url": "/static/js/main.e9e696b0.chunk.js"
+    "revision": "13db358656e2fe8133e5",
+    "url": "/static/js/main.e72e3086.chunk.js"
   },
   {
     "revision": "cfef6c182d259d02af4f",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Logomarca.f3dbae4f.svg"
   },
   {
-    "revision": "34058d99b5fa45ee44c33e8598d08a4e",
-    "url": "/static/media/Patrick-Fernandes-Rios-Curriculo.34058d99.pdf"
+    "revision": "7ac23cb60eba169bc1f117d59e6b0d76",
+    "url": "/static/media/Patrick-Fernandes-Rios-Curriculo-08-2021.7ac23cb6.pdf"
   },
   {
     "revision": "0836596594b409f10be567a155de9811",
