@@ -55,7 +55,7 @@ const MainMenu = () => {
             <div>
                 <button className="mobile-menu-button" onClick={showMenu}><FontAwesomeIcon icon={faBars}/></button>
                 <div className="menu-langs">
-                    <p>{lang}</p>
+                    <p>{lang.toUpperCase()}</p>
                     <img id="ptLang"  src="/techs/pt-br.svg" alt="Pt-br" onClick={selectLang} className={ptClass} />
                     <img id="engLang" src="/techs/eng.svg" alt="Eng" onClick={selectLang} className={enClass}/>
                 </div>

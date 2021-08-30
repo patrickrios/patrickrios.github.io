@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './styles/about.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
-import resume from './files/Patrick-Fernandes-Rios-Curriculo.pdf';
+import resume from './files/Patrick-Fernandes-Rios-Curriculo-08-2021.pdf';
 import LogoAbout from './images/about-desc-logo.png';
 import WebIcon from './images/frontend-icon.svg'
 import DeskIcon from './images/backend-icon.svg'

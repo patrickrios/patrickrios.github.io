@@ -39,11 +39,12 @@
                 ["JavaScript", "/techs/javascript.svg"],
                 ["TypeScript", "/techs/typescript.svg"],
                 ["ReactJS", "/techs/react.svg"],
-                ["NodeJS", "/techs/node.svg"],
                 ["NextJS", "/techs/next.svg"], 
+                ["TailwindCSS", "/techs/tailwind.svg"],
                 ["FIGMA", "/techs/figma.svg"]
             ],
             "back":[
+                ["NodeJS", "/techs/node.svg"],
                 ["Express", "/techs/express.svg"],
                 ["Java", "/techs/java.svg"],
                 ["JavaFX", "/techs/fx.svg"],
