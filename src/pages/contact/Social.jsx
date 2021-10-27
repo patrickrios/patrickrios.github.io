@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/social.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
@@ -18,9 +17,6 @@ function Social() {
             </a>
             <a href="https://www.facebook.com/profile.php?id=100001905463519" className="social-link facebook-link">
                 <FontAwesomeIcon icon={faFacebookF} />
-            </a>
-            <a href="https://www.instagram.com/patrickriosf/" className="social-link insta-link">
-                <FontAwesomeIcon icon={faInstagram} />
             </a>
         </div>
     );
