@@ -19,7 +19,9 @@
     display: flex;
     flex-direction: column;
     border-radius:.4rem;
-    border-bottom: 1px solid #548126;
+    border: 1px solid #548126;
+    background-image: url('../images/synthwave-bg.png');
+    background-size: 100%;
 }
 
 .about-desc{
@@ -31,7 +33,7 @@
 
 .about-desc img{
     position: absolute;
-    top:-25%;
+    top:-20%;
 }
 
 .about-desc p{
@@ -44,6 +46,9 @@
 
 .about-stack-card{
     display: flex;
+    position:relative;
+    overflow: hidden;
+    z-index:1;
 }
 
 .about-what{
@@ -64,26 +69,31 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding:.5rem 1rem;
+    position:relative;
 }
 
 .about-web{
-    border-bottom: 1px solid var(--web-color);
+    border: 1px solid #522BA1;
     color: var(--web-color);
+    background-image: url('../images/front-bg.png');
+    background-size:100%;
 }
 
 .about-desk{
-    border-bottom: 1px solid var(--desk-color);
+    border: 1px solid #C35848;
     color: var(--desk-color);
+    background-image: url('../images/back-bg.png');
+    background-size:100%;
 }
 
 .about-web span, 
 .about-desk span{
-    padding:.4rem .6rem;
-    font-size:.5rem 1.0rem;
-    background: rgba(0, 0, 0, 0.05);
+    padding:.4rem .7rem;
+    font-size:.85rem;
+    background: #1C2326;
     margin:.4rem 0 0 .4rem;
-    border-radius:.5rem;
-    opacity:.75;
+    border-radius:.35rem;
+    opacity:.85;
     color: var(--text-color);
     display: flex;
     gap:.3rem;
@@ -94,13 +104,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:.5rem 1.5rem;
+    padding:.2rem 1.5rem;
     gap:.5rem;
 }
 
 .about-card-title h3{
-    font-weight:500;
+    font-weight:700;
     font-size:1.0rem;
+}
+
+.about-card-title img{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:0;
 }
 
 .download-resume{

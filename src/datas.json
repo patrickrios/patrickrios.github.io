@@ -27,7 +27,7 @@
 
     "about":{
         "description":{
-            "pt-br": "Sou um programador com uma paixão por design. No frontend, sou capaz de criar interfaces de usuário modernas para websites e aplicativos. Atualmente no backend, eu estudo criação de API's REST com express e banco de dados.",
+            "pt-br": "Sou um programador com uma paixão por design. No frontend, sou capaz de criar interfaces de usuário modernas para websites e aplicativos. No backend, eu estudo de API's REST com Node e banco de dados NoSQL.",
             "eng": "I'm a programmer with a passion for design. In frontend, i can create modern UI's for websites and app's. Nowadays in backend, i'm studying API's REST development & database."
         },
         "download":{
@@ -36,6 +36,8 @@
         },
         "stack":{
             "front":[
+                ["HTML", "/techs/html.svg"],
+                ["CSS", "/techs/css.svg"],
                 ["JavaScript", "/techs/javascript.svg"],
                 ["TypeScript", "/techs/typescript.svg"],
                 ["ReactJS", "/techs/react.svg"],
@@ -52,7 +54,8 @@
                 ["SQL", "/techs/database.svg"],
                 ["SQLite", "/techs/sqlite.svg"],
                 ["MySQL", "/techs/mysql.svg"],
-                ["GNU/Linux", "/techs/linux.svg"]
+                ["GNU/Linux", "/techs/linux.svg"],
+                ["MongoDB", "/techs/mongodb.svg"]
             ]
         }
     },
