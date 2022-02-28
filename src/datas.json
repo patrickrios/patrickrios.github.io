@@ -27,7 +27,7 @@
 
     "about":{
         "description":{
-            "pt-br": "Sou um programador com uma paixão por design. No frontend, sou capaz de criar interfaces de usuário modernas para websites e aplicativos. No backend, eu estudo de API's REST com Node e banco de dados NoSQL.",
+            "pt-br": "Sou um programador com uma paixão por design. No frontend, sou capaz de criar interfaces de usuário modernas para websites e aplicativos. No backend, eu estudo API's REST com NodeJS e NoSQL.",
             "eng": "I'm a programmer with a passion for design. In frontend, i can create modern UI's for websites and app's. Nowadays in backend, i'm studying API's REST development & database."
         },
         "download":{
@@ -69,54 +69,57 @@
         "projects":[
             {
                 "key": 0,
-                "logo": "/projects/dev-finances-logo.png",
-                "snap" : "/projects/dev-finance-snap.png",
-                "name": "dev.finances",
+                "snap" : "/projects/dev-finances-cover.png",
+                "name": "dev.finances (web)",
                 "desc": {
-                    "pt-br": "Web app para guardar transações financeiras. Controle suas finanças, salvando suas receitas e despesas e tenha um balanço mensal de todas elas.",
-                    "eng": "Web app to store finances transactions. Manage your transactions, save your incomes and expenses to generate a monthly balance."
+                    "pt-br": "App para guardar transações financeiras. Controle suas finanças e tenha um balanço mensal de todas elas.",
+                    "eng":   "App to store finances transactions. Manage your transactions and get a monthly balance report."
                 },
-                "techs": ["javascript", "html", "css"],
-                "level": {
-                    "pt-br":"Básico",
-                    "eng": "Beginner"
-                },
-                "repo": "https://github.com/patrickrios/dev-finances-maratona-discover",
-                "live": "https://patrickrios.github.io/dev-finances-maratona-discover/"
+                "links":[{
+                    "name":  "source code",
+                    "style": "source-code",
+                    "url":   "https://github.com/patrickrios/dev-finances-maratona-discover"
+                 },{
+                    "name":  "live demo", 
+                    "style": "live-demo",
+                    "url":   "https://patrickrios.github.io/dev-finances-maratona-discover/"
+                }]
             },
             {
                 "key": 1,
-                "logo": "/projects/nps-api-logo.png",
-                "snap" : "/projects/nps-api-snap.png",
-                "name": "NPS-API",
+                "snap" : "/projects/todo-app-nextjs-snap.png",
+                "name": "Todo-list app (web)",
                 "desc": {
-                    "pt-br": "NPS é uma API para criar pesquisas de satisfação do consumidor. Com ela é possível enviar pesquisas por e-mail para usuários cadastrados e salvar suas respostas.",
-                    "eng": "NPS is an API to create surveys &  manage. You can send surveys by e-mail to registered users and take yours answers."
+                    "pt-br": "Gerencie o seu trabalho criando projetos e adicionando tarefas para fazer.",
+                    "eng":   "Manage your work, creating projects and adding tasks to do."
                 },
-                "techs": ["nodejs", "typescript", "sqlite"],
-                "level": {
-                    "pt-br": "Intermediário",
-                    "eng": "Intermediate"
-                },
-                "repo": "https://github.com/patrickrios/NPS-API",
-                "live" : null
+                "links":[{   
+                        "name":  "source code", 
+                        "style": "source-code", 
+                        "url":   "https://github.com/patrickrios/todo-app-nextjs"
+                    },{
+                        "name":  "live demo",
+                        "style": "live-demo",
+                        "url":   "https://patrickrios-todo-app.vercel.app/"
+                }]
             },
             {
                 "key": 2,
-                "logo": "/projects/moveit-logo.png",
-                "snap" : "/projects/moveit-snap.png",
+                "snap" : "/projects/moveit-cover.png",
                 "name": "Moveit",
                 "desc": {
-                    "pt-br": "O moveit é um web app, que propõe pequenos e rápidos desafios, em um determinado intervalo de tempo. Complete os desafios para ganhar experiência e subir de nível.",
-                    "eng": "Moveit is a web app, which proposes small and quick challenges, in a certain time interval. Complete the challenges to gain experience and level up."
+                    "pt-br": "App que propõe pequenos e rápidos desafios, em um determinado intervalo de tempo. Complete os desafios para ganhar experiência e subir de nível.",
+                    "eng": "It's a app that proposes small and quick challenges, in a certain time interval. Complete the challenges to gain experience and level up."
                 },
-                "techs": ["react","nextjs", "typescript"],
-                "level": {
-                    "pt-br": "Intermediário",
-                    "eng": "Intermediate"
-                },
-                "repo": "https://github.com/patrickrios/moveit",
-                "live": "https://moveit-patrickrios.vercel.app/"
+                "links":[{
+                    "name": "source code",
+                    "style": "source-code",
+                    "url": "https://github.com/patrickrios/moveit"
+                },{
+                    "name": "live demo",
+                    "style": "live-demo",
+                    "url": "https://moveit-patrickrios.vercel.app/"
+                }]
             }
         ],
         "demo":{
