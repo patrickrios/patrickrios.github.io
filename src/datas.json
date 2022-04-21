@@ -106,7 +106,7 @@
             {
                 "key": 2,
                 "snap" : "/projects/moveit-cover.png",
-                "name": "Moveit",
+                "name": "Moveit (web)",
                 "desc": {
                     "pt-br": "App que propõe pequenos e rápidos desafios, em um determinado intervalo de tempo. Complete os desafios para ganhar experiência e subir de nível.",
                     "eng": "It's a app that proposes small and quick challenges, in a certain time interval. Complete the challenges to gain experience and level up."
@@ -119,6 +119,20 @@
                     "name": "live demo",
                     "style": "live-demo",
                     "url": "https://moveit-patrickrios.vercel.app/"
+                }]
+            },
+            {
+                "key": 3,
+                "snap": "/projects/wordminer-cover.png",
+                "name": "WordMiner (ui design)",
+                "desc": {
+                    "pt-br": "Projeto de design de interface para um aplicativo de aprendizado de idioma",
+                    "eng": "A UI design project of a new language learning app"
+                },
+                "links":[{
+                    "name": "access prototype",
+                    "style": "live-demo",
+                    "url": "https://www.figma.com/file/FAAGn2b8kNALi894FqqsBQ/WordMiner-App?node-id=30%3A44"
                 }]
             }
         ],
