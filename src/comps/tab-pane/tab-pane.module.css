@@ -1,0 +1,136 @@
+.tabPane{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--gray-90);
+    background: var(--gray-06);
+    transition: all .25s ease-in-out;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    top:0;
+}
+.tabs.light{
+    background:var(--gray-98);
+}
+.tabs ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+.tabs ul li{
+    list-style: none;
+    color:var(--gray-50);
+    padding:.65rem 1rem;
+    border-bottom:1px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border-radius:.25rem;
+}
+.tabs ul li svg{
+    opacity:.65;
+}
+.tabs ul li.selectedTab{
+    background: rgba(176,76,255,.2);
+    border-bottom:1px solid #B04CFF;
+    color:#B04CFF;
+}
+.tabs.light ul li.selectedTab{
+    border-bottom:1px solid #9538DE;
+    color: #9538DE;
+}
+.tabs ul li.download,
+.tabs ul li.download a{
+    color: #5498FF !important;
+    padding-left:.25rem;
+    transition: all .3s ease-in-out;
+}
+.tabs ul li.download:hover,
+.tabs ul li.download:Hover a{
+    color: #256EDB !important;
+}
+.tabPaneContent{
+    width: 100%;
+    border-top: 1px solid var(--gray-12);
+    display: flex;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+
+}
+.tabPaneContent.lightMode{
+    border-top: 1px solid var(--gray-90);
+}
+.tabPaneContentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding:1rem 0 3rem;
+}
+
+.toggleMenu{
+    display: block;
+    border: none;
+    background: none;
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+    z-index: 101;
+}
+.openMenu{
+    transform: translateX(0);
+}
+.hideMenu{
+    transform: translateX(-100%);
+}
+
+@media screen and (min-width: 600px) {
+    .toggleMenu{
+        display: none;
+    }
+    .tabs{
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .tabs ul{
+        flex-direction: row;
+        gap:1rem;
+    }
+    .tabs ul li{
+        padding: 0 0 .65rem;
+        border-radius:0;
+    }
+    .tabs ul li.selectedTab{
+        background:none;
+    }
+    .openMenu,
+    .hideMenu{
+        transform: translateX(0);
+    }
+}
+
+@media  screen and (min-width:1080px) {
+    .tabs ul{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+    }
+    .tabs ul{
+        display: flex;
+    }
+    .tabPaneContentContainer{
+        width: 1000px;
+    }
+}

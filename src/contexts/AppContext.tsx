@@ -1,18 +1,17 @@
-import React, { createContext, ReactNode, useState } from "react";
-import datas from '../datas.json'
-
-interface AppProviderDatas{
-    menuItems: object;
+import React, { createContext, ReactNode, useEffect, useState } from "react";
+export interface AppProviderDatas{
     lang: string;
     changeLangEnglish: () => void;
     changeLangPtBr: () => void;
-    about: object;
-    portfolio: object;
-    contact: object;
-    logo: object;
+    switchLanguage: () => void;
 }
 interface AppProviderProps {
     children: ReactNode;
+}
+
+export interface ModalProps{
+    children: ReactNode;
+    title: string;
 }
 
 export const AppContext = createContext( {} as AppProviderDatas) 
@@ -20,44 +19,44 @@ export const AppContext = createContext( {} as AppProviderDatas)
 
 export default function AppProvider( {children}: AppProviderProps){
 
-    //Locales
-    const [lang, setLang] = useState("pt-br")
+    const [lang, setLang] = useState("pt-br");
+
+    useEffect(()=>{
+        const savedLang: string = localStorage.getItem("lang");
+        if(savedLang)
+            setLang(savedLang);
+        else
+            localStorage.setItem("lang","pt-br");
+        return;
+    },[]);
 
     const changeLangEnglish = () =>{
-        setLang("eng")
+        setLang("eng");
+        localStorage.setItem("lang","eng");
     }
 
     const changeLangPtBr = () =>{
         setLang("pt-br")
+        localStorage.setItem("lang","pt-br");
     }
 
-    //Menu
-    const [menuItems] = useState(datas.menu)
-
-    //Logo
-    const[logo] = useState(datas.logo)
-
-    //Sobre
-    const [about] = useState(datas.about)
-
-    //Portfolio
-    const [portfolio] = useState( datas.portfolio )
-
-    //Contato
-    const [contact] = useState(datas.contact)
-
+    const switchLanguage = () =>{
+        if( lang === "pt-br"){
+            setLang("eng");
+            localStorage.setItem("lang","eng");
+        }else{
+            setLang("pt-br");
+            localStorage.setItem("lang","pt-br");
+        }
+    };
 
     return(
         <AppContext.Provider 
             value={{
-                menuItems,
                 lang,
                 changeLangEnglish,
                 changeLangPtBr,
-                about,
-                portfolio,
-                contact,
-                logo
+                switchLanguage
             }}
         >
             {children}

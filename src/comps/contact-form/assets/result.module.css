@@ -1,0 +1,26 @@
+.result,
+.fail{
+    padding:1rem;
+    color: var(--gray-70);
+    margin-bottom:2rem;
+}
+.result.light,
+.fail.light{
+    color: var(--gray-20);
+}
+.result.light b,
+.fail.light b{
+    color: var(--gray-12);
+}
+.result b,
+.fail b{
+    color: var(--gray-80);
+}
+.result{
+    background: rgba(45,242,119,0.05);
+    border:1px solid rgba(45,242,119,0.2);
+}
+.fail{
+    background: rgba(242,45,116,0.05);
+    border:1px solid rgba(242,45,116,0.3);
+}

@@ -1,0 +1,148 @@
+.profileModal,
+.profileHeader,
+.profileHeadLine,
+.profileItems,
+.profileItems span,
+.profileInfo,
+.profileSocial,
+.profileSocial span{
+    display: flex;
+}
+.profileModal{
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 3rem;
+}
+.profileContent,
+.profileHeader{
+    width: 100%;
+}
+.profileContent{
+    border-radius:.25rem;
+    margin-top:1.5rem;
+}
+.profileHeader{
+    flex-direction: row;
+    padding:1rem 0 2rem;
+    border-bottom:1px solid var(--gray-20);
+    gap:2rem;
+}
+.profileHeader.light{
+    border-color: var(--gray-80);
+}
+.profileHeadLine{
+    flex-direction: column;
+    padding-top:.5rem;
+    width: 100%;
+}
+.profileHeadLine.light h2{
+    color: var(--gray-06);
+}
+.profileHeadLine h2{
+    font-size: 1.95rem;
+    color: var(--gray-90);
+}
+.profileInfo{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:.5rem;
+}
+.profileItems{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.profileSocial{
+    flex-direction: row;
+    align-items: center;
+}
+.profileItems,
+.profileSocial{
+    gap:.5rem;
+    margin-top:.5rem;
+}
+.profileItems.light span,
+.profileItems.light span a{
+    color: var(--gray-30);
+}
+.profileItems.light span{
+    border-right:1px solid var(--gray-80);
+}
+.profileItems span,
+.profileItems span a,
+.profileSocial span,
+.profileSocial span a{
+    color: var(--gray-70);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+}
+.profileSocial a.external{
+    transition: all .3s ease-in-out;
+}
+.profileSocial a.external:hover{
+    transform: scale(1.1);
+}
+.profileContent h3{
+    color: var(--gray-90);
+    font-size: 1.85rem;
+    margin-top: 2rem;
+}
+.profileContent p{
+    color: var(--gray-60);
+    padding:.5rem 0;
+    font-weight: 300;
+    line-height:2rem;
+    font-size: 1.15rem;
+}
+.profileContent.light h3{
+    color: var(--gray-30);
+}
+.profileContent.light p{
+    color: var(--gray-60);
+}
+
+@media screen and (min-width: 785px) {
+    .profileItems{
+        flex-direction: row;
+        align-items: center;
+    }
+    .profileItems span{
+        padding-right:1rem;
+        border-right:1px solid var(--gray-30);
+    }
+    .profileItems span:last-child{
+        border: none;
+    }
+}
+@media  screen and (min-width:500px) and (max-width: 599px) {
+    .profileHeadLine h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media  screen and (min-width:600px) and (max-width: 799px) {
+    .profileHeadLine h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .profileInfo{
+        flex-direction: row;
+    }
+    .profileContent,
+    .profileHeader{
+        width: calc(800px - 2rem);
+    }
+    .profileModal{
+        padding:0 0 5rem;
+    }
+    .profileHeadLine h2{
+        font-size: 3.1rem;
+    }
+}

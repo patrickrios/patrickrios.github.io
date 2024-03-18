@@ -1,0 +1,32 @@
+.tooltipContainer{
+    cursor:pointer;
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+.tooltipContainer:hover .tooltip{
+    transform:translateY(-100%) scale(1);
+    opacity:1;
+}
+.tooltip{
+    background:var(--gray-12);
+    border:1px solid var(--gray-30);
+    border-radius:.25rem;
+    color:#fff;
+    position:absolute;
+    top:-15px;
+    transform: translateY(-100%) scale(0);
+    transition: all .2s ease-in-out;
+    padding:.5rem .6rem;
+    opacity:0;
+}
+.tooltip span{
+    width: 100%;
+    font-size:.85rem;
+}
+.tooltipArrow{
+    position:absolute;
+    bottom:-6px;
+    left:50%;
+    transform:translateX(-50%);
+}
