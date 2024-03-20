@@ -19,7 +19,7 @@ function formatElapsedTimeByLang({years, months, lang}){
     } else if (years > 1 && months === 0) {
         return `${years} ${lang === 'pt-br' ? 'anos' : 'years'}`;
     } else {
-        return `${years} ${lang === 'pt-br' ? 'anos e' : 'years and'} ${lang === 'pt-br' ? 'mêses' : 'months'}`;
+        return `${years} ${lang === 'pt-br' ? 'anos e' : 'years and'} ${months} ${lang === 'pt-br' ? 'mêses' : 'months'}`;
     }
 }
 
