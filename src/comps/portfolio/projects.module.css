@@ -21,12 +21,19 @@
     grid-template-columns: repeat(2, 1fr);
 }
 .professionalSection{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
 }
 .firstProject{
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
+}
+
+@media screen and (min-width: 600px) {
+    .professionalSection{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; 
+    }
 }
 
 @media screen and (min-width:800px) {

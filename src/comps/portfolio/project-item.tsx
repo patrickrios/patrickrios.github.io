@@ -15,7 +15,7 @@ export interface Slide{
 }
 
 interface ProjectItemProps{
-    thumbnail: string;
+    thumbnail: string[];
     name: string;
     description?: {
         "pt-br"?: string;
@@ -52,6 +52,7 @@ export const ProjectItem = ( props : ProjectDataProp) => {
     const { thumbnail, name, description, slide, keywords,links, embed } = data;
     const { addContent, clearContent } = useContext(PortifolioContext);
     const { lang } = useContext(AppContext);
+    const thumbnailSize = thumbnail?.length;
 
     const handleOnClick = () =>{
         addContent(<ProjectOverview 
@@ -75,7 +76,15 @@ export const ProjectItem = ( props : ProjectDataProp) => {
             style={style ? style : {}} 
         >
             <Link to="tabPane" smooth={true} onClick={handleOnClick} offset={-10}>
-                <img src={thumbnail} className={css.projectThumb}/>
+                { thumbnailSize > 1 && 
+                    <picture className={css.projectThumb}>
+                        <source media="(max-width: 599px)" srcSet={thumbnail[1]}/>
+                        <source media="(min-width: 600px)" srcSet={thumbnail[0]}/>
+                        <img src={thumbnail[0]} alt="Imagem"/>
+                    </picture>
+                }
+                { thumbnailSize === 1 && <img src={thumbnail[0]} className={css.projectThumb}/> }
+                
                 <div className={css.projectInfo}>
                     <h3>{name}</h3>
                     <p>{description?.["eng"] ? description?.[lang] : description}</p>
