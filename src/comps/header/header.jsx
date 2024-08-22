@@ -5,6 +5,15 @@ import css from "./header.module.css";
 import { LanguageToggle, ThemeToggle } from "../theme-toggle/ThemeToggle";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
+export const ThemeOptions = () =>{
+    return(
+        <div className={css.themeOptions}>
+            <ThemeToggle/>
+            <LanguageToggle/>
+        </div>
+    )
+};
+
 export const Header = () => {
     const { lightMode } = useContext(ThemeContext);
     return(
@@ -14,9 +23,8 @@ export const Header = () => {
                 <source media="(min-width: 600px)" srcSet={desktopPic}/>
                 <img src={desktopPic} alt="Imagem"/>
             </picture>
-            <div className={css.themeOptions}>
-                <ThemeToggle/>
-                <LanguageToggle/>
+            <div className="desk-only">
+                <ThemeOptions/>
             </div>
         </header>
     )

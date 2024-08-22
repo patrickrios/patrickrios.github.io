@@ -6,6 +6,7 @@ import { tabs, tabsContent} from "./tabs";
 import { DownloadIcon, MenuIcon } from "./assets/tabIcons";
 import { AppContext } from "../../contexts/AppContext";
 import { tabsText } from "./lang/tabs-lang";
+import { ThemeOptions } from "../header/header";
 
 const downloadText = {
     "pt-br": "baixar arquivo pdf",
@@ -28,6 +29,18 @@ export const TabPane =  () => {
     }
 
     const handleToggleMenu = () => setMenuHide( prev => !prev);
+
+    const tabsTitle = [
+        tabsText['portfolio'][lang],
+        tabsText['about'][lang],
+        tabsText['stack'][lang],
+        tabsText['contact'][lang],
+    ];
+
+    function capitalizeTabTitle() {
+        const current_tile = tabsTitle[currentTab];
+        return "#"+current_tile;
+    }
 
     return(
         <section className={css.tabPane} id="tabPane">
@@ -62,11 +75,17 @@ export const TabPane =  () => {
                         </a>
                         <DownloadIcon/>
                     </li>
+                    <div className="mobile-only">
+                        <ThemeOptions/>
+                    </div>
                 </ul>
             </nav>
             <div className={`${css.tabPaneContent} ${ lightMode && css.lightMode}`}>
                 <div className={css.tabPaneContentContainer}>
                     <PortfolioProvider>
+                        <h2 className={`${css.tabTitle} mobile-only`}>
+                            { capitalizeTabTitle() }
+                        </h2>
                         { tabsContent[currentTab] }
                     </PortfolioProvider>
                 </div>

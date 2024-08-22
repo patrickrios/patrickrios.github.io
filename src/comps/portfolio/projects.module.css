@@ -13,23 +13,18 @@
 .sectionContent,
 .professionalSection{
     margin-top:1rem;
-    width:100%;
-    display: grid;
-    gap: .65rem;
-}
-.sectionContent{
-    grid-template-columns: repeat(2, 1fr);
-}
-.professionalSection{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; 
-}
-.firstProject{
-    grid-column: span 1;
-    grid-row: span 1;
+    width:98%;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
 }
 
 @media screen and (min-width: 600px) {
+    .sectionContent,
+    .professionalSection{
+        display: grid;
+        gap: .65rem;
+    }
     .professionalSection{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto; 

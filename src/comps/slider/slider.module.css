@@ -4,14 +4,12 @@
     flex-direction: column;
     margin-top:2rem;
     position: relative;
-    border-radius:.65rem;
     overflow: hidden;
 }
 .slideThumb{
     display: flex;
     position: relative;
     align-items: center;
-    min-height:378px;
 }
 .arrowRight, 
 .arrowLeft{
@@ -62,4 +60,13 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .slide{
+        border-radius:.65rem;
+    }
+    .slideThumb{
+        min-height:378px;
+    }
 }

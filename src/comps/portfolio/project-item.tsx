@@ -72,19 +72,18 @@ export const ProjectItem = ( props : ProjectDataProp) => {
             initial={{ scale:0.9, opacity:0 }}
             animate={{ scale:1, opacity:1 }}
             transition={{ duration:0.25 }}
-            className={`${css.projectItem} ${styleClass}`} 
+            className={`${css.projectItem} ${styleClass ? styleClass : ''}`} 
             style={style ? style : {}} 
         >
             <Link to="tabPane" smooth={true} onClick={handleOnClick} offset={-10}>
-                { thumbnailSize > 1 && 
-                    <picture className={css.projectThumb}>
+                <picture className={css.projectThumb}>
+                    { thumbnailSize > 1 && <>
                         <source media="(max-width: 599px)" srcSet={thumbnail[1]}/>
                         <source media="(min-width: 600px)" srcSet={thumbnail[0]}/>
-                        <img src={thumbnail[0]} alt="Imagem"/>
-                    </picture>
-                }
-                { thumbnailSize === 1 && <img src={thumbnail[0]} className={css.projectThumb}/> }
-                
+                        </>
+                    }
+                    <img src={thumbnail[0]} alt="Imagem"/>
+                </picture>
                 <div className={css.projectInfo}>
                     <h3>{name}</h3>
                     <p>{description?.["eng"] ? description?.[lang] : description}</p>
