@@ -3,8 +3,9 @@ import css from "./project-item.module.css";
 import { PortifolioContext } from "../../contexts/PortfolioContext";
 import { ProjectOverview } from "./project-overview";
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll';
 import { AppContext } from "../../contexts/AppContext";
+import { Card } from "../feed-card/FeedCard";
+import { UnlikedHeart } from "./assets/icons";
 
 export interface Slide{
     thumb: string;
@@ -13,20 +14,13 @@ export interface Slide{
         "eng": string;
     };
 }
-
 interface ProjectItemProps{
-    thumbnail: string[];
     name: string;
     description?: {
         "pt-br"?: string;
         "eng"?: string;
     };
-    slide?: Slide[];
-    keywords?: string[];
-    links?:{
-        source?: string;
-        preview?: string;
-    },
+    thumbs: { img: string, grid?: { col: string, row: string}}[],
     embed?:{
         url: string;
         caption: {
@@ -34,64 +28,70 @@ interface ProjectItemProps{
             "eng"?: string;
         };
     };
+    grid?:{
+        column: string;
+        row: string;
+    }
 }
-
 interface ProjectDataProp{
     data: ProjectItemProps;
     style?: object;
     styleClass?: string;
 }
-
-const viewText = {
-    "pt-br": "VER DETALHES",
-    "eng": "SEE DETAILS"
+interface ThumbnailProps{
+    source: string;
+    column: string;
+    row: string;
 }
+
+const Thumbnail = ({ source, column, row} : ThumbnailProps) =>{
+    return(
+        <div 
+            className={css.projectThumb} 
+            style={{gridColumn: column, gridRow: row}}
+        >
+            <img  src={source}/>
+        </div>
+    )
+};
 
 export const ProjectItem = ( props : ProjectDataProp) => {
     const { data, style, styleClass } = props;
-    const { thumbnail, name, description, slide, keywords,links, embed } = data;
+    const {  name, description, thumbs, grid } = data;
     const { addContent, clearContent } = useContext(PortifolioContext);
     const { lang } = useContext(AppContext);
-    const thumbnailSize = thumbnail?.length;
 
-    const handleOnClick = () =>{
-        addContent(<ProjectOverview 
-            data={{
-                name,
-                onClear: clearContent,
-                slide,
-                keywords,
-                links,
-                embed
-            }}/>
-        );
-    }
-    
+
     return(
         <motion.div 
             initial={{ scale:0.9, opacity:0 }}
             animate={{ scale:1, opacity:1 }}
             transition={{ duration:0.25 }}
-            className={`${css.projectItem} ${styleClass ? styleClass : ''}`} 
-            style={style ? style : {}} 
+            className={`${styleClass ? styleClass : ''}`} 
+            style={{
+                gridColumn: grid?.column,
+                gridRow: grid?.row
+            }} 
         >
-            <Link to="tabPane" smooth={true} onClick={handleOnClick} offset={-10}>
-                <picture className={css.projectThumb}>
-                    { thumbnailSize > 1 && <>
-                        <source media="(max-width: 599px)" srcSet={thumbnail[1]}/>
-                        <source media="(min-width: 600px)" srcSet={thumbnail[0]}/>
-                        </>
-                    }
-                    <img src={thumbnail[0]} alt="Imagem"/>
-                </picture>
-                <div className={css.projectInfo}>
-                    <h3>{name}</h3>
-                    <p>{description?.["eng"] ? description?.[lang] : description}</p>
-                    <button className={css.viewDetailsBtn}>
-                        { viewText[lang] }
-                    </button>
+            <Card title={name} style={{height: '100%'}}>
+                <p className={css.projectDescription}>
+                    { description[lang] }
+                </p>
+                <div className={css.thumbnailGrid}>
+                    { thumbs?.map((thumb, index) => {
+                        return(
+                            <Thumbnail 
+                                source={thumb?.img} 
+                                column={thumb?.grid?.col}
+                                row={thumb?.grid?.row}
+                                key={`image-thumb-${index}`}
+                            />
+                    )})}
                 </div>
-            </Link>
+                <div style={{paddingTop:"1rem"}}>
+                    <UnlikedHeart/>
+                </div>
+            </Card>
         </motion.div>
     )
 };

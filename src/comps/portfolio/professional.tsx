@@ -1,34 +1,21 @@
 import React from "react";
 import css from "./projects.module.css";
 import { ProjectItem } from "./project-item";
-import {personalProjects, professionalProjects} from "./projects";
+import {personalProjects, professionalProjects, professionalFeed} from "./projects";
+import { Card } from "../feed-card/FeedCard";
+import hubknPhotoGrid from "./assets/hubkn_photo_grid.png";
 
 export const Professional = () => {
     return(
-        <section className={css.section}>
+        <section className={css.section} style={{marginTop:"1rem"}}>
             <div className={css.professionalSection}>
-                { professionalProjects.map((project, index)=>(
-                    <ProjectItem 
-                        data={project}
-                        key={`project-${project?.name}-${index}`}
-                        styleClass={ index === 0 && css.firstProject}
-                    />
-                ))}
-            </div>
-        </section>
-    )
-};
-
-export const Personal = () => {
-    return(
-        <section className={css.section}>
-            <div className={css.sectionContent}>
-                { personalProjects.map((project,index)=>(
-                    <ProjectItem 
-                        data={project}
-                        key={`project-${project?.name}-${index}`}
-                    />
-                ))}
+                { professionalFeed.map( post =>{
+                    return(
+                        <ProjectItem 
+                            data={post} 
+                            key={`post-item-${post.name}`}
+                        />
+                )})}
             </div>
         </section>
     )

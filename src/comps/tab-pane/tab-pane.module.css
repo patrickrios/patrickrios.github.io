@@ -1,5 +1,4 @@
 .tabPane{
-    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -29,7 +28,7 @@
 }
 .tabs ul li{
     list-style: none;
-    color:var(--gray-50);
+    color:var(--gray-30);
     padding:1rem 1rem;
     border-bottom:1px solid transparent;
     cursor: pointer;
@@ -42,20 +41,31 @@
     width:100%;
     background: var(--gray-10);
 }
+.tabs ul li:hover{
+    color: var(--gray-40);
+}
+.tabs ul li::first-letter{
+    color: #f00;
+}
+.tabs ul li span.hashtag{
+    color: var(--gray-30);
+}
 .tabs ul li svg{
     opacity:.65;
 }
 .tabs ul li.selectedTab{
-    background: rgba(176,76,255,.2);
+    color:#14C5BA; /*3BCCE9 -> 14C5BA*/
+}
+.tabs ul li.selectedTab span.hashtag{
     color:#B04CFF;
 }
 .tabs.light ul li.selectedTab{
-    border-bottom:1px solid #9538DE;
+    border-bottom:1px solid #3BCCE9;
     color: #9538DE;
 }
 .tabs ul li.download,
 .tabs ul li.download a{
-    color: #5498FF !important;
+    color: #c0c8d4 !important;
     padding-left:.25rem;
     transition: all .3s ease-in-out;
 }
@@ -129,7 +139,7 @@
     }
     .tabs ul li.selectedTab{
         background:none;
-        border-bottom:1px solid #B04CFF;
+        border-bottom:2px solid #3BCCE9;
     }
     .openMenu,
     .hideMenu{

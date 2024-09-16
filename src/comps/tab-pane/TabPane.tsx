@@ -7,6 +7,7 @@ import { DownloadIcon, MenuIcon } from "./assets/tabIcons";
 import { AppContext } from "../../contexts/AppContext";
 import { tabsText } from "./lang/tabs-lang";
 import { ThemeOptions } from "../header/header";
+import { TabContext } from "../../contexts/TabsContext";
 
 const downloadText = {
     "pt-br": "baixar arquivo pdf",
@@ -16,7 +17,7 @@ const downloadText = {
 export const TabPane =  () => {
     const { lightMode } = useContext(ThemeContext);
     const { lang } = useContext(AppContext);
-    const[currentTab, setCurrentTab] = useState(0);
+    const { currentTab, setTab } = useContext(TabContext);
     const[isMenuHide, setMenuHide] = useState(true);
 
     const isCurrent = (index: number) =>{
@@ -24,23 +25,11 @@ export const TabPane =  () => {
     }
 
     const hanleOnTabSelected = (index: number) =>{
-        setCurrentTab(index);
+        setTab(index);
         handleToggleMenu();
     }
 
     const handleToggleMenu = () => setMenuHide( prev => !prev);
-
-    const tabsTitle = [
-        tabsText['portfolio'][lang],
-        tabsText['about'][lang],
-        tabsText['stack'][lang],
-        tabsText['contact'][lang],
-    ];
-
-    function capitalizeTabTitle() {
-        const current_tile = tabsTitle[currentTab];
-        return "#"+current_tile;
-    }
 
     return(
         <section className={css.tabPane} id="tabPane">
@@ -56,14 +45,11 @@ export const TabPane =  () => {
                 <ul>
                     {tabs.map( (tab, index) =>
                         <li 
-                            className={`${
-                                isCurrent(index) ? css.selectedTab : ''
-                            }`}
+                            className={`${isCurrent(index) ? css.selectedTab : ''}`}
                             onClick={()=>{hanleOnTabSelected(index)}}
                             key={`tab-${tab}-${index}`}
                         >
-                            {tabsText[tab?.name][lang]}
-                            {tab?.icon}
+                            {`#${tabsText[tab?.name][lang]}`}
                         </li>
                     )}
                     <li className={css.download} title={downloadText[lang]}>
@@ -80,16 +66,37 @@ export const TabPane =  () => {
                     </div>
                 </ul>
             </nav>
-            <div className={`${css.tabPaneContent} ${ lightMode && css.lightMode}`}>
-                <div className={css.tabPaneContentContainer}>
-                    <PortfolioProvider>
-                        <h2 className={`${css.tabTitle} mobile-only`}>
-                            { capitalizeTabTitle() }
-                        </h2>
-                        { tabsContent[currentTab] }
-                    </PortfolioProvider>
-                </div>
-            </div>
         </section>
+    )
+}
+
+export const TabContent = () => {
+    const { currentTab } = useContext(TabContext);
+    const { lightMode } = useContext(ThemeContext);
+    const { lang } = useContext(AppContext);
+
+    const tabsTitle = [
+        tabsText['portfolio'][lang],
+        tabsText['about'][lang],
+        tabsText['stack'][lang],
+        tabsText['contact'][lang],
+    ];
+
+    const capitalizeTabTitle = () => {
+        const current_tile = tabsTitle[currentTab];
+        return "#"+current_tile;
+    }
+
+    return(
+        <main className={`${css.tabPaneContent} ${ lightMode && css.lightMode}`}>
+            <div className={css.tabPaneContentContainer}>
+                <PortfolioProvider>
+                    <h2 className={`${css.tabTitle} mobile-only`}>
+                        { capitalizeTabTitle() }
+                    </h2>
+                    { tabsContent[currentTab] }
+                </PortfolioProvider>
+            </div>
+        </main>
     )
 }

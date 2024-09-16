@@ -30,6 +30,7 @@
     --gray-70:#ABABBA;
     --gray-60:#8D8FA5;
     --gray-50:#73748C;
+    --gray-40:#5c5c70;
     --gray-30:#454554;
     --gray-20:#2E2E38;
     --gray-12:#1F1F1F;
@@ -50,7 +51,25 @@
 .desk-only{
     display:none;
 }
-
+.flexColumn,
+.flexRow{
+    display: flex;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.flexRow{
+    flex-direction: row;
+}
+.alignItemCenter{
+    align-items: center;
+}
+.card{
+    border-radius:.5rem;
+    background: var(--gray-12);
+    padding:1rem;
+    border:1px solid var(--gray-20);
+}
 @media (min-width: 768px){
     .desk-only{
         display: block;

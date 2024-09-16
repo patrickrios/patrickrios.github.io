@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Personal, Professional } from "./professional";
+import { Professional } from "./professional";
 import { PortifolioContext } from "../../contexts/PortfolioContext";
 
 export const Portfolio = () => {
@@ -10,7 +10,6 @@ export const Portfolio = () => {
                 content : 
                 <>
                     <Professional/>
-                    <Personal/>
                 </>
             }
         </>

@@ -6,6 +6,16 @@ import {
     personalThumbs
 } from "./assets/_portfolio-thumbs";
 
+import hubkn_thumb_01 from "./assets/hubkn/hubkn_thumb_01-min.png";
+import hubkn_thumb_02 from "./assets/hubkn/hubkn_thumb_02-min.png";
+import hubkn_thumb_03 from "./assets/hubkn/hubkn_thumb_03-min.png";
+
+import bf_fhm_01 from "./assets/bf_fhm/bf_fhm_thumb_01-min.png";
+import bf_fhm_02 from "./assets/bf_fhm/bf_fhm_thumb_02-min.png";
+
+import fhm_thumb_01 from "./assets/fhm_20/fhm_20_01-min.png";
+import fhm_thumb_02 from "./assets/fhm_20/fhm_20_02-min.png";
+
 export const professionalProjects = [
     {
         name: "hubkn app",
@@ -223,5 +233,54 @@ export const personalProjects = [
             "Game Jam"
         ]
 
+    }
+];
+
+export const professionalFeed = [
+    {
+        name: "hubkn app",
+        description:{
+            'pt-br': "Plataforma web",
+            'eng': "Platform web"
+        },
+        thumbs:[
+            {img: hubkn_thumb_01, grid:{ col: 'span 2', row: 'span 1'}},
+            {img: hubkn_thumb_02, grid:{ col: 'span 1', row: 'span 1'}},
+            {img: hubkn_thumb_03, grid:{ col: 'span 1', row: 'span 1'}},
+        ],
+        grid:{
+            column: "span 1",
+            row: "span 2"
+        }
+    },
+    {
+        name: "Black Friday: FHM",
+        description:{
+            'pt-br': "Landing page, página de captação",
+            'eng': "Landing page, página de captação"
+        },
+        thumbs:[
+            {img: bf_fhm_01, grid:{ col: 'span 1', row: 'span 1'}},
+            {img: bf_fhm_02, grid:{ col: 'span 1', row: 'span 1'}},
+        ],
+        grid:{
+            column: "span 1",
+            row: "span 1"
+        }
+    },
+    {
+        name: "Formação Head de Marketing 2.0",
+        description:{
+            'pt-br': "Landing page, página de captação",
+            'eng': "Landing page, página de captação"
+        },
+        thumbs:[
+            {img: fhm_thumb_01, grid:{ col: 'span 1', row: 'span 1'}},
+            {img: fhm_thumb_02, grid:{ col: 'span 1', row: 'span 1'}},
+        ],
+        grid:{
+            column: "span 1",
+            row: "span 1"
+        }
     }
 ];
