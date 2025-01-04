@@ -17,14 +17,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/CounterWrapper.tsx"
-, "src/comps/header/header.jsx"  ],
+    "src/components/CounterWrapper.tsx",
+    "src/comps/header/header.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
