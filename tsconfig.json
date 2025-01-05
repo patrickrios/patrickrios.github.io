@@ -25,7 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/CounterWrapper.tsx",
-    "src/comps/header/header.jsx"
+    "src/components/header/header.jsx"
   ],
   "exclude": [
     "node_modules"

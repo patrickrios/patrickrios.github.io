@@ -1,5 +1,5 @@
 import React from "react";
-import { TechList } from "./../tech-list/tech-list";
+import { TechList } from "../tech-list/tech-list";
 import { ContactForm } from "../contact-form/ContactForm";
 import { Portfolio } from "../portfolio/portfolio";
 import { ProfileModal } from "../profile-modal/ProfileModal";

@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper } from "../comps/wrapper";
+import { Wrapper } from "../components/wrapper";
 
 export const Homepage = () =>{
     return( <Wrapper/>)

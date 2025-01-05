@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import css from "./tab-pane.module.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { PortfolioProvider } from "../../contexts/PortfolioContext";
@@ -31,6 +31,9 @@ export const TabPane =  () => {
 
     const handleToggleMenu = () => setMenuHide( prev => !prev);
 
+    useEffect(() =>{
+        console.log(lang)
+    },[]);
     return(
         <section className={css.tabPane} id="tabPane">
             <button className={css.toggleMenu} onClick={handleToggleMenu}>
