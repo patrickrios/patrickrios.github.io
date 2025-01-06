@@ -2,11 +2,21 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 :root{
+
+    --background-color: #161513;
+    --border-dark: #383838;
+    --card-dark: #222222;
+    --primary-text:#f0f0f0;
+    --secondary-text: #A3ADCC;
+
+    --primary-blue:#005CFF;
+    --indigo:#5856D6;
+
     --background:#2B3539;
     --body-bg:#000;
     --card-bg: #222B2F;
@@ -70,6 +80,15 @@
     background: var(--gray-12);
     padding:1rem;
     border:1px solid var(--gray-20);
+}
+.sectionTitle{
+    color: #A5A4E8;
+    font-size:1.5rem;
+}
+.textHappyGradient{
+    background: linear-gradient(to right, #20BF55, #01BAEF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media (min-width: 768px){
     .desk-only{
@@ -138,7 +157,7 @@ li{
     display:flex;
     flex-direction:column;
     align-items:center;
-    background: var(--gray-09);
+    background: var(--background-color);
     transition: all .25s ease-in-out;
 }
 #wrapper.lightMode{

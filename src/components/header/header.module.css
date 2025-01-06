@@ -1,72 +1,66 @@
 .header{
     width:100%;
-    padding:0;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    background: var(--gray-06);
-    transition: all .25s ease-in-out;
-    border-bottom:1px solid var(--gray-20);
-    height: 160px;
-}
-.header.light{
-    background: var(--gray-98);
-}
-.headLine{
+    margin-top:60px;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+.headerBackground{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index:0;
 }
 .profile{
-    width:900px;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    transform: translateY(30%);
-    position: absolute;
-}
-.headerProfile{
-    transform: translateY(-1rem);
-}
-.nameSection{
+    width:1000px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    margin-top:3rem;
 }
-.nameSection h1{
-    color: var(--gray-95);
+.profile img{
+    width: max-content;
 }
-.nameSection p{
-    color: var(--gray-50);
-    font-weight: 300;
-    margin-bottom:1.5rem;
+.profile h2{
+    color: var(--primary-text);
+    font-size:2.25rem;
+    margin-top:1rem;
 }
-.title{
-    font-size: 1.85rem;
-    background: linear-gradient(to right, #4381F9, #07D5D5);
+.profile p{
+    color: var(--secondary-text);
+    text-align: center;
+    font-size:1.05rem;
+    margin-top:.5rem;
+    line-height: 1.85rem;
+}
+.profile p b{
+    color: #B8C3E5;
+}
+.titleGradient{
+    background: linear-gradient(to right, #20BF55, #01BAEF);
     -webkit-background-clip: text;
-    color: transparent;
-    margin-top:.65rem;
+    -webkit-text-fill-color: transparent;
 }
-.devFront{
-    color:var(--gray-30);
+.actionButtons{
+    display: flex;
+    flex-direction: row;
+    margin-top:3rem;
+    gap: 1rem;
 }
-.knowMore{
-    font-size:.75rem;
-    color:#6F38E3;
-    cursor:pointer;
-    margin-top:.85rem;
+.actionButtons a{
+    padding:.65rem 1.25rem;
+    font-weight:500;
+    border-radius:2rem;
+    font-size:1.05rem;
 }
-.themeOptions{
-    position:absolute;
-    top:2rem;
-    right:2rem;
-    display:flex;
-    flex-direction:column;
-    gap:.5rem;
+.getInTouchButton{
+    border:1px solid var(--secondary-text);
+    color: var(--primary-text);
 }
-@media screen and (min-width: 1080px) {
-    .themeOptions{
-        right: calc(100% / 2 - 500px);
-    }
+.downloadCvButton{
+    background: var(--primary-blue);
+    color: var(--primary-text);
 }
