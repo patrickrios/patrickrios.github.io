@@ -1,0 +1,30 @@
+.topMenu{
+    width:100%;
+    border-bottom: 1px solid var(--border-dark);
+    background: var(--card-dark);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index:10;
+}
+.topMenu ul{
+    width:1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.topMenu ul li{
+    color: var(--secondary-text);
+}
+.menuItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap:.5rem;
+}
