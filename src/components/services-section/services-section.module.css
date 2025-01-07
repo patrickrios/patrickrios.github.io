@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .cards{
     display: grid;
@@ -74,4 +75,16 @@
 }
 .stackList li:hover svg{
     transform: scale(120%);
+}
+.leftOrnam,
+.rightOrnam{
+    position: absolute;
+    opacity:.3;
+}
+.leftOrnam{
+    left: -5%;
+}
+.rightOrnam{
+    right: -1%;
+    top:25%;
 }

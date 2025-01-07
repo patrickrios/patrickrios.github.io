@@ -58,6 +58,8 @@ export const ServicesSection = () => {
                     <ServicesDivider/>
                 </div>
             </div>
+            <img src="/images/bg/service_left_ornament-min.png" className={css.leftOrnam}/>
+            <img src="/images/bg/service_right_ornament-min.png" className={css.rightOrnam}/>
         </section>
     )
 }
