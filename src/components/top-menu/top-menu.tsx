@@ -17,10 +17,13 @@ export const TopMenu = () => {
             <div className={css.menuItems}>
                 {topMenuItems?.map(( item, index) => {
                   return(
-                    <li key={`top-menu-item~${index}`}>
-                      { upper(item[lang]) }
-                    </li>)
-                })}
+                    <>
+                      <li key={`top-menu-item~${index}`}>
+                        { upper(item[lang]) }
+                      </li>
+                      { index < topMenuItems?.length-1 && <MenuSeparator/>}
+                    </>
+                )})}
             </div>
             <div className={css.controls}>
                 <ThemeToggle/>
@@ -31,5 +34,12 @@ export const TopMenu = () => {
     </nav>
   )  
 };
+
+const MenuSeparator = () => {
+  return(
+    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 3L3 0L6 3L3 6L0 3Z" fill="#323232"/>
+    </svg>
+)};
 
 export default TopMenu;
