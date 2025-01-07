@@ -1,0 +1,14 @@
+{
+    "frontend":{
+        "description":{
+            "pt-br":"Codifico interfaces modernas, rápidas e responsivas. Com expertise em React e Next.js, entrego soluções otimizadas para a web, garantindo performance, escalabilidade e uma experiência de usuário incrível. Seja para startups ou grandes empresas, meu foco é criar aplicações eficientes e com design de alta qualidade.",
+            "eng":"I code modern, fast and responsive interfaces. With expertise in React and Next.js, I deliver solutions optimized for the web, guaranteeing performance, scalability and an incredible user experience. Whether for startups or large companies, my focus is on creating efficient applications with high-quality design."
+        }
+    },
+    "ui_ux":{
+        "description":{
+            "pt-br":"Crio interfaces digitais que conectam pessoas e marcas. Especializado em Figma, desenvolvo designs intuitivos, modernos e centrados no usuário, sempre alinhados às melhores práticas de UX. Seja para aplicativos, sites ou sistemas complexos, meu foco é transformar ideias em experiências visuais impactantes e funcionais.",
+            "eng":"I create digital interfaces that connect people and brands. Specializing in Figma, I develop intuitive, modern and user-centric designs, always in line with UX best practices. Whether for apps, websites or complex systems, my focus is on transforming ideas into impactful and functional visual experiences."
+        }
+    }
+}

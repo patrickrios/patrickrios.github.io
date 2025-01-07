@@ -11,6 +11,7 @@
     top:0;
     width: 100%;
     z-index:0;
+    opacity: .7;
 }
 .profile{
     width:1000px;
@@ -42,6 +43,7 @@
 .titleGradient{
     background: linear-gradient(to right, #20BF55, #01BAEF);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .actionButtons{

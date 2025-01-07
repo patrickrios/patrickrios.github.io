@@ -1,0 +1,77 @@
+.services{
+    width:100%;
+    margin-top:5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:100%;
+    margin-top: 1rem;
+    border: 1px solid #242424;
+}
+.cardContainer{
+    width:500px;
+}
+.firsOne{
+    float: right;
+}
+.lastOne{
+    margin-left:2rem;
+}
+.servCard{
+    background: var(--card-dark);
+    padding:0  1.25rem 2rem;
+    position: relative;
+}
+.servHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.servCard:first-child{
+    background: #1A1A1A;
+}
+.servCard:last-child{
+    background: #1F1F1F;
+}
+.servCard h4{
+    color: var(--indigo);
+    font-size:2.25rem;
+    padding-top:.5rem;
+}
+.servCard p{
+    color: var(--secondary-text);
+    font-size:.92rem;
+    margin-top:1rem;
+    padding-right:2rem;
+
+    line-height:1.65rem;
+}
+.divider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100% !important;
+    transform: translateX(-60%);
+}
+.serviceIcon{
+    padding:1.5rem .85rem .5rem;
+    border-radius:0 0 .5rem .5rem;
+    background: #342C44;
+}
+.stackList{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    margin-top:2rem;
+}
+.stackList li svg{
+    transition: all .3s ease-in-out;
+}
+.stackList li:hover svg{
+    transform: scale(120%);
+}
