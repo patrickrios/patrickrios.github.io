@@ -43,10 +43,3 @@ export const ToggleButton = (props : ToggleProps) => {
         </div>
     );
 }
-
-/*
-<img 
-                src={isON ? active.icon : inactive.icon }
-                className={isON ? css.active : css.inactive}
-            />
-]*/
