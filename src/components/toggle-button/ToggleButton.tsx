@@ -1,13 +1,13 @@
-import React from "react";
+import { ReactNode } from "react";
 import css from "./toggle.module.css";
 
 interface ToggleProps{
     active?:{
-        icon: string;
+        icon: ReactNode;
         style: string;
     };
     inactive?:{
-        icon: string;
+        icon: ReactNode;
         style: string;
     }
     title?: string;
@@ -38,10 +38,15 @@ export const ToggleButton = (props : ToggleProps) => {
             onClick={handleOnAction}
             title={title ? title : ''}
         >
-            <img 
-                src={isON ? active.icon : inactive.icon }
-                className={isON ? css.active : css.inactive}
-            />
+            {isON ? active.icon : inactive.icon }
+            
         </div>
     );
 }
+
+/*
+<img 
+                src={isON ? active.icon : inactive.icon }
+                className={isON ? css.active : css.inactive}
+            />
+]*/

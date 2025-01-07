@@ -1,9 +1,11 @@
 .toggle{
-    width:48px;
-    height:24px;
     position:relative;
-    border-radius:24px;
+    border-radius:4px;
     cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:.35rem .65rem;
 }
 .active,
 .inactive{

@@ -1,8 +1,9 @@
 import css from "./top-menu.module.css";
 import { LanguageToggle, ThemeToggle } from "../theme-toggle/ThemeToggle";
-import { topMenuItems } from "./menu-items-text";
+import { topMenuItems, socialLinks } from "./menu-items-text";
 import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
+import Link from "next/link";
 
 const upper = (item: string) =>{
   return item.toUpperCase();
@@ -13,7 +14,19 @@ export const TopMenu = () => {
   return(
     <nav className={css.topMenu}>
         <ul>
-            <img src="/images/profile/top-logo.png"/>
+            <div className={css.socialButtons}>
+              {socialLinks?.map( link => (
+                <Link 
+                  href={link?.url}
+                  target="_black" 
+                  title={link?.title}
+                  className={css[link?.styleClass]}
+                  key={`social-link~${link?.styleClass}`}
+                >
+                  { link?.icon }
+                </Link>
+              ))}
+            </div>
             <div className={css.menuItems}>
                 {topMenuItems?.map(( item, index) => {
                   return(
@@ -30,10 +43,8 @@ export const TopMenu = () => {
                 <LanguageToggle/>
             </div>
         </ul>
-
     </nav>
-  )  
-};
+)};
 
 const MenuSeparator = () => {
   return(
