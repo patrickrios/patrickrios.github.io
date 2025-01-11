@@ -1,17 +1,10 @@
 import css from "./services-section.module.css";
-import { 
-    NextIcon, 
-    ReactIcon, 
-    TypeScriptIcon, 
-    TailwindIcon, 
-    FramerMotionIcon,
-    FigmaIcon,
-    frontTech
-} from "./tech-icons";
+import { FigmaIcon, frontTech } from "./tech-icons";
 import service_text from "./services-text.json";
 import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
 import { ToolTip } from "../tool-tip/tooltip";
+import parse from "html-react-parser";
 
 export const ServicesSection = () => {
     const { lang } = useContext(AppContext);
@@ -20,13 +13,17 @@ export const ServicesSection = () => {
             <div className={css.cards}>
                 <div className={css.servCard}>
                     <div className={`${css.cardContainer} ${css.firsOne}`}>
-                        <header className={css.servHeader}>
-                            <span className={css.serviceIcon}>
-                                <FrontIcon/>
-                            </span>
-                            <h4>DEV FRONTEND</h4>
-                        </header>
-                        <p>{service_text['frontend']?.description[lang]}</p>
+                        <div>
+                            <header className={css.servHeader}>
+                                <span className={css.serviceIcon}>
+                                    <FrontIcon/>
+                                </span>
+                                <h4>DEV FRONTEND</h4>
+                            </header>
+                            <p>
+                                {parse(service_text['frontend']?.description[lang])}
+                            </p>
+                        </div>
                         <ul className={css.stackList}>
                             { frontTech?.map( tech =>(
                                 <li key={`tech-icon~${tech?.name}`}>
@@ -40,13 +37,17 @@ export const ServicesSection = () => {
                 </div>
                 <div className={css.servCard}>
                     <div className={`${css.cardContainer} ${css.lastOne}`}>
-                        <header className={css.servHeader}>
-                            <span className={css.serviceIcon}>
-                                <UiIcon/>
-                                </span>
-                            <h4>UI/UX DESIGN</h4>
-                        </header>
-                        <p>{service_text['ui_ux']?.description[lang]}</p>
+                        <div>
+                            <header className={css.servHeader}>
+                                <span className={css.serviceIcon}>
+                                    <UiIcon/>
+                                    </span>
+                                <h4>UI/UX DESIGN</h4>
+                            </header>
+                            <p>
+                                {parse(service_text['ui_ux']?.description[lang])}
+                        </p>
+                        </div>
                         <ul className={css.stackList}>
                             <li>
                                 <ToolTip text="Figma">
