@@ -9,7 +9,8 @@
     z-index:10;
 }
 .topMenu ul{
-    width:1000px;
+    width:100%;
+    padding:0 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,12 +18,24 @@
 }
 .topMenu ul li{
     color: var(--secondary-text);
+    padding:.85rem 0;
+    font-size:1.35rem;
+    border-bottom:1px solid var(--border-dark);
 }
 .menuItems{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:.65rem;
+    flex-direction: column;
+    position: absolute;
+    background: #1F1E1E;
+    opacity:0;
+    top: 60px;
+    left:0;
+    width:100%;
+    height: 100vh;
+    padding:0 2rem;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform .15s ease-in-out;
 }
 .controls{
     display: flex;
@@ -48,4 +61,88 @@
 }
 .insta:hover{
     color: #E1306C;
+}
+.mobileButton{
+    display: block;
+    background-color: #202129;
+    border: 1px solid var(--border-dark);
+    border-radius:.25rem;
+    padding:.15rem .25rem;
+    line-height:0;
+    transform: translateY(-2px);
+    margin-right:4px;
+}
+.closeMenuIcon{
+    background: none;
+    border: none;
+    width: max-content;
+    margin:2rem 0 1rem;
+    opacity: .5;
+}
+.menuSeparator{
+    display: none;
+}
+.showMenu{
+    transform: translateX(0);
+    opacity:1;
+}
+@media screen and (min-width:340px){
+    .menuItems{
+        width:80%;
+    }
+}
+@media screen and (min-width:420px){
+    .menuItems{
+        width:70%;
+    }
+}
+@media screen and (min-width:480px){
+    .menuItems{
+        width:60%;
+    }
+}
+@media screen and (min-width:600px){
+    .menuItems{
+        width: 55%;
+    }
+}
+@media screen and (min-width:640px){
+    .menuItems{
+        width: 50%;
+    }
+}
+
+@media  screen and (min-width:760px){
+    .mobileButton{
+        display: none;
+    }
+    .closeMenuIcon{
+        display: none;
+    }
+    .topMenu ul li{
+        padding:0;
+        font-size:1.05rem;
+        border:none;
+    }
+    .menuItems{
+        gap:.65rem;
+        top: 0;
+        position: relative;
+        width:max-content;
+        height:max-content;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        transform: translateX(0);
+        opacity:1;
+    }
+    .menuSeparator{
+        display: block;
+    }
+}
+@media  screen and (min-width:980px) {
+    .topMenu ul{
+        width: 1000px;
+        padding:0;
+    }
 }
