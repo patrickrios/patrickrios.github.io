@@ -3,28 +3,30 @@
     margin-top:5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width:100%;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    width:calc(100% * 2);
     margin-top: 1rem;
     border: 1px solid #242424;
+    transition: transform .3s ease-in-out;
 }
 .cardContainer{
-    width:480px;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding:0 1rem;
 }
 .firsOne{
     float: right;
 }
 .lastOne{
-    margin-left:2rem;
+    margin-left:0;
 }
 .servCard{
     background: var(--card-dark);
@@ -45,14 +47,13 @@
 }
 .servCard h4{
     color: var(--indigo);
-    font-size:2.25rem;
+    font-size:2rem;
     padding-top:.5rem;
 }
 .servCard p{
     color: var(--secondary-text);
-    font-size:1rem;
+    font-size:1.05rem;
     margin-top:1rem;
-    padding-right:2rem;
     line-height:1.85rem;
 }
 .divider{
@@ -70,11 +71,12 @@
 .stackList{
     display: flex;
     flex-direction: row;
-    gap:1.5rem;
+    gap:1rem;
     margin-top:2rem;
 }
 .stackList li svg{
     transition: all .3s ease-in-out;
+    width:28px;
 }
 .stackList li:hover svg{
     transform: scale(120%);
@@ -83,6 +85,7 @@
 .rightOrnam{
     position: absolute;
     opacity:.3;
+    display: none;
 }
 .leftOrnam{
     left: -5%;
@@ -90,4 +93,90 @@
 .rightOrnam{
     right: -1%;
     top:25%;
+}
+.slideToUI{
+    transform: translateX(-50%);
+}
+.slideToDEV{
+    transform: translateX(0);
+}
+.mobileNavigation{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+    gap:.65rem;
+}
+.mobileNavigation button{
+    line-height:0;
+    padding:.85rem;
+    border:0;
+    background:#292E31;
+    border-radius:.25rem;
+}
+.leftArrow{
+    transform: scaleX(-1);
+}
+
+@media screen and (min-width:400px) {
+    .cardContainer{
+        padding:0 2rem;
+    }
+}
+
+@media screen and (min-width:760px) {
+    .cards{
+        flex-direction: row;
+        width:100%;
+    }
+    .servCard h4{
+        font-size:2.25rem;
+    }
+    .servCard p{
+        padding-right:2rem;
+    }
+    .services{
+        width:100%;
+    }
+    .cardContainer{
+        padding:0;
+    }
+    .slideToUI{
+        transform: translateX(0);
+    }
+    .lastOne{
+        margin-left:2rem;
+    }
+    .mobileNavigation{
+        display: none;
+    }
+    .stackList{
+        gap:1.5rem;
+    }
+    .stackList li svg{
+        width:32px;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .services{
+        width:100%;
+    }
+    .cardContainer{
+        width: 480px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .leftOrnam,
+    .rightOrnam{
+        display: block;
+    }
 }

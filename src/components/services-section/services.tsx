@@ -1,16 +1,20 @@
 import css from "./services-section.module.css";
-import { FigmaIcon, frontTech } from "./tech-icons";
+import { FigmaIcon, frontTech, NavArrow } from "./tech-icons";
 import service_text from "./services-text.json";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../../contexts/AppContext";
 import { ToolTip } from "../tool-tip/tooltip";
 import parse from "html-react-parser";
 
 export const ServicesSection = () => {
     const { lang } = useContext(AppContext);
+    const[slide, setSlide] = useState<boolean>(false);
+
+    const toggleSlide = () => setSlide(prev_status => !prev_status);
+
     return(
         <section className={css.services}>
-            <div className={css.cards}>
+            <div className={`${css.cards} ${slide ? css.slideToUI : css.slideToDEV}`}>
                 <div className={css.servCard}>
                     <div className={`${css.cardContainer} ${css.firsOne}`}>
                         <div>
@@ -58,6 +62,14 @@ export const ServicesSection = () => {
                     </div>
                     <ServicesDivider/>
                 </div>
+            </div>
+            <div className={css.mobileNavigation}>
+                <button 
+                    onClick={toggleSlide} 
+                    className={slide ? css.leftArrow : ''}
+                >
+                    <NavArrow/>
+                </button>
             </div>
             <img src="/images/bg/service_left_ornament-min.png" className={css.leftOrnam}/>
             <img src="/images/bg/service_right_ornament-min.png" className={css.rightOrnam}/>
