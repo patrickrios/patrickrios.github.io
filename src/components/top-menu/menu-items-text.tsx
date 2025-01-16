@@ -1,15 +1,27 @@
 export const topMenuItems = [{ 
-    'pt-br': 'serviços', 
-    'eng': 'services'
+    title:{
+      'pt-br': 'serviços', 
+      'eng': 'services'
+    },
+    target: 'services'
 },{
-    'pt-br': 'projetos', 
-    'eng': 'projects'
+    title:{
+      'pt-br': 'projetos', 
+      'eng': 'projects'
+    },
+    target: 'projects'
 },{
-    'pt-br': 'experiência', 
-    'eng': 'experience'
+    title:{
+      'pt-br': 'experiência', 
+      'eng': 'experience'
+    },
+    target: 'experience'
 },{
-    'pt-br': 'contato', 
-    'eng': 'contact'
+    title:{
+      'pt-br': 'contato', 
+      'eng': 'contact'
+    },
+    target: 'contact'
 }];
 
 const LikedinIcon = () =>{

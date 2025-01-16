@@ -21,6 +21,7 @@
     padding:.85rem 0;
     font-size:1.35rem;
     border-bottom:1px solid var(--border-dark);
+    cursor: pointer;
 }
 .menuItems{
     display: flex;
@@ -77,7 +78,7 @@
     border: none;
     width: max-content;
     margin:2rem 0 1rem;
-    opacity: .5;
+    opacity: .35;
 }
 .menuSeparator{
     display: none;
@@ -85,6 +86,9 @@
 .showMenu{
     transform: translateX(0);
     opacity:1;
+}
+.activeSection{
+    color: #0e76a8 !important;
 }
 @media screen and (min-width:340px){
     .menuItems{

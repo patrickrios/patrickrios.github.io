@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./top-menu.module.css";
 import { LanguageToggle, ThemeToggle } from "../theme-toggle/ThemeToggle";
 import { useContext, useState } from "react";
@@ -10,17 +11,20 @@ import {
   CloseMenuIcon, 
   MenuSeparator 
 } from "./menu-items-text";
-
-const upper = (item: string) =>{
-  return item.toUpperCase();
-};
+import { MenuItem } from "./menu-item";
 
 export const TopMenu = () => {
   const { lang } = useContext(AppContext);
   const [shouldShowMenu, setShowMenu ] = useState<boolean>(false);
 
-  const showMenu = () => {
+  const toggleMenu = () => {
     setShowMenu(prev_status => !prev_status)
+  };
+
+  const onMenuItemClicked = () =>{
+    if(shouldShowMenu){
+      toggleMenu();
+    }
   };
 
   return(
@@ -29,7 +33,7 @@ export const TopMenu = () => {
             <div className={css.socialButtons}>
               <button 
                 className={css.mobileButton} 
-                onClick={showMenu}
+                onClick={toggleMenu}
               >
                 <MenuIcon/>
               </button>
@@ -47,19 +51,21 @@ export const TopMenu = () => {
             </div>
             <div className={`${css.menuItems} ${shouldShowMenu && css.showMenu}`}>
                 <CloseMenuIcon 
-                  onClose={showMenu} 
+                  onClose={toggleMenu} 
                   styleClass={css.closeMenuIcon}
                 />
                 { topMenuItems?.map((item, index) => (
-                    <>
-                      <li key={`top-menu-item~${index}`}>
-                        { upper(item[lang]) }
-                      </li>
+                    <React.Fragment key={`menu-item-${index}`}>
+                      <MenuItem 
+                        text={item.title[lang]} 
+                        targetId={item.target}
+                        toggleMenu={onMenuItemClicked}
+                      />
                       { 
                         index < topMenuItems?.length-1 && 
                         <MenuSeparator styleClass={css.menuSeparator}/>
                       }
-                    </>
+                    </React.Fragment>
                 ))}
             </div>
             <div className={css.controls}>
