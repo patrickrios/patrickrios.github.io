@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    padding:2rem 0;
 }
 .headerBackground{
     position: absolute;
@@ -57,19 +58,42 @@
     width:80%;
 }
 .actionButtons a{
-    padding:1rem 2rem;
+    padding:1rem 1.65rem;
     font-weight:500;
     border-radius:2rem;
-    font-size:1.25rem;
+    font-size:1rem;
     text-align: center;
 }
 .getInTouchButton{
-    border:1px solid var(--secondary-text);
+    border:1px solid var(--border-dark);
     color: var(--primary-text);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:.5rem 1rem;
+    gap: .5rem;
+}
+.getInTouchButton a{
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition:color .25s ease-in-out;
 }
 .downloadCvButton{
     background: var(--primary-blue);
     color: var(--primary-text);
+}
+.linked:hover{
+    color: #158dc5;
+}
+.github:hover{
+    color: #8864bd;
+}
+.insta:hover{
+    color: #ea5184;
 }
 
 @media screen and (min-width:400px) {
@@ -115,9 +139,13 @@
     }
 }
 @media screen and (min-width:820px) {
+    .header{
+        padding:3rem 0;
+    }
     .actionButtons{
         width:auto;
         flex-direction: row;
+        gap:.5rem;
     }
     .profile p{
         font-size:1.05rem;
