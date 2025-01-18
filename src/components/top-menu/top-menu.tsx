@@ -1,12 +1,14 @@
 import React from "react";
 import css from "./top-menu.module.css";
-import { LanguageToggle, ThemeToggle } from "../theme-toggle/ThemeToggle";
 import { useContext, useState } from "react";
 import { AppContext } from "../../contexts/AppContext";
-import Link from "next/link";
+import { animateScroll } from "react-scroll";
 import { 
-  topMenuItems, 
-  socialLinks, 
+  LanguageToggle, 
+  ThemeToggle
+} from "../theme-toggle/ThemeToggle";
+import { 
+  topMenuItems,
   MenuIcon, 
   CloseMenuIcon, 
   MenuSeparator 
@@ -27,51 +29,54 @@ export const TopMenu = () => {
     }
   };
 
+  const scrollTop = () => {
+    animateScroll.scrollToTop({
+      smooth: true,
+      duration:600
+    });
+  };
+
   return(
     <nav className={css.topMenu}>
         <ul>
-            <div className={css.socialButtons}>
-              <button 
-                className={css.mobileButton} 
-                onClick={toggleMenu}
-              >
-                <MenuIcon/>
-              </button>
-              {socialLinks?.map( link => (
-                <Link 
-                  href={link?.url}
-                  target="_black" 
-                  title={link?.title}
-                  className={css[link?.styleClass]}
-                  key={`social-link~${link?.styleClass}`}
-                >
-                  { link?.icon }
-                </Link>
+          <div className={css.mobileMenuAndLogo}>
+            <button 
+              className={css.mobileButton} 
+              onClick={toggleMenu}
+            >
+              <MenuIcon/>
+            </button>
+            <img 
+              src="/images/profile/patrickrios.svg"
+              title="Patrick Rios"
+              alt="Patrick Rios"
+              className={css.logoIcon}
+              onClick={scrollTop}
+            />
+          </div>
+          <div className={`${css.menuItems} ${shouldShowMenu && css.showMenu}`}>
+              <CloseMenuIcon 
+                onClose={toggleMenu} 
+                styleClass={css.closeMenuIcon}
+              />
+              { topMenuItems?.map((item, index) => (
+                  <React.Fragment key={`menu-item-${index}`}>
+                    <MenuItem 
+                      text={item.title[lang]} 
+                      targetId={item.target}
+                      toggleMenu={onMenuItemClicked}
+                    />
+                    { 
+                      index < topMenuItems?.length-1 && 
+                      <MenuSeparator styleClass={css.menuSeparator}/>
+                    }
+                  </React.Fragment>
               ))}
-            </div>
-            <div className={`${css.menuItems} ${shouldShowMenu && css.showMenu}`}>
-                <CloseMenuIcon 
-                  onClose={toggleMenu} 
-                  styleClass={css.closeMenuIcon}
-                />
-                { topMenuItems?.map((item, index) => (
-                    <React.Fragment key={`menu-item-${index}`}>
-                      <MenuItem 
-                        text={item.title[lang]} 
-                        targetId={item.target}
-                        toggleMenu={onMenuItemClicked}
-                      />
-                      { 
-                        index < topMenuItems?.length-1 && 
-                        <MenuSeparator styleClass={css.menuSeparator}/>
-                      }
-                    </React.Fragment>
-                ))}
-            </div>
-            <div className={css.controls}>
-                <ThemeToggle/>
-                <LanguageToggle/>
-            </div>
+          </div>
+          <div className={css.controls}>
+              <ThemeToggle/>
+              <LanguageToggle/>
+          </div>
         </ul>
     </nav>
 )};

@@ -43,25 +43,10 @@
     flex-direction: row;
     gap:.5rem;
 }
-.socialButtons{
+.mobileMenuAndLogo{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: .65rem;
-}
-.socialButtons a{
-    padding:0;
-    color: var(--secondary-text);
-    transition:color .3s ease-in-out;
-}
-.linked:hover{
-    color: #0e76a8;
-}
-.github:hover{
-    color: #6e5494;
-}
-.insta:hover{
-    color: #E1306C;
+    gap:.5rem;
 }
 .mobileButton{
     display: block;
@@ -89,6 +74,10 @@
 }
 .activeSection{
     color: #0e76a8 !important;
+}
+.logoIcon{
+ transform: translateY(-2px);
+ cursor: pointer;
 }
 @media screen and (min-width:340px){
     .menuItems{
