@@ -1,0 +1,448 @@
+[
+    {
+        "id":"hubkn-app-123",
+        "name": "Hubkn App",
+        "excerpt": {
+            "pt-br":"Software de IA para vendas",
+            "eng": "Sales AI Software"
+        },
+        "text": [
+	        {
+                "pt-br": "Foi um serviço de <b>análise de dados</b>, para checar a saúde do processo de <b>vendas</b> de clientes. Este serviço lia os dados de vendas e <b>CRM</b> fornecidos pelos clientes, gerava <b>relatórios</b>, apontava <b>falhas</b> e sugeria <b>melhorias</b>.",
+                "eng": "It was a <b>data analysis</b> service to check the health of the customer <b>sales</b> process. This service read the sales and <b>CRM data</b> provided by clients, generated <b>reports</b> pointing out <b>flaws</b> and suggested <b>improvements</b>."
+            },
+		    {
+                "pt-br": "Fui contratado para criar uma <b>plataforma web</b>, para <b>facilitar</b> a entrega dos relatórios, tornando o uso do serviço mais <b>prático</b> e <b>dinâmico</b> para os usuários.",
+                "eng":"I was hired to create a <b>web platform</b> to <b>facilitate</b> the delivery of reports, making the use of the service more <b>practical</b> and <b>dynamic</b> for users."
+            },
+		    {
+                "pt-br": "A <b>plataforma</b> possuía diversas páginas de <b>dashboards</b>, para visualização dos dados que vinham de uma <b>API</b>, criada pelo time de <b>desenvolvedores</b> da própria empresa.",
+                "eng": "The <b>platform</b> had several <b>dashboard</b> pages for visualizing data that came from an <b>API</b> created by the company's own team of <b>developers</b>."
+            }
+	
+        ],
+        "media":[
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/hbkn/hubkn-login-screen-480-min.png",
+                    "md": "/images/screenshot/hbkn/hubkn-login-screen-720-min.png",
+                    "lg": "/images/screenshot/hbkn/hubkn-login-screen-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/hbkn/hubkn-welcome-screen-480-min.png",
+                    "md": "/images/screenshot/hbkn/hubkn-welcome-screen-720-min.png",
+                    "lg": "/images/screenshot/hbkn/hubkn-welcome-screen-1080-min.png"
+                }
+            },
+            {   "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/hbkn/hubkn-dashboard-480-min.png",
+                    "md": "/images/screenshot/hbkn/hubkn-dashboard-720-min.png",
+                    "lg": "/images/screenshot/hbkn/hubkn-dashboard-1080-min.png"
+                }
+        }],
+        "techList":[
+            {
+                "name": "React", 
+                "url": "/images/tech/react-icon-min.png"
+            },{ 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            }
+        ]},
+    {
+        "id":"bf-tcm-1124",
+        "name": "The CMOS: Black Friday",
+        "excerpt": {
+            "pt-br": "WebSite / Marketing Digital",
+            "eng": "WebSite / Marketing Digital"
+        },
+        "text": [
+		    {
+                "pt-br": "Foi um serviço de <b>web design</b>, prestado para a empresa <b>The CMOS</b>, ao longo de várias <b>campanhas</b> de <b>marketing</b>, que teve início na <b>Black Friday</b> de novembro de 2024.",
+                "eng": "It was a <b>web design</b> service, provided for the company <b>The CMOS</b>, over the course of several <b>marketing campaigns</b>, which began on <b>Black Friday</b> in November 2024."
+            },
+		    {
+                "pt-br": "As <b>páginas web</b> foram criadas para as <b>campanhas</b>, e serviam para vários <b>propósitos</b> de marketing, desde formulários de <b>captação de clientes</b>, ou páginas com <b>informações</b> para promover um <b>produto</b> ou <b>evento</b> oferecido pela empresa.",
+                "eng": "The <b>web pages</b> were created for the <b>campaigns</b>, and served various marketing <b>purposes</b>, from <b>customer acquisition</b> pages, or just pages with <b>information</b> to promote a <b>product</b> or <b>event</b> offered by the company."
+            },
+		    {
+                "pt-br": "As páginas eram <b>projetadas</b> no <b>Figma</b> e após aprovação as páginas eram criadas no framework <b>WordPress</b> + <b>Oxygen Page-Builder</b>.",
+                "eng": "The pages were <b>designed</b> in <b>Figma</b> and after approval the pages were created in the <b>WordPress</b> + <b>Oxygen Page-Builder</b> framework."
+            }
+        ],
+        "media":[{
+                "type": "photo", 
+                "url":{ 
+                    "sm": "/images/screenshot/tcmo/thecmos-black-friday-480-min.png",
+                    "md": "/images/screenshot/tcmo/thecmos-black-friday-720-min.png",
+                    "lg": "/images/screenshot/tcmo/thecmos-black-friday-1080-min.png"
+                }
+            },{
+                "type": "photo", 
+                "url":{ 
+                    "sm": "/images/screenshot/tcmo/thecmos-formacao-head-marketing-480-min.png",
+                    "md": "/images/screenshot/tcmo/thecmos-formacao-head-marketing-720-min.png",
+                    "lg": "/images/screenshot/tcmo/thecmos-formacao-head-marketing-1080-min.png"
+                }
+            }
+        ],
+        "techList":[
+            { 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            },{ 
+                "name": "Wordpress", 
+                "url":"/images/tech/wordpress-tech-icon-min.png"
+            },{ 
+                "name": "Oxygen pb", 
+                "url":"/images/tech/oxigen-builder-icon-min.png"
+            }
+        ]},
+    {
+        "id":"fh-201224",
+        "name": "Multi Step form",
+        "excerpt": {
+            "pt-br": "Vídeo tutorial",
+            "eng": "Tutorial video"
+        },
+        "text": [
+            {
+                "pt-br": "Foi o meu primeiro <b>vídeo</b> no <b>YouTube</b> e o início do meu projeto de produção de <b>conteúdo</b> relacionado à <b>programação</b> e <b>tecnologia</b>, o canal <a href='https://www.youtube.com/@thecodeempire1562' target='_blank'>The Code Empire</a>.",
+                "eng": "It was my first <b>YouTube video</b> and the start of my project to produce audio visual <b>content</b> related to <b>programming</b> and <b>technology</b>, <a href='https://www.youtube.com/@thecodeempire1562' target='_blank'>The Code Empire</a> channel."
+            },
+            {
+                "pt-br": "É um tutorial <b>simples</b> e <b>rápido</b> que ensina a dividir um <b>formulário</b> de em <b>várias etapas</b>, e como <b>navegar</b> entre as etapas, mediante <b>validação</b> de preenchimento de campos obrigatórios.",
+                "eng": "It's a <b>simple</b> and <b>quick</b> tutorial that teaches you how to split a <b>form</b> into <b>multiple steps</b> and how to <b>navigate</b> between the stages by <b>validating</b> the completion of mandatory fields."
+            },
+            {
+                "pt-br": "Com mais 3 anos no ar, o vídeo já ultrapassou <b>6 mil visualizações</b> e com diversos <b>comentários positivos</b> acerca do conteúdo do vídeo.",
+                "eng": "After three years on air, the video has already had over <b>6K views</b> and many <b>positive comments</b> about its content."
+            },
+            {
+                "pt-br": "<a href='https://www.youtube.com/@thecodeempire1562?sub_confirmation=1' target='_blank'>INSCREVA-SE!</a>",
+                "eng": "<a href='https://www.youtube.com/@thecodeempire1562?sub_confirmation=1' target='_blank'>SUBSCRIBE!</a>"
+            }
+        ],
+        "media":[{
+                "type": "video", 
+                "url": "https://www.youtube.com/embed/p9m0VZyXwhI?si=bRt5qUTkDoQe0Vp7",
+                "background": "/images/projects/thumbs/multipart-tutorial-thumb-min.png"
+            }
+        ],
+        "techList":[
+            { 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            },{ 
+                "name": "Wordpress", 
+                "url":"/images/tech/wordpress-tech-icon-min.png"
+            },{ 
+                "name": "Oxygen pb", 
+                "url":"/images/tech/oxigen-builder-icon-min.png"
+            }
+        ],
+        "icon": "video"
+    },{
+        "id":"devf-032021",
+        "name": "dev.finance$",
+        "excerpt": {
+            "pt-br": "Gerenciador de finanças pessoais",
+            "eng": "Personal finances manager"
+        },
+        "text": [
+            {
+                "pt-br": "É um <b>web app</b> para guardar <b>transações financeiras</b>. Foi desenvolvido durante o evento Maratona Discover da RocketSeat.",
+                "eng": "It's a <b>web app</b> for storing <b>financial</b> transactions. It was developed during RocketSeat's Discover Marathon event."
+            },
+            {
+                "pt-br": "O aplicativo permite o usuário <b>guardar</b> suas transações financeiras, <b>excluir</b> transações existentes, <b>consultar</b> o <b>histórico</b> de transações organizados por <b>mês/ano</b> e visualizar relatórios com o balanço entre as <b>entradas</b> e <b>saídas</b>.",
+                "eng": "The app allows the user to <b>save</b> their financial transactions, <b>delete</b> existing transactions, <b>consult</b> the <b>history</b> of transactions organized by <b>month/year</b> and view reports with the balance between <b>inflows</b> and <b>outflows</b>."
+            }
+        ],
+        "media":[
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/devf/dev-finances-homepage-480-min.png",
+                    "md": "/images/screenshot/devf/dev-finances-homepage-720-min.png",
+                    "lg": "/images/screenshot/devf/dev-finances-homepage-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/devf/dev-finances-new-transaction-480-min.png",
+                    "md": "/images/screenshot/devf/dev-finances-new-transaction-720-min.png",
+                    "lg": "/images/screenshot/devf/dev-finances-new-transaction-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/devf/dev-finances-transaction-list-480-min.png",
+                    "md": "/images/screenshot/devf/dev-finances-transaction-list-720-min.png",
+                    "lg": "/images/screenshot/devf/dev-finances-transaction-list-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/devf/dev-finances-report-480-min.png",
+                    "md": "/images/screenshot/devf/dev-finances-report-720-min.png",
+                    "lg": "/images/screenshot/devf/dev-finances-report-1080-min.png"
+                }
+            }
+        ],
+        "techList":[
+            { 
+                "name": "HTML", 
+                "url":"/images/tech/html-icon-min.png"
+            },{ 
+                "name": "CSS", 
+                "url":"/images/tech/css-icon-min.png"
+            },{ 
+                "name": "JavaScript", 
+                "url":"/images/tech/javascript-icon-min.png"
+            }
+        ],
+        "links":{
+            "live": "https://patrickrios.github.io/dev-finances-maratona-discover/",
+            "repo": "https://github.com/patrickrios/dev-finances-maratona-discover"
+        }
+    },
+    {
+        "id":"todo-112021",
+        "name": "ToDo App",
+        "excerpt": {
+            "pt-br": "Gerenciador de tarefas",
+            "eng": "Tasks manager"
+        },
+        "text": [
+            {
+                "pt-br": "Tenha uma vida mais <b>produtiva</b>, organizando o seu trabalho em <b>projetos</b>. Divida esse projeto me pequenas <b>tarefas</b>, e a medida que forem <b>concluídas</b>, tenha uma avaliação do <b>progresso</b> do seu projeto.",
+                "eng": "Live a <b>productive</b> life by organizing your work around <b>projects</b>. Divide this project into small <b>tasks</b>, and as they are <b>completed</b>, evaluate the <b>progress</b> of your project."
+            },
+            {
+                "pt-br": "Para criar um <b>ambiente</b> de trabalho <b>aprimorado</b>, o app possui um <b>cronômetro</b> pra controlar o <b>tempo de trabalho</b> e um reprodutor de músicas <b>LO-FI</b>, para ajudar a manter o <b>foco</b> e aumentar a sensação de <b>relaxamento</b> enquanto trabalha.",
+                "eng": "To create an <b>enhanced</b> working <b>environment</b>, the app has a <b>timer</b> to keep track of <b>work time</b> and a <b>LO-FI</b> music player to help maintain <b>focus</b> and increase the feeling of <b>relaxation</b> while working."
+            }
+        ],
+        "media":[
+            {
+                "type": "video",
+                "url": "https://www.youtube.com/embed/KF1qjLYBBkY?si=-Osbs5T6I0HxKhB-",
+                "background": "/images/projects/screenshot/todo_01-min.png"
+            }
+        ],
+        "techList":[
+            { 
+                "name": "NextJS", 
+                "url":"/images/tech/nextjs-icon-min.png"
+            },{ 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            }
+        ],
+        "links":{
+            "live": "https://patrickrios-todo-app.vercel.app/",
+            "repo": "https://github.com/patrickrios/todo-app-nextjs"
+        }
+    },
+    {
+        "id":"moveit-022021",
+        "name": "Move.it",
+        "excerpt": {
+            "pt-br": "App de desafios de alongamento",
+            "eng": "Stretching Challenges App"
+        },
+        "text": [
+            {
+                "pt-br": "Muitos profissionais de <b>TI</b> passam muitas horas do dia <b>sentados</b> diante de um computador, e isso pode ser <b>prejudicial</b> para o corpo no <b>longo prazo</b>.",
+                "eng": "Many <b>IT</b> professionals spend many hours a day <b>sitting</b> at a computer, and this can be <b>harmful</b> to the body in the <b>long run</b>."
+            },
+            {
+                "pt-br": "Para incentivar o <b>alongamento</b>, de forma <b>simples</b> e <b>rápida</b>, o app propõe pequenos <b>desafios</b> em intervalos de tempo de <b>25 minutos</b>. A cada desafio completado, ganhe <b>pontos</b> para subir de <b>nível</b>.",
+                "eng": "To encourage <b>stretching</b> in a <b>simple</b> and <b>quick</b> way, the app offers small <b>challenges</b> at <b>25-minute</b> intervals. With each challenge completed, you earn <b>points</b> to <b>level up</b>."
+            },
+            {
+                "pt-br": "Complete os desafio para <b>garantir</b> uma vida profissional mais <b>saudável</b>.",
+                "eng": "Complete the challenges to <b>ensure</b> a <b>healthier</b> working life."
+            }
+        ],
+        "media":[
+            {
+                "type": "video", 
+                "url": "https://www.youtube.com/embed/VsOpv2YG6Aw?si=48pTBiVCF7Iycsag"
+            }
+        ],
+        "techList":[
+            { 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            },{ 
+                "name": "Wordpress", 
+                "url":"/images/tech/wordpress-tech-icon-min.png"
+            },{ 
+                "name": "Oxygen pb", 
+                "url":"/images/tech/oxigen-builder-icon-min.png"
+            }
+        ],
+        "icon": "video",
+        "links":{
+            "live": "https://moveit-patrickrios.vercel.app/",
+            "repo": "https://github.com/patrickrios/moveit"
+        }
+    },
+    {
+        "id":"miner-072021",
+        "name": "Wordminer",
+        "excerpt": {
+            "pt-br": "Protótipo UI/UX",
+            "eng": "UI/UX Prototype"
+        },
+        "text": [
+            {
+                "pt-br": "É um complexo app de <b>aprendizado de idioma</b>, que permite o usuário <b>aprender</b> novas palavras através de textos <b>interativos</b>.",
+                "eng": "It's a complex <b>language-learning</b> app that allows users to <b>learn</b> new words through <b>interactive</b> texts."
+            },
+            {
+                "pt-br": "Ao ler uma palavra desconhecida, o <b>usuário</b> seleciona a palavra e é apresentado uma tela com o <b>contexto</b> e uma lista de <b>frases</b> que o usuário poderá salvar em um <b>deck</b>.",
+                "eng":"When reading an unknown word, the <b>user</b> selects the word and is shown a screen with the <b>context</b> and a list of <b>phrases</b> that the user can save in a <b>deck</b>."
+            },
+            {
+                "pt-br": "Uma vez salva, o <b>deck</b> vai oferecer ao usuário <b>revisões</b> das mesmas frases, de acordo com um algoritmo de <b>repetição espaçada</b>, garantido assim o aprendizado <b>eficiente</b> do novo idioma.",
+                "eng": "Once saved, the <b>deck</b> will offer the user <b>revisions</b> of the same phrases according to a <b>spaced-repetition</b> algorithm, ensuring an <b>efficient</b> way to learn a new language."
+            }
+        ],
+        "media":[
+            {
+                "type": "photo", 
+                "url":{ 
+                    "sm": "/images/screenshot/word/wordminer-figma-project-480-min.png",
+                    "md": "/images/screenshot/word/wordminer-figma-project-720-min.png",
+                    "lg": "/images/screenshot/word/wordminer-figma-project-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url":{ 
+                    "sm": "/images/screenshot/word/wordminer-deck-overview-480-min.png",
+                    "md": "/images/screenshot/word/wordminer-deck-overview-720-min.png",
+                    "lg": "/images/screenshot/word/wordminer-deck-overview-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url":{ 
+                    "sm": "/images/screenshot/word/wordminer-context-480-min.png",
+                    "md": "/images/screenshot/word/wordminer-context-720-min.png",
+                    "lg": "/images/screenshot/word/wordminer-context-1080-min.png"
+                }
+            }
+        ],
+        "techList":[
+            { 
+                "name": "Figma", 
+                "url":"/images/tech/figma-icon-min.png"
+            }
+        ],
+        "links":{
+            "live": "https://www.figma.com/file/FAAGn2b8kNALi894FqqsBQ/WordMiner-App?node-id=30%3A44"
+        }
+    },
+    {
+        "id":"komodo-022024",
+        "name": "Komodora",
+        "excerpt": {
+            "pt-br": "Jogo Plataforma 2D",
+            "eng": "2D Platform Game"
+        },
+        "text": [
+            {
+                "pt-br": "É uma jornada de <b>aventura</b>. Resolva <b>puzzles</b> com a ajuda de <b>objetos mágicos</b>, para avançar de fase e conseguir alcançar o <b>objetivo</b> principal: chegar ao outro lado da <b>ilha</b>.",
+                "eng": "It's an <b>adventurous</b> journey. Solve <b>puzzles</b> with the help of <b>magical objects</b> in order to progress through the levels and reach the main <b>objective</b>: to reach the other side of the <b>island</b>."
+            },
+            {
+                "pt-br": "Foi campeão da <a href='https://itch.io/jam/clecio-gamedev-jam-02' target='_blank'>ClecioDev GameJam #2</a>, o jogo foi <b>criado</b> em sete dias. Alguns meses depois, foi <b>exposto</b> no festival de jogos <a href='https://www.ifms.edu.br/noticias/2024/evento-reune-desenvolvedores-de-jogos-digitais-em-dourados' target='_blank'>Gametiva</a>, organizado pelo <b>IFMS</b> de <b>Dourados</b>.",
+                "eng": "It was champion of <a href='https://itch.io/jam/clecio-gamedev-jam-02' target='_blank'>ClecioDev GameJam #2</a>, the game <b>created</b> in seven days. A few months later, it was <b>exhibited</b> at the <a href='https://www.ifms.edu.br/noticias/2024/evento-reune-desenvolvedores-de-jogos-digitais-em-dourados' target='_blank'>Gametiva</a> games festival, organized by the <b>IFMS</b> from <b>Dourados</b>."
+            },
+            {
+                "pt-br": "A versão final está <b>desenvolvimento</b>, porém já possui uma <b>versão demonstrativa</b> jogável no <b>Itch.io</b>.",
+                "eng": "The final version is in <b>development</b>, but there's already a <b>demo version</b> playable on <b>Itch.io</b>."
+            },
+            {
+                "pt-br": "<b>DIVIRTA-SE!</b>",
+                "eng": "<b>HAVE FUN!</b>"
+            }
+        ],
+        "media":[
+            {
+                "type": "game",
+                "url": "https://itch.io/embed-upload/11755462?color=222034"
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/kmd/komodora-beach-stage-480-min.png",
+                    "md": "/images/screenshot/kmd/komodora-beach-stage-720-min.png",
+                    "lg": "/images/screenshot/kmd/komodora-beach-stage-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/kmd/komodora-palm-tree-stage-480-min.png",
+                    "md": "/images/screenshot/kmd/komodora-palm-tree-stage-720-min.png",
+                    "lg": "/images/screenshot/kmd/komodora-palm-tree-stage-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/kmd/komodora-forest-480-min.png",
+                    "md": "/images/screenshot/kmd/komodora-forest-720-min.png",
+                    "lg": "/images/screenshot/kmd/komodora-forest-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/kmd/komodora-gametiva-playing-480-min.png",
+                    "md": "/images/screenshot/kmd/komodora-gametiva-playing-720-min.png",
+                    "lg": "/images/screenshot/kmd/komodora-gametiva-playing-1080-min.png"
+                }
+            },
+            {
+                "type": "photo", 
+                "url": {
+                    "sm": "/images/screenshot/kmd/komodora-stickers-480-min.png",
+                    "md": "/images/screenshot/kmd/komodora-stickers-720-min.png",
+                    "lg": "/images/screenshot/kmd/komodora-stickers-1080-min.png"
+                }
+            }
+        ],
+        "techList":[
+            { 
+                "name": "Godot Engine", 
+                "url":"/images/tech/godot-icon-min.png"
+            },
+            
+            { 
+                "name": "LibreSprite", 
+                "url":"/images/tech/libresprite-icon-min.png"
+            },
+            { 
+                "name": "Audacity", 
+                "url":"/images/tech/audacity-icon-min.png"
+            }
+        ],
+        "links":{
+            "live": "https://patrickrios.itch.io/komodora"
+        }
+    }
+]

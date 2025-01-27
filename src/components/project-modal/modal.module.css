@@ -1,0 +1,247 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    z-index:12;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    overflow: auto;
+}
+.modalLayer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    top:0;
+    left:0;
+    z-index:1;
+}
+.contentGrid{
+  display: flex;
+  flex-direction: column;
+  z-index:2;
+  width:100%;
+  top:0;
+}
+.left{
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+.right{
+  background: var(--background-color);
+  position: relative;
+}
+.right h2{
+  color: var(--primary-text);
+  font-size:2rem;
+}
+.right p{
+  color: var(--secondary-text);
+  margin-top:1rem;
+}
+.right p b{
+  color: #CBD4EE;
+  font-weight:600;
+}
+.photoContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index:2;
+}
+.blurBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  filter: blur(80px);
+  z-index:0;
+  opacity: .4;
+}
+.projectNavigation,
+.mediaNavigation{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-between;
+  position: absolute;
+  padding:0 1rem;
+}
+.projectArrowBtn{
+  padding:0;
+  border:0;
+  background:none;
+  cursor: pointer;
+  opacity:0.7;
+  transition: opacity .3s ease-in-out;
+}
+.projectArrowBtn:hover{
+  opacity:1;
+}
+.leftArrow,
+.flipH{
+  transform: scaleX(-1);
+}
+.leftArrow,
+.rightArrow{
+  position: absolute;
+  z-index:2;
+}
+.leftArrow{
+  left: .5rem;
+}
+.rightArrow{
+  right:.5rem;
+}
+.mediaNavigation{
+  top:50%;
+  z-index:20;
+  transform: translateY(-50%);
+}
+.mediaControls{
+  position: absolute;
+  bottom: .65rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  gap:4px;
+  z-index:2;
+}
+.normal{
+  color:#3D4455;
+}
+.selected{
+  color: #007AFF;
+}
+.projectOverview{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding:1rem 2rem;
+  max-height:90%;
+}
+.projectInfo{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-dark);
+}
+.projectInfo span{
+  color: var(--secondary-text);
+  opacity: .5;
+}
+.techList{
+  display: flex;
+  flex-direction: row;
+  gap:.5rem;
+  margin-top:1rem;
+}
+.techItem{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+  align-items: center;
+}
+.techItem span{
+  font-size: .65rem;
+  color: var(--secondary-text);
+}
+.techTitle{
+  font-size: .75rem;
+  color: #505366;
+  margin-top: 2rem;
+}
+.closeModal{
+  border:0;
+  padding:0;
+  background: none;
+  position: absolute;
+  top:.5rem;
+  right: .5rem;
+  opacity: .5;
+  transition: opacity .3s ease-in-out;
+}
+.closeModal:hover{
+  opacity:.8;
+}
+.projectsLinks{
+  display: flex;
+  flex-direction: row;
+  gap:.5rem;
+  margin-top:1rem;
+}
+.livePreviewBtn,
+.repoBtn{
+  color: var(--background-color);
+  padding:.25rem .5rem;
+  font-size: .85rem;
+  font-weight: 500;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background .2s ease-in-out;
+}
+.livePreviewBtn svg,
+.repoBtn svg{
+  margin-left: 4px;
+}
+.livePreviewBtn{
+  background: #30B0C7;
+}
+.livePreviewBtn:hover{
+  background: #3ED0EB;
+}
+.repoBtn{
+  background: #32ADE6;
+}
+.repoBtn:hover{
+  background: #55C9FF;
+}
+@media screen and (min-width: 1000px) {
+  .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+  }
+  .contentGrid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width:90%;
+    height:90%;
+    overflow: hidden;
+    background: #fd5;
+  }
+  .projectOverview{
+    height:100%;
+    overflow: auto;
+  }
+  .projectContent{
+    flex:1;
+    overflow: auto;
+  }
+  .left{
+    height: 100%;
+  }
+  .right{
+    height: 100%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .contentGrid{
+    width:86%;
+    height:90%;
+    
+    background: #fd5;
+  }
+}
