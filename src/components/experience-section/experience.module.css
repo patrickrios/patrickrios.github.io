@@ -1,0 +1,97 @@
+.experience{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding-top: 2rem;
+    margin-top: 4rem;
+}
+.experience h3{
+    color: var(--indigo);
+    font-weight: 700;
+    border-bottom: 1px solid #403F71;
+    padding-bottom:.65rem;
+    font-size:2.25rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.experience div{
+    padding:2rem 0;
+}
+.bordered{
+    border-bottom:1px solid #242424;
+}
+.experience div header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .65rem;
+}
+.experience div header h4{
+    font-size:1.25rem;
+    color:#A5A4E8;
+    display: flex;
+    align-items: center;
+}
+.experience div header h4 img{
+    margin-right:.65rem;
+}
+.experience div header span{
+    background: #28283F;
+    color: #A5A4E8;
+    font-size: .85rem;
+    padding:.35rem 1rem;
+    border-radius: 1rem;
+    max-width: max-content;
+    margin-bottom:1rem;
+}
+.experience div p{
+    color: #A9B2BC;
+    opacity:.8;
+    margin-top: .5rem;
+    line-height:2.05rem;
+    font-size:1.15rem;
+}
+.experience div b{
+    color: #B7BFC7;
+}
+.ornament{
+    display: none;
+}
+@media screen and (min-width: 360px) {
+    .experience div header h4{
+        font-size:1.5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .experience div header h4{
+        font-size:1.85rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .experience div header{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .experience div header span{
+        margin-bottom:0;
+        height: max-content;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .ornament{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .experience{
+        width:1000px;
+    }
+}
