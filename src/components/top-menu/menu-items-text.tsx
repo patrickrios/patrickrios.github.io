@@ -1,10 +1,4 @@
-export const topMenuItems = [{ 
-    title:{
-      'pt-br': 'serviços', 
-      'eng': 'services'
-    },
-    target: 'services'
-},{
+export const topMenuItems = [{
     title:{
       'pt-br': 'projetos', 
       'eng': 'projects'
