@@ -14,6 +14,9 @@
     z-index:0;
     opacity: .7;
 }
+.headerBackground img{
+    width:100%;
+}
 .profile{
     width:1000px;
     display: flex;
@@ -87,13 +90,13 @@
     color: var(--primary-text);
 }
 .linked:hover{
-    color: #158dc5;
+    color: #4fc2f7;
 }
 .github:hover{
-    color: #8864bd;
+    color: #b287f1;
 }
 .insta:hover{
-    color: #ea5184;
+    color: #f67da6;
 }
 
 @media screen and (min-width:400px) {

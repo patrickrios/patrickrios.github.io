@@ -37,15 +37,20 @@ export const Header = () => {
                     <a 
                         href="/files/Patrick_Fernandes_Resume_0324.pdf" 
                         className={css.downloadCvButton}
+                        download="Patrick_Fernandes_Resume.pdf"
                     >
                         {lang === 'eng' ? 'Download' : 'Baixar'} CV
                     </a>
                 </div>
             </div>
-            <img 
-                src="/images/bg/header_bg-min.png" 
-                className={css.headerBackground}
-            />
+            <picture className={css.headerBackground}>
+                <source srcSet="/images/bg/header-bg-360-min.png" media="(max-width: 479px)"/>
+                <source srcSet="/images/bg/header-bg-480-min.png" media="(min-width: 480px) and (max-width: 719px)"/>
+                <source srcSet="/images/bg/header-bg-720-min.png" media="(min-width: 720px) and (max-width: 1023px)"/>
+                <source srcSet="/images/bg/header-bg-1024-min.png" media="(min-width: 1024px) and (max-width: 1439px)"/>
+                <source srcSet="/images/bg/header-bg-1440-min.png" media="(min-width: 1440px) and (max-width: 1919px)"/>
+                <img src="/images/bg/header-bg-1920-min.png"/>
+            </picture>
         </header>
     )
 };
