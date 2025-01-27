@@ -3,7 +3,7 @@ import css from "./project-item.module.css";
 import { ModalContext  } from "../../contexts/ModalContext";
 import { motion } from "framer-motion";
 import { AppContext } from "../../contexts/AppContext";
-import { Modal } from "../modal/modal";
+import { ProjectModal } from "../project-modal/modal";
 export interface Slide{
     thumb: string;
     caption: {
@@ -58,7 +58,7 @@ export const ProjectItem = ( props : ProjectDataProp) => {
     const { name, description, icon, thumb } = data;
 
     const handleOnCliked = () => {
-        addContent(<Modal projectId={data?.projectId}/>);
+        addContent(<ProjectModal projectId={data?.projectId}/>);
     };
 
     return(

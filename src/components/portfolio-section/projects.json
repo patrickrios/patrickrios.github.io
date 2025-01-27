@@ -81,7 +81,8 @@
             "description":{
                 "pt-br": "Web App", 
                 "eng": "Web App"
-            }
+            },
+            "icon": "video"
         },
         {
             "projectId": "miner-072021",
