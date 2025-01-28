@@ -4,15 +4,19 @@ let assetPrefix = '';
 let basePath = '';
 
 if (isGithubActions) {
+  // Pega o nome do repositório do GitHub Actions
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
-  assetPrefix = `/${repo}/`;
+  assetPrefix = `/${repo}`;
   basePath = `/${repo}`;
 }
 
-module.exports = {
+const nextConfig = {
+  output: 'export',
   assetPrefix,
   basePath,
   images: {
     unoptimized: true,
   },
 };
+
+module.exports = nextConfig;

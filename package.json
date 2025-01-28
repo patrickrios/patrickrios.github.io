@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "next dev",
     "start": "next --openssl-legacy-provider start",
-    "build": "next build && next export",
+    "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
