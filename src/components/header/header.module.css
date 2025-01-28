@@ -36,6 +36,9 @@
     text-align: center;
     padding:0 2rem;
 }
+.profile h2.lightHeadline{
+    color: var(--gray-20);
+}
 .profile p{
     color: var(--secondary-text);
     text-align: center;
@@ -44,8 +47,14 @@
     line-height: 1.65rem;
     width:85%;
 }
+.profile p.lightP{
+    color: #3D4B75;
+}
 .profile p b{
     color: #B8C3E5;
+}
+.profile p.lightP b{
+    color: #3D4B75;
 }
 .titleGradient{
     background: linear-gradient(to right, #20BF55, #01BAEF);
@@ -77,6 +86,9 @@
     padding:.5rem 1rem;
     gap: .5rem;
 }
+.getInTouchButton.light{
+    border-color: var(--gray-80);
+}
 .getInTouchButton a{
     padding:0;
     display: flex;
@@ -85,17 +97,23 @@
     color: #fff;
     transition:color .25s ease-in-out;
 }
+.getInTouchButton a.lightA{
+    color: #3A4157;
+}
 .downloadCvButton{
     background: var(--primary-blue);
     color: var(--primary-text);
 }
-.linked:hover{
+.linked:hover,
+.linked:hover.lightA{
     color: #4fc2f7;
 }
-.github:hover{
+.github:hover,
+.github:hover.lightA{
     color: #b287f1;
 }
-.insta:hover{
+.insta:hover,
+.insta:hover.lightA{
     color: #f67da6;
 }
 

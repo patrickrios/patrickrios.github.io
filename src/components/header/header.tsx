@@ -18,16 +18,20 @@ export const Header = () => {
                     <source srcSet="/images/profile/profile-photo-260.svg" media="(min-width: 1000px)" />
                     <img src="/images/profile/profile-photo-140.svg" alt="MDN" />
                 </picture>
-                <h2>{parse(headerText['headLine'][lang])}</h2>
-                <p>{parse(headerText['description'][lang])}</p>
+                <h2 className={lightMode ? css.lightHeadline : ''}>
+                    {parse(headerText['headLine'][lang])}
+                </h2>
+                <p className={lightMode ? css.lightP : ''}>
+                    {parse(headerText['description'][lang])}
+                </p>
                 <div className={css.actionButtons}>
-                    <div className={css.getInTouchButton}>
+                    <div className={`${css.getInTouchButton} ${ lightMode ? css.light : ''}`}>
                         {socialItems?.map( link => (
                             <Link 
                                 href={link?.url}
                                 target="_black" 
                                 title={link?.title}
-                                className={css[link?.styleClass]}
+                                className={`${css[link?.styleClass]} ${lightMode ? css.lightA : ''}`}
                                 key={`social-link~${link?.styleClass}`}
                             >
                                 { link?.icon }
@@ -44,12 +48,12 @@ export const Header = () => {
                 </div>
             </div>
             <picture className={css.headerBackground}>
-                <source srcSet="/images/bg/header-bg-360-min.png" media="(max-width: 479px)"/>
-                <source srcSet="/images/bg/header-bg-480-min.png" media="(min-width: 480px) and (max-width: 719px)"/>
-                <source srcSet="/images/bg/header-bg-720-min.png" media="(min-width: 720px) and (max-width: 1023px)"/>
-                <source srcSet="/images/bg/header-bg-1024-min.png" media="(min-width: 1024px) and (max-width: 1439px)"/>
-                <source srcSet="/images/bg/header-bg-1440-min.png" media="(min-width: 1440px) and (max-width: 1919px)"/>
-                <img src="/images/bg/header-bg-1920-min.png"/>
+                <source srcSet={`/images/bg/header-bg-360${lightMode?'-light':''}-min.png`} media="(max-width: 479px)"/>
+                <source srcSet={`/images/bg/header-bg-480${lightMode?'-light':''}-min.png`} media="(min-width: 480px) and (max-width: 719px)"/>
+                <source srcSet={`/images/bg/header-bg-720${lightMode?'-light':''}-min.png`} media="(min-width: 720px) and (max-width: 1023px)"/>
+                <source srcSet={`/images/bg/header-bg-1024${lightMode?'-light':''}-min.png`} media="(min-width: 1024px) and (max-width: 1439px)"/>
+                <source srcSet={`/images/bg/header-bg-1440${lightMode?'-light':''}-min.png`} media="(min-width: 1440px) and (max-width: 1919px)"/>
+                <img src={`/images/bg/header-bg-1920${lightMode?'-light':''}-min.png`}/>
             </picture>
         </header>
     )
