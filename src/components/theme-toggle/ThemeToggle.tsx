@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { ToggleButton } from "../toggle-button/ToggleButton";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { AppContext } from "../../contexts/AppContext";
-import css from "./theme-button.module.css";
 import { 
     BrazilFlag, 
     DarkThemeIcon, 
@@ -28,15 +27,9 @@ export const ThemeToggle = () => {
     const { lang } = useContext(AppContext);
 
     return (
-        <ToggleButton 
-            active={{
-                icon: <DarkThemeIcon/>,
-                style: css.darkTheme
-            }}
-            inactive={{
-                icon: <LightThemeIcon/>,
-                style: css.lightTheme
-            }}
+        <ToggleButton
+            activeIcon={<DarkThemeIcon/>}
+            inactiveIcon={<LightThemeIcon/>}
             onAction={toggleTheme}
             title={themeText[lang]}
             isON={!lightMode}
@@ -51,14 +44,8 @@ export const LanguageToggle = () => {
     } = useContext(AppContext);
     return(
         <ToggleButton
-            active={{
-                icon: <BrazilFlag/>,
-                style: css.brLang
-            }}
-            inactive={{
-                icon: <UsaFlag/>,
-                style: css.ukLang
-            }}
+            activeIcon={ <BrazilFlag/>}
+            inactiveIcon={<UsaFlag/>}
             onAction={switchLanguage}
             title={languageText[lang]}
             isON={ lang === "pt-br"}

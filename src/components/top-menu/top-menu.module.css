@@ -2,11 +2,16 @@
     width:100%;
     height:60px;
     border-bottom: 1px solid var(--border-dark);
-    background: var(--card-dark);
+    background-color: var(--card-dark);
     display: flex;
     justify-content: center;
     position: fixed;
     z-index:10;
+    transition: all .3s ease-in-out;
+}
+.topMenu.light{
+    background-color: #EBEBEB;
+    border-bottom:1px solid #C7C7C7;
 }
 .topMenu ul{
     width:100%;
@@ -22,6 +27,9 @@
     font-size:1.35rem;
     border-bottom:1px solid var(--border-dark);
     cursor: pointer;
+}
+.topMenu ul li.light{
+    color: var(--gray-20);
 }
 .menuItems{
     display: flex;
@@ -76,8 +84,12 @@
     color: #0e76a8 !important;
 }
 .logoIcon{
- transform: translateY(-2px);
- cursor: pointer;
+    transform: translateY(-2px);
+    cursor: pointer;
+    color: var(--primary-text);
+}
+.logoIcon.light{
+    color: var(--gray-20);
 }
 @media screen and (min-width:340px){
     .menuItems{

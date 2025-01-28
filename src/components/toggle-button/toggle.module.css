@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
     padding:.35rem .65rem;
+    background-color: #2A2D2D;
+    transition: background .3s ease-in-out;
+}
+.toggle.light{
+    background-color: #DADDDD;
 }
 .active,
 .inactive{

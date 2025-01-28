@@ -5,6 +5,7 @@ interface MenuItemProps{
     targetId: string;
     children?: ReactNode;
     text: string;
+    className?: string;
     toggleMenu: ()=>void;
 }
 
@@ -16,7 +17,8 @@ export const MenuItem = (props:MenuItemProps) => {
     const {
         targetId,
         text, 
-        toggleMenu
+        toggleMenu,
+        className
     } = props;
 
     const onMenuClicked = () => {
@@ -31,7 +33,7 @@ export const MenuItem = (props:MenuItemProps) => {
     }
 
     return(
-        <li onClick={onMenuClicked}>
+        <li onClick={onMenuClicked} className={className}>
             { upper(text) }
         </li>
     )

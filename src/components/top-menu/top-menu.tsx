@@ -11,12 +11,16 @@ import {
   topMenuItems,
   MenuIcon, 
   CloseMenuIcon, 
-  MenuSeparator 
+  MenuSeparator, 
+  PatrickRiosLogo
 } from "./menu-items-text";
 import { MenuItem } from "./menu-item";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { socialItems } from "../header/social-items";
 
 export const TopMenu = () => {
   const { lang } = useContext(AppContext);
+  const { lightMode } = useContext(ThemeContext);
   const [shouldShowMenu, setShowMenu ] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -37,7 +41,7 @@ export const TopMenu = () => {
   };
 
   return(
-    <nav className={css.topMenu}>
+    <nav className={`${css.topMenu} ${lightMode && css.light}`}>
         <ul>
           <div className={css.mobileMenuAndLogo}>
             <button 
@@ -46,12 +50,9 @@ export const TopMenu = () => {
             >
               <MenuIcon/>
             </button>
-            <img 
-              src="/images/profile/patrickrios.svg"
-              title="Patrick Rios"
-              alt="Patrick Rios"
-              className={css.logoIcon}
-              onClick={scrollTop}
+            <PatrickRiosLogo 
+              onClick={scrollTop} 
+              className={`${css.logoIcon} ${lightMode && css.light}`}
             />
           </div>
           <div className={`${css.menuItems} ${shouldShowMenu && css.showMenu}`}>
@@ -65,6 +66,7 @@ export const TopMenu = () => {
                       text={item.title[lang]} 
                       targetId={item.target}
                       toggleMenu={onMenuItemClicked}
+                      className={lightMode ? css.light : ''}
                     />
                     { 
                       index < topMenuItems?.length-1 && 

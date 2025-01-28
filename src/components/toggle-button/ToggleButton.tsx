@@ -1,15 +1,10 @@
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
 import css from "./toggle.module.css";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 interface ToggleProps{
-    active?:{
-        icon: ReactNode;
-        style: string;
-    };
-    inactive?:{
-        icon: ReactNode;
-        style: string;
-    }
+    activeIcon?: ReactNode;
+    inactiveIcon?: ReactNode;
     title?: string;
     onAction: () => void;
     isON?: boolean;
@@ -17,12 +12,14 @@ interface ToggleProps{
 
 export const ToggleButton = (props : ToggleProps) => {
     const {
-        active,
-        inactive,
+        activeIcon,
+        inactiveIcon,
         onAction,
         title,
         isON
     } = props;
+
+    const { lightMode } = useContext(ThemeContext);
 
     const handleOnAction = () =>{
         onAction();
@@ -30,16 +27,11 @@ export const ToggleButton = (props : ToggleProps) => {
 
     return(
         <div 
-            className={`
-                ${css.toggle}
-                ${isON ? active.style : inactive.style}
-                ${isON ? css.onStyle : css.offStyle}
-            `}
+            className={`${css.toggle} ${lightMode && css.light}`}
             onClick={handleOnAction}
             title={title ? title : ''}
         >
-            {isON ? active.icon : inactive.icon }
-            
+            {isON ? activeIcon : inactiveIcon }
         </div>
     );
 }
