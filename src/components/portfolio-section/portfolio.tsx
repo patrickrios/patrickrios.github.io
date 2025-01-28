@@ -3,12 +3,14 @@ import { ProjectItem } from "./project-item";
 import projects from "./projects.json";
 import { useContext } from "react";
 import { AppContext } from "../../contexts/AppContext";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 export const Portfolio = () => {
     const { lang } = useContext(AppContext);
+    const { lightMode } = useContext(ThemeContext);
     return(
         <section className={css.portfolio} id="projects">
-            <h3 className={css.strokeText}>
+            <h3 className={`${css.strokeText} ${lightMode ? css.lightTitle : ''}`}>
                 { lang === 'pt-br' ? 'PROJETOS' : 'PROJECTS'}
             </h3>
             <Professional/>

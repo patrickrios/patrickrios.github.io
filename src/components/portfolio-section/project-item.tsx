@@ -4,6 +4,7 @@ import { ModalContext  } from "../../contexts/ModalContext";
 import { motion } from "framer-motion";
 import { AppContext } from "../../contexts/AppContext";
 import { ProjectModal } from "../project-modal/modal";
+import { ThemeContext } from "../../contexts/ThemeContext";
 export interface Slide{
     thumb: string;
     caption: {
@@ -53,6 +54,7 @@ const viewText = {
 
 export const ProjectItem = ( props : ProjectDataProp) => {
     const { addContent } = useContext(ModalContext);
+    const { lightMode } = useContext(ThemeContext);
     const { lang } = useContext(AppContext);
     const { data, style, styleClass } = props;
     const { name, description, icon, thumb } = data;
@@ -66,16 +68,16 @@ export const ProjectItem = ( props : ProjectDataProp) => {
             initial={{ scale:0.9, opacity:0 }}
             animate={{ scale:1, opacity:1 }}
             transition={{ duration:0.25 }}
-            className={`${css.projectItem} ${styleClass ? styleClass : ''}`} 
+            className={`${css.projectItem} ${styleClass ? styleClass : ''} ${lightMode ? css.light : ''}`} 
             style={style ? style : {}} 
             onClick={handleOnCliked}
         >
-                <picture className={css.projectThumb}>
+                <picture className={`${css.projectThumb} ${lightMode ? css.lightThumb : ''}`}>
                     <source media="(max-width: 320px)" srcSet={thumb.sm}/>
                     <source media="(min-width: 321px) and (max-width: 480px)" srcSet={thumb.md}/>
                     <source media="(min-width: 481px) and (max-width: 800px)" srcSet={thumb.lg}/>
                     { thumb?.xl && <source media="(min-width: 801px)" srcSet={thumb.xl}/>}
-                    <img src={thumb.lg} alt="Imagem"/>
+                    <img src={thumb.lg} alt={`Thumbnail of ${name} project`}/>
                 </picture>
                 <div className={css.projectInfo}>
                     <header>

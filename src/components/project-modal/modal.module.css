@@ -11,10 +11,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, .2);
     top:0;
     left:0;
     z-index:1;
+}
+.modalLayer.lightLayer{
+  background: rgba(0, 0, 0, .7);
 }
 .contentGrid{
   display: flex;
@@ -29,16 +32,26 @@
   overflow: hidden;
 }
 .right{
-  background: var(--background-color);
+  background-color: var(--background-color);
   position: relative;
+}
+.right.lightRight{
+ background-color: var(--background-light);
 }
 .right h2{
   color: var(--primary-text);
   font-size:2rem;
 }
+.right.lightRight h2{
+  color: var(--gray-30);
+}
 .right p{
   color: var(--secondary-text);
   margin-top:1rem;
+}
+.right.lightRight p,
+.right.lightRight p b{
+  color: var(--secondary-text-light);
 }
 .right p b{
   color: #CBD4EE;
@@ -135,9 +148,15 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-dark);
 }
+.projectInfo.lightInfo{
+  border-color: var(--border-light);
+}
 .projectInfo span{
   color: var(--secondary-text);
   opacity: .5;
+}
+.projectInfo.lightInfo span{
+  color: var(--gray-10);
 }
 .techList{
   display: flex;
@@ -241,7 +260,5 @@
   .contentGrid{
     width:86%;
     height:90%;
-    
-    background: #fd5;
   }
 }

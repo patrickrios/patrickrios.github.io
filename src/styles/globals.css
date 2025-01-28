@@ -9,10 +9,13 @@
 :root{
 
     --background-color: #161513;
+    --background-light: #FAFAFA;
     --border-dark: #383838;
+    --border-light: #EBEBEB;
     --card-dark: #222222;
     --primary-text:#f0f0f0;
     --secondary-text: #A3ADCC;
+    --secondary-text-light: #3D4B75;
 
     --primary-blue:#005CFF;
     --indigo:#5856D6;
@@ -91,9 +94,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.activeMenu{
-    color: #f00;
-}
 @media (min-width: 768px){
     .desk-only{
         display: block;
@@ -166,7 +166,7 @@ li{
     overflow: hidden;
 }
 #wrapper.lightMode{
-    background:#fff;
+    background:#fafafa;
 }
 
 dialog::backdrop{

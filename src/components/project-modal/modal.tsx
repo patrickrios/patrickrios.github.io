@@ -6,6 +6,7 @@ import parse from "html-react-parser";
 import {motion} from "framer-motion";
 import { EmbedGame, EmbedVideo } from "./embed-video";
 import { AppContext } from "../../contexts/AppContext";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 interface ProjectModalProp{
     projectId?: string;
@@ -18,6 +19,7 @@ interface CloseProp{
 export const ProjectModal = ({ projectId } : ProjectModalProp) => {
     const { clearContent } = useContext(ModalContext);
     const { lang } = useContext(AppContext);
+    const { lightMode } = useContext(ThemeContext);
     const [project, setProject] = useState(null);
     const [projectIndex, setProjectIndex] = useState<number>(0);
     const [currentMedia, setMedia] = useState<number>(0);
@@ -47,13 +49,16 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
     };
 
     const handlePrevProject = () => {
-        const new_index = projectIndex === 0 ? projectData.length - 1 : projectIndex - 1;
-        const new_proj = projectIndex === 0 ? projectData[projectData.length - 1] : projectData[projectIndex - 1];
+        const new_index = projectIndex === 0 ? 
+            projectData.length - 1 : 
+            projectIndex - 1;
+        const new_proj  = projectIndex === 0 ? 
+            projectData[projectData.length-1] : 
+            projectData[projectIndex-1];
         setProjectIndex(new_index);
         setProject(new_proj);
         setMedia(0);
       };
-
 
     const handleKeyDown = (event: KeyboardEvent) => {
         if (event.key === "Escape") {
@@ -62,8 +67,6 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
             handleNextProject();
         }if(event.key === "ArrowLeft"){
             handlePrevProject();
-        }if(event.key === " "){
-            handleNextMedia();
         }
     };
 
@@ -76,8 +79,6 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                 const new_index = projectData.indexOf(new_project);
                 setProject(new_project);
                 setProjectIndex(new_index);
-            }else{
-                console.log(projectId + ' not-found');
             }
         }
     }, []);
@@ -179,14 +180,14 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                     }
                     
                 </div>
-                <div className={css.right}>
+                <div className={`${css.right} ${lightMode ? css.lightRight : ''}`}>
                     <motion.div 
                         initial={{x:16, opacity: 0.7}}
                         animate={{x:0, opacity: 1}}
                         transition={{duration:0.7}}
                         className={css.projectOverview}
                     >
-                        <header className={css.projectInfo}>
+                        <header className={`${css.projectInfo} ${lightMode ? css.lightInfo : ''}`}>
                             <h2>{project?.name}</h2>
                             <span>{project?.excerpt[lang]}</span>
                         </header>
@@ -256,7 +257,10 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                 >
                     <Arrow/>
                 </button>
-            <div className={css.modalLayer} onClick={clearContent}/>
+            <div 
+                className={`${css.modalLayer} ${lightMode ? css.lightLayer : ''}`} 
+                onClick={clearContent}
+            />
         </div>
     )
 }
