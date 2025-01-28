@@ -1,0 +1,61 @@
+.contact{
+    background: #1C1B18;
+    width: 100%;
+    border-top: 1px solid #383838;
+    display: flex;
+    align-items: center;
+    padding:3rem 0 5rem;
+    flex-direction: column;
+    margin-top:4rem;
+}
+.contact h3{
+    color: var(--secondary-text);
+    margin-bottom:2rem;
+}
+.contactGrid{
+    display: flex;
+    flex-direction: column-reverse;
+    width:94%;
+    gap:2rem;
+    align-items: center;
+}
+.contactGrid div a{
+    color: var(--primary-text);
+    transform: scale(1.5);
+    transition: color .3s ease-in-out;
+}
+.socialContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialContainer div{
+    display: flex;
+    gap:2rem;
+    margin-top:1rem;
+}
+.aboutImg{
+    width:min-content;
+}
+.linked:hover{
+    color: #4fc2f7;
+}
+.github:hover{
+    color: #b287f1;
+}
+.insta:hover{
+    color: #f67da6;
+}
+
+@media  screen and (min-width:1080px) {
+    .contactGrid{
+        width:1000px;
+        gap: 4rem;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .aboutImg{
+        width:max-content;
+    }
+}
