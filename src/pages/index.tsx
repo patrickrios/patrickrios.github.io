@@ -1,8 +1,33 @@
-import React from "react"
-import { Wrapper } from "../components/wrapper";
+import React, { useContext } from "react"
+import { TopMenu } from "../components/top-menu/top-menu";
+import { Header } from "../components/header/header";
+import { Portfolio } from "../components/portfolio-section/portfolio";
+import { ModalContext } from "../contexts/ModalContext";
+import { Experience } from "../components/experience-section/experience";
+import { Contat } from "../components/contact-section/contact";
+import { WhatsAppButton } from "../components/whatsapp-btn/Whatsapp";
+import Head from "next/head";
+import { Footer } from "../components/footer/footer";
 
 export const Homepage = () =>{
-    return( <Wrapper/>)
+    const { content } = useContext(ModalContext);
+    return(
+        <>
+            <Head>
+                <title>Patrick Rios | DEV</title>
+            </Head>
+            <div id="wrapper">
+                <TopMenu/>
+                <Header/>
+                <Portfolio/>
+                <Experience/>
+                <Contat/>
+                <Footer/>
+                <WhatsAppButton/>
+                { content }
+            </div>
+        </>
+    )
 }
 
 export default Homepage;

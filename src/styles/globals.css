@@ -88,7 +88,11 @@
 .textHappyGradient{
     background: linear-gradient(to right, #20BF55, #01BAEF);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.activeMenu{
+    color: #f00;
 }
 @media (min-width: 768px){
     .desk-only{
@@ -159,6 +163,7 @@ li{
     align-items:center;
     background: var(--background-color);
     transition: all .25s ease-in-out;
+    overflow: hidden;
 }
 #wrapper.lightMode{
     background:#fff;

@@ -13,7 +13,7 @@ export const ServicesSection = () => {
     const toggleSlide = () => setSlide(prev_status => !prev_status);
 
     return(
-        <section className={css.services}>
+        <section className={css.services} id="services">
             <div className={`${css.cards} ${slide ? css.slideToUI : css.slideToDEV}`}>
                 <div className={css.servCard}>
                     <div className={`${css.cardContainer} ${css.firsOne}`}>
