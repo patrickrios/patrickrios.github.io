@@ -192,8 +192,10 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                             <span>{project?.excerpt[lang]}</span>
                         </header>
                         <div className={css.projectContent}>
-                            { project?.text?.map((paragraph: string) =>(
-                                <p>{ parse(paragraph[lang])}</p>
+                            { project?.text?.map((paragraph: string, index: number) =>(
+                                <p key={`projet-paragraph~${index}`}>
+                                    { parse(paragraph[lang])}
+                                </p>
                             ))}
                             { 
                                 project?.links && 
@@ -205,6 +207,7 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                                             href={project?.links?.live} 
                                             target="_blank" 
                                             referrerPolicy="no-referrer"
+                                            rel="noreferrer"
                                         >
                                             deploy <PreviewIcon/>
                                         </a>
@@ -216,6 +219,7 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                                             href={project?.links?.repo} 
                                             target="_blank" 
                                             referrerPolicy="no-referrer"
+                                            rel="noreferrer"
                                         >
                                             repo <RepoIcon/>
                                         </a>

@@ -3,10 +3,10 @@ import css from "./embed-video.module.css";
 
 interface EmbedProp{
     videoUrl: string;
-};
+}
 interface GameProp{
     gameUrl: string;
-};
+}
 
 export const EmbedVideo = ({ videoUrl } : EmbedProp) => {
     const [isLoading, setIsLoading] = useState(true);

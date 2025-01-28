@@ -16,7 +16,6 @@ import {
 } from "./menu-items-text";
 import { MenuItem } from "./menu-item";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { socialItems } from "../header/social-items";
 
 export const TopMenu = () => {
   const { lang } = useContext(AppContext);

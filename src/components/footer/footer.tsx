@@ -3,7 +3,7 @@ import css from "./footer.module.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 function getCurrentYear() {
-    var date= new Date();
+    const date= new Date();
     return date.getFullYear();
   }
 

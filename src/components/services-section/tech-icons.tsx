@@ -54,7 +54,7 @@ export const TailwindIcon = () => {
 export const FramerMotionIcon = () => {
     return(
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 35.9999V12H6V24L18 35.9999Z" fill="white" fill-opacity="0.5"/>
+        <path d="M18 35.9999V12H6V24L18 35.9999Z" fill="white" fillOpacity="0.5"/>
         <path d="M29.9999 12V0H6L18 12H6V23.9999H29.9999L18 12H29.9999Z" fill="url(#paint0_linear_3185_625)"/>
         <defs>
             <linearGradient id="paint0_linear_3185_625" x1="18" y1="0" x2="18" y2="23.9999" gradientUnits="userSpaceOnUse">

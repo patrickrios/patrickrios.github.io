@@ -1,6 +1,5 @@
 import React, {ReactNode} from "react";
 import css from "./tooltip.module.css";
-import arrow from "./tooltip.svg";
 
 interface TooltipProps{
     children?: ReactNode;
