@@ -15,12 +15,24 @@
     justify-content:space-between;
     align-items: center;
     margin-bottom:1rem;
+    transition: all .3s ease-in-out;
+}
+.experience.light h3{
+    color: var(--gray-30);
+    border-color: var(--border-light);
 }
 .experience div{
     padding:2.25rem 0;
 }
 .bordered{
     border-bottom:1px solid #242424;
+    transition: border .3s ease-in-out;
+}
+.bordered.light{
+    border-color: var(--border-light);
+}
+.lightTheCmos{
+    filter: brightness(0);
 }
 .experience div header{
     width: 100%;
@@ -35,17 +47,26 @@
     display: flex;
     align-items: center;
 }
+.experience.light div header h4{
+    color: #3B39B2;
+    transition: color .3s ease-in-out;
+}
 .experience div header h4 img{
     margin-right:.65rem;
 }
 .experience div header span{
-    background: #28283F;
+    background-color: #28283F;
     color: #A5A4E8;
     font-size: .85rem;
     padding:.35rem 1rem;
     border-radius: 1rem;
     max-width: max-content;
     margin-bottom:1rem;
+    transition: all .3s ease-in-out;
+}
+.experience.light div header span{
+    background-color: #E6E6EF;
+    color:#6A68D8;
 }
 .experience div p{
     color: #A9B2BC;
@@ -53,6 +74,10 @@
     margin-top: .5rem;
     line-height:2.05rem;
     font-size:1.15rem;
+}
+.experience.light div p,
+.experience.light div b{
+    color: var(--secondary-text-light);
 }
 .experience div b{
     color: #B7BFC7;

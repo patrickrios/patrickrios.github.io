@@ -3,11 +3,13 @@ import css from "./experience.module.css";
 import history from "./job-history.json";
 import { AppContext } from "../../contexts/AppContext";
 import parse from "html-react-parser";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 export const Experience = () => {
     const { lang } = useContext(AppContext);
+    const { lightMode } = useContext(ThemeContext);
     return(
-        <section className={css.experience} id="experience">
+        <section className={`${css.experience} ${lightMode?css.light:''}`} id="experience">
             <h3>
                 <Ornament/>
                 EXPERIÊNCIA PROFISSIONAL
@@ -15,12 +17,12 @@ export const Experience = () => {
             </h3>
             { history?.map((job, index) =>(
                 <div 
-                    className={index === 0  ? css.bordered : ''}
+                    className={`${index === 0  ? css.bordered : ''} ${lightMode?css.light :''}`}
                     key={`job-item-~${index}~${job.jobId}`}
                 >
                     <header>
                         <h4>
-                            <img src={job.icon}/>
+                            <img src={job.icon} className={lightMode && index === 0 ? css.lightTheCmos: ''}/>
                             {job.title[lang]}
                         </h4>
                         <span>
