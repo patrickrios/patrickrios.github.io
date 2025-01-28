@@ -2,10 +2,13 @@ import Link from "next/link"
 import { ContactForm } from "../contact-form/ContactForm"
 import { socialItems } from "../header/social-items"
 import css from "./contact.module.css"
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts/ThemeContext"
 
 export const Contat = () => {
+    const { lightMode } = useContext(ThemeContext);
     return(
-        <section className={css.contact} id="contact">
+        <section className={`${css.contact} ${lightMode ? css.light : ''}`} id="contact">
             <h3>GET IN TOUCH</h3>
             <div className={css.contactGrid}>
                 <div className={css.socialContainer}>

@@ -1,0 +1,13 @@
+.footer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    color: var(--gray-50);
+    background: linear-gradient(to bottom, #1C1B18, #161513)
+}
+.footer.light{
+    background: #fff;
+    color: var(--secondary-text-light);
+}

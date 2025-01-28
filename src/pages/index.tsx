@@ -7,8 +7,8 @@ import { Experience } from "../components/experience-section/experience";
 import { Contat } from "../components/contact-section/contact";
 import { WhatsAppButton } from "../components/whatsapp-btn/Whatsapp";
 import Head from "next/head";
-import { Footer } from "../components/footer/footer";
 import { ThemeContext } from "../contexts/ThemeContext";
+import { Footer } from "../components/footer/footer";
 
 export const Homepage = () =>{
     const { content } = useContext(ModalContext);
