@@ -20,11 +20,12 @@
   "scripts": {
     "dev": "next dev",
     "start": "next --openssl-legacy-provider start",
+    "clean": "rm -rf out",
     "build": "next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out --nojekyll --cname https://patrickrios.github.io"
   },
   "eslintConfig": {
     "extends": "react-app"
