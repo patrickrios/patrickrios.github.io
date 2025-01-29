@@ -14,7 +14,7 @@ const nextConfig = {
   basePath: '', //patrickrios.github.io
   assetPrefix: '',///patrickrios.github.io
   trailingSlash: true,
-  distDir: 'dist',
+  //distDir: 'dist',
   images: {
     unoptimized: true,
   },

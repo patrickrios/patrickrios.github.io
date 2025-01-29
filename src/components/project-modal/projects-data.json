@@ -63,15 +63,15 @@
         },
         "text": [
 		    {
-                "pt-br": "Foi um serviço de <b>web design</b>, prestado para a empresa <b>The CMOS</b>, ao longo de várias <b>campanhas</b> de <b>marketing</b>, que teve início na <b>Black Friday</b> de novembro de 2024.",
-                "eng": "It was a <b>web design</b> service, provided for the company <b>The CMOS</b>, over the course of several <b>marketing campaigns</b>, which began on <b>Black Friday</b> in November 2024."
+                "pt-br": "Foi um serviço de <b>web design</b>, prestado para a empresa <b>The CMOS</b>, ao longo de várias <b>campanhas</b> de <b>marketing</b>, que teve início na <b>Black Friday</b> de novembro de 2023.",
+                "eng": "It was a <b>web design</b> service, provided for the company <b>The CMOS</b>, over the course of several <b>marketing campaigns</b>, which began on <b>Black Friday</b> in November 2023."
             },
 		    {
-                "pt-br": "As <b>páginas web</b> foram criadas para as <b>campanhas</b>, e serviam para vários <b>propósitos</b> de marketing, desde formulários de <b>captação de clientes</b>, ou páginas com <b>informações</b> para promover um <b>produto</b> ou <b>evento</b> oferecido pela empresa.",
+                "pt-br": "As <b>páginas web</b> foram criadas para as <b>campanhas</b>, e serviam para vários <b>propósitos</b>, desde formulários de <b>captação de clientes</b>, ou páginas com <b>informações</b> para promover um <b>produto</b> ou <b>evento</b> oferecidos pela empresa.",
                 "eng": "The <b>web pages</b> were created for the <b>campaigns</b>, and served various marketing <b>purposes</b>, from <b>customer acquisition</b> pages, or just pages with <b>information</b> to promote a <b>product</b> or <b>event</b> offered by the company."
             },
 		    {
-                "pt-br": "As páginas eram <b>projetadas</b> no <b>Figma</b> e após aprovação as páginas eram criadas no framework <b>WordPress</b> + <b>Oxygen Page-Builder</b>.",
+                "pt-br": "As páginas eram <b>projetadas</b> no <b>Figma</b> e <b>implementadas</b> no framework <b>WordPress</b> + <b>Oxygen Page-Builder</b>.",
                 "eng": "The pages were <b>designed</b> in <b>Figma</b> and after approval the pages were created in the <b>WordPress</b> + <b>Oxygen Page-Builder</b> framework."
             }
         ],
@@ -112,11 +112,11 @@
         },
         "text": [
             {
-                "pt-br": "Foi o meu primeiro <b>vídeo</b> no <b>YouTube</b> e o início do meu projeto de produção de <b>conteúdo</b> relacionado à <b>programação</b> e <b>tecnologia</b>, o canal <a href='https://www.youtube.com/@thecodeempire1562' target='_blank'>The Code Empire</a>.",
+                "pt-br": "Foi o meu primeiro <b>vídeo</b> no <b>YouTube</b> e o início de um projeto de produção de <b>conteúdo</b> relacionado à <b>programação</b> e <b>tecnologia</b>, o canal <a href='https://www.youtube.com/@thecodeempire1562' target='_blank'>The Code Empire</a>.",
                 "eng": "It was my first <b>YouTube video</b> and the start of my project to produce audio visual <b>content</b> related to <b>programming</b> and <b>technology</b>, <a href='https://www.youtube.com/@thecodeempire1562' target='_blank'>The Code Empire</a> channel."
             },
             {
-                "pt-br": "É um tutorial <b>simples</b> e <b>rápido</b> que ensina a dividir um <b>formulário</b> de em <b>várias etapas</b>, e como <b>navegar</b> entre as etapas, mediante <b>validação</b> de preenchimento de campos obrigatórios.",
+                "pt-br": "É um tutorial <b>simples</b> e <b>rápido</b> que ensina a dividir um <b>formulário</b> de em <b>várias etapas</b>, e como <b>navegar</b> entre as etapas, mediante <b>validação</b> do preenchimento de campos obrigatórios.",
                 "eng": "It's a <b>simple</b> and <b>quick</b> tutorial that teaches you how to split a <b>form</b> into <b>multiple steps</b> and how to <b>navigate</b> between the stages by <b>validating</b> the completion of mandatory fields."
             },
             {
@@ -156,8 +156,8 @@
         },
         "text": [
             {
-                "pt-br": "É um <b>web app</b> para guardar <b>transações financeiras</b>. Foi desenvolvido durante o evento Maratona Discover da RocketSeat.",
-                "eng": "It's a <b>web app</b> for storing <b>financial</b> transactions. It was developed during RocketSeat's Discover Marathon event."
+                "pt-br": "É um <b>web app</b> para guardar <b>transações financeiras</b>. Foi desenvolvido durante o evento <b>Maratona Discover</b> da <b>RocketSeat</b>.",
+                "eng": "It's a <b>web app</b> for storing <b>financial</b> transactions. It was developed during <b>RocketSeat</b>'s <b>Discover Marathon</b> event."
             },
             {
                 "pt-br": "O aplicativo permite o usuário <b>guardar</b> suas transações financeiras, <b>excluir</b> transações existentes, <b>consultar</b> o <b>histórico</b> de transações organizados por <b>mês/ano</b> e visualizar relatórios com o balanço entre as <b>entradas</b> e <b>saídas</b>.",
@@ -224,7 +224,7 @@
         },
         "text": [
             {
-                "pt-br": "Tenha uma vida mais <b>produtiva</b>, organizando o seu trabalho em <b>projetos</b>. Divida esse projeto me pequenas <b>tarefas</b>, e a medida que forem <b>concluídas</b>, tenha uma avaliação do <b>progresso</b> do seu projeto.",
+                "pt-br": "Tenha uma vida mais <b>produtiva</b>, organizando o seu trabalho em <b>projetos</b>. Divida esse projeto em pequenas <b>tarefas</b>, e a medida que forem <b>concluídas</b>, tenha uma avaliação do <b>progresso</b> do seu projeto.",
                 "eng": "Live a <b>productive</b> life by organizing your work around <b>projects</b>. Divide this project into small <b>tasks</b>, and as they are <b>completed</b>, evaluate the <b>progress</b> of your project."
             },
             {
