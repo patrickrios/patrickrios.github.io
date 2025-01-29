@@ -79,7 +79,7 @@ export const ProjectItem = ( props : ProjectDataProp) => {
                     { thumb?.xl && <source media="(min-width: 801px)" srcSet={thumb.xl}/>}
                     <img src={thumb.lg} alt={`Thumbnail of ${name} project`}/>
                 </picture>
-                <div className={css.projectInfo}>
+                <div className={`${css.projectInfo} ${lightMode ? css.light : ''}`}>
                     <header>
                         <h3>{name}</h3>
                         <p>{description?.["eng"] ? description?.[lang] : description}</p>

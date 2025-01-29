@@ -22,7 +22,7 @@
     -1px 0 0 var(--secondary-text);
 }
 .strokeText.lightTitle{
-    color: var(--background-light);
+    color: var(--gray-98);
     text-shadow: 
     1px 1px 0   var(--gray-30), /* Sombras horizontais e verticais */
     -1px 1px 0  var(--gray-30),

@@ -11,6 +11,7 @@
 }
 .projectItem.light{
     background-color: var(--background-light);
+    border-color: var(--border-light);
 }
 .projectThumb{
     display: flex;
@@ -43,6 +44,9 @@
 .projectInfo h3{
     color:var(--gray-90);
     font-size:1.5rem;
+}
+.projectInfo.light h3{
+    color: var(--gray-30);
 }
 .projectInfo p{
     color: var(--gray-60);
@@ -92,6 +96,9 @@
         justify-content: center;
         align-items: center;
         width:100%;
+    }
+    .projectInfo.light h3{
+        color: var(--gray-90);
     }
     .projectInfo p{
         font-size:1rem;

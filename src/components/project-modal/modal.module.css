@@ -26,10 +26,59 @@
   width:100%;
   top:0;
 }
+.mobileHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  background-color: var(--background-color);
+}
+.mobileHeader.light{
+  background-color:var(--gray-98);
+}
+.mobileHeader h2{
+  color: var(--primary-text);
+  font-size:1.3rem;
+}
+.mobileHeader.light h2{
+  color: var(--gray-10);
+}
+.mobileHeader span{
+  color: var(--gray-40);
+}
+.mobileHeader.light span{
+  color: var(--gray-70);
+}
+.mobileHeader button{
+  padding:1.5rem 1.25rem;
+  background: none;
+  border:1px solid var(--border-dark);
+  border-width:0 1px 0 0;
+  line-height:0;
+  color:var(--gray-70);
+}
+.mobileHeader.light button{
+  border-color: var(--border-light);
+  color: var(--gray-20);
+}
+.rightMobileArrow{
+  transform: scaleX(-1);
+}
+.mobileHeadLine{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:.5rem 0;
+}
 .left{
   background: #000;
   position: relative;
   overflow: hidden;
+}
+.left.light{
+  background: #fff;
 }
 .right{
   background-color: var(--background-color);
@@ -106,6 +155,7 @@
 .rightArrow{
   position: absolute;
   z-index:2;
+  display: none;
 }
 .leftArrow{
   left: .5rem;
@@ -143,7 +193,7 @@
   max-height:90%;
 }
 .projectInfo{
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-dark);
@@ -239,11 +289,16 @@
     width:90%;
     height:90%;
     overflow: hidden;
-    background: #fd5;
   }
   .projectOverview{
     height:100%;
     overflow: auto;
+  }
+  .mobileHeader{
+    display: none;
+  }
+  .projectInfo{
+    display: flex;
   }
   .projectContent{
     flex:1;
@@ -255,6 +310,13 @@
   .right{
     height: 100%;
   }
+  .right h2{
+    display: block;
+  }
+  .leftArrow,
+  .rightArrow{
+    display: block;
+}
 }
 @media screen and (min-width:1200px) {
   .contentGrid{

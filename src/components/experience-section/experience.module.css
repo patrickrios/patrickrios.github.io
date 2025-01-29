@@ -10,7 +10,7 @@
     font-weight: 700;
     border-bottom: 1px solid #403F71;
     padding-bottom:.65rem;
-    font-size:2.25rem;
+    font-size:1.5rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -22,7 +22,7 @@
     border-color: var(--border-light);
 }
 .experience div{
-    padding:2.25rem 0;
+    padding:1.5rem 0;
 }
 .bordered{
     border-bottom:1px solid #242424;
@@ -89,11 +89,20 @@
     .experience div header h4{
         font-size:1.5rem;
     }
+    .experience h3{
+        font-size:1.65rem;
+    }
 }
 
 @media screen and (min-width: 600px) {
     .experience div header h4{
         font-size:1.85rem;
+    }
+    .experience div{
+        padding:2rem 0;
+    }
+    .experience h3{
+        font-size:2rem;
     }
 }
 
@@ -106,6 +115,12 @@
     .experience div header span{
         margin-bottom:0;
         height: max-content;
+    }
+    .experience div{
+        padding:2.25rem 0;
+    }
+    .experience h3{
+        font-size:2.25rem;
     }
 }
 

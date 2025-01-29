@@ -8,8 +8,36 @@
     position: relative;
     z-index: 1;
 }
+.videoHeight{
+    height:200px;
+}
 .loading{
     width: 80px;
     position: absolute;
     z-index:0;
+}
+@media screen and (min-width:360px) {
+    .videoHeight{
+        height:250px;
+    }
+}
+@media screen and (min-width:460px) {
+    .videoHeight{
+        height:300px;
+    }
+}
+@media screen and (min-width:520px) {
+    .videoHeight{
+        height:350px;
+    }
+}
+@media screen and (min-width:620px) {
+    .videoHeight{
+        height:400px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .videoHeight{
+        height:450px;
+    }
 }

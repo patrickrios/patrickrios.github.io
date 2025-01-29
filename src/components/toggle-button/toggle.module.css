@@ -10,15 +10,5 @@
     transition: background .3s ease-in-out;
 }
 .toggle.light{
-    background-color: #DADDDD;
-}
-.active,
-.inactive{
-    transition: all .3s ease-in-out;
-}
-.active{
-    transform: translateX(100%);
-}
-.inactive{
-    transform: translateX(0);
+    background-color: #e4e7e7;
 }

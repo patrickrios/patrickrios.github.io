@@ -110,7 +110,24 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
     return(
         <div className={`${css.modal}`}>
             <div className={css.contentGrid}>
-                <div className={css.left}>
+                <div className={`${css.mobileHeader} ${lightMode ? css.light : ''}`}>
+                    <button 
+                        onClick={handlePrevProject}
+                    >
+                        <MobileArrow/>
+                    </button>
+                    <div className={css.mobileHeadLine}>
+                        <h2>{project?.name}</h2>
+                        <span>{project?.excerpt[lang]}</span>
+                    </div>
+                    <button 
+                        onClick={handleNextProject} 
+                        className={css.rightMobileArrow}
+                    >
+                        <MobileArrow/>
+                    </button>
+                </div>
+                <div className={`${css.left} ${lightMode ? css.light : ''}`}>
                     <motion.div 
                         className={css.photoContainer}
                         initial={{opacity: 0.5}}
@@ -226,9 +243,8 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                                     }
                                 </div>
                             }
-                            
                             <h4 className={css.techTitle}>
-                                TECNOLOGIAS
+                                { lang === 'eng' ? 'TECHNOLOGIES': 'TECNOLOGIAS'}
                             </h4>
                             <div className={css.techList} >
                                 { project?.techList?.map( tech => 
@@ -247,20 +263,20 @@ export const ProjectModal = ({ projectId } : ProjectModalProp) => {
                     <CloseModal onAction={clearContent}/>
                 </div>
             </div>
-                <button 
-                    className={`${css.projectArrowBtn} ${css.leftArrow}`} 
-                    title="previous project"
-                    onClick={handlePrevProject}
-                >
-                    <Arrow/>
-                </button>
-                <button 
-                    className={`${css.projectArrowBtn} ${css.rightArrow}`} 
-                    title="next project"
-                    onClick={handleNextProject}
-                >
-                    <Arrow/>
-                </button>
+            <button 
+                className={`${css.projectArrowBtn} ${css.leftArrow}`} 
+                title="previous project"
+                onClick={handlePrevProject}
+            >
+                <Arrow/>
+            </button>
+            <button 
+                className={`${css.projectArrowBtn} ${css.rightArrow}`} 
+                title="next project"
+                onClick={handleNextProject}
+            >
+                <Arrow/>
+            </button>
             <div 
                 className={`${css.modalLayer} ${lightMode ? css.lightLayer : ''}`} 
                 onClick={clearContent}
@@ -324,3 +340,20 @@ const RepoIcon = () => {
             <path d="M9.99935 1.66675C8.905 1.66675 7.82137 1.8823 6.81032 2.30109C5.79927 2.71987 4.88061 3.3337 4.10679 4.10752C2.54399 5.67033 1.66602 7.78994 1.66602 10.0001C1.66602 13.6834 4.05768 16.8084 7.36602 17.9167C7.78268 17.9834 7.91602 17.7251 7.91602 17.5001V16.0917C5.60768 16.5917 5.11602 14.9751 5.11602 14.9751C4.73268 14.0084 4.19102 13.7501 4.19102 13.7501C3.43268 13.2334 4.24935 13.2501 4.24935 13.2501C5.08268 13.3084 5.52435 14.1084 5.52435 14.1084C6.24935 15.3751 7.47435 15.0001 7.94935 14.8001C8.02435 14.2584 8.24102 13.8917 8.47435 13.6834C6.62435 13.4751 4.68268 12.7584 4.68268 9.58342C4.68268 8.65842 4.99935 7.91675 5.54102 7.32508C5.45768 7.11675 5.16602 6.25008 5.62435 5.12508C5.62435 5.12508 6.32435 4.90008 7.91602 5.97508C8.57435 5.79175 9.29102 5.70008 9.99935 5.70008C10.7077 5.70008 11.4243 5.79175 12.0827 5.97508C13.6743 4.90008 14.3743 5.12508 14.3743 5.12508C14.8327 6.25008 14.541 7.11675 14.4577 7.32508C14.9993 7.91675 15.316 8.65842 15.316 9.58342C15.316 12.7667 13.366 13.4667 11.5077 13.6751C11.8077 13.9334 12.0827 14.4417 12.0827 15.2167V17.5001C12.0827 17.7251 12.216 17.9917 12.641 17.9167C15.9493 16.8001 18.3327 13.6834 18.3327 10.0001C18.3327 8.90573 18.1171 7.8221 17.6983 6.81105C17.2796 5.80001 16.6657 4.88135 15.8919 4.10752C15.1181 3.3337 14.1994 2.71987 13.1884 2.30109C12.1773 1.8823 11.0937 1.66675 9.99935 1.66675Z" fill="black"/>
         </svg>
 )};
+
+const MobileArrow = () => {
+    return (
+        
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3548_480)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29245 8.7066C5.10519 8.5191 5 8.26493 5 7.99993C5 7.73493 5.10519 7.48077 5.29245 7.29327L9.06312 3.52127C9.25072 3.33376 9.50512 3.22845 9.77036 3.22852C9.90169 3.22855 10.0317 3.25445 10.1531 3.30473C10.2744 3.35502 10.3846 3.42871 10.4775 3.5216C10.5703 3.61449 10.6439 3.72475 10.6942 3.8461C10.7444 3.96745 10.7702 4.0975 10.7702 4.22884C10.7702 4.36017 10.7443 4.49021 10.694 4.61153C10.6437 4.73286 10.57 4.84309 10.4771 4.93593L7.41379 7.99993L10.4778 11.0639C10.5733 11.1561 10.6496 11.2664 10.702 11.3884C10.7545 11.5104 10.7822 11.6416 10.7834 11.7744C10.7846 11.9072 10.7593 12.0389 10.7091 12.1618C10.6589 12.2847 10.5847 12.3964 10.4908 12.4903C10.397 12.5843 10.2854 12.6586 10.1625 12.7089C10.0396 12.7592 9.90797 12.7846 9.77519 12.7835C9.64242 12.7824 9.51118 12.7549 9.38915 12.7025C9.26713 12.6502 9.15675 12.5741 9.06445 12.4786L5.29112 8.7066H5.29245Z" fill="currentColor"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_3548_480">
+                <rect width="16" height="16" fill="currentColor"/>
+            </clipPath>
+            </defs>
+        </svg>
+
+    )
+}

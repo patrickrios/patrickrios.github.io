@@ -44,17 +44,23 @@ export const TopMenu = () => {
         <ul>
           <div className={css.mobileMenuAndLogo}>
             <button 
-              className={css.mobileButton} 
+              className={`${css.mobileButton} ${lightMode ? css.ligtButton : ''}`} 
               onClick={toggleMenu}
             >
               <MenuIcon/>
             </button>
             <PatrickRiosLogo 
               onClick={scrollTop} 
-              className={`${css.logoIcon} ${lightMode && css.light}`}
+              className={`${css.logoIcon} ${lightMode ? css.light : ''}`}
             />
           </div>
-          <div className={`${css.menuItems} ${shouldShowMenu && css.showMenu}`}>
+          <div 
+            className={`
+              ${css.menuItems} 
+              ${shouldShowMenu && css.showMenu} 
+              ${lightMode ? css.lightItems : ''}
+            `}
+          >
               <CloseMenuIcon 
                 onClose={toggleMenu} 
                 styleClass={css.closeMenuIcon}

@@ -21,9 +21,9 @@ export const EmbedVideo = ({ videoUrl } : EmbedProp) => {
                 />
             }
             <iframe 
+                className={css.videoHeight}
                 onLoad={handleLoad}
-                width="100%" 
-                height="415" 
+                width="100%"
                 src={videoUrl} 
                 title="YouTube video player" 
                 frameBorder="0" 
@@ -46,13 +46,13 @@ export const EmbedGame = ({ gameUrl } : GameProp) => {
                     src="/images/icon/tube-spinner.svg"
                 />
             }
-            <iframe 
+            <iframe
+                className={css.videoHeight}
                 onLoad={handleLoad}
                 frameBorder="0" 
                 src={gameUrl}
                 allowFullScreen={true} 
-                width="896" 
-                height="524"
+                width="896"
             />
         </div>
 )}

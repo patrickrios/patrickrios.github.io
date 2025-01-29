@@ -166,7 +166,7 @@ li{
     overflow: hidden;
 }
 #wrapper.lightMode{
-    background:#fafafa;
+    background-color: var(--gray-95);
 }
 
 dialog::backdrop{
