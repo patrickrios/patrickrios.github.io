@@ -1,0 +1,45 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Ou a branch que você usa para deploy
+
+permissions:
+  contents: write  # Permissão para fazer deploy na branch gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Definir variável de ambiente
+        run: echo "NEXT_PUBLIC_GA_ID=${{ secrets.NEXT_PUBLIC_GA_ID }}" >> $GITHUB_ENV
+
+      - name: Build do Next.js
+        run: npm run build
+
+      - name: Exportar site estático
+        run: npm run export
+
+      - name: Configurar GitHub Pages
+        run: |
+          touch out/.nojekyll
+          echo "meusite.github.io" > out/CNAME  # Se você tiver um domínio personalizado, ajuste aqui
+
+      - name: Deploy para GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
