@@ -39,11 +39,19 @@ export const Header = () => {
                         ))}
                     </div>
                     <a 
-                        href="/files/Patrick_Fernandes_Resume_0324.pdf" 
+                        href={ 
+                            lang === "eng" ? 
+                                "/files/patrick_rios_developer_resume.pdf" : 
+                                "/files/patrick_rios_desenvolvedor_cv.pdf"
+                        } 
                         className={css.downloadCvButton}
-                        download="Patrick_Fernandes_Resume.pdf"
+                        download={ 
+                            lang === "eng" ? 
+                                "patrick-rios-web-developer-resume.pdf" : 
+                                "patrick-rios-desenvolvedor-web-cv.pdf"
+                        }
                     >
-                        {lang === 'eng' ? 'Download' : 'Baixar'} CV
+                        {lang === 'eng' ? 'Download resume' : 'Baixar CV'}
                     </a>
                 </div>
             </div>
