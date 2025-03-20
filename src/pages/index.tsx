@@ -9,7 +9,6 @@ import { WhatsAppButton } from "../components/whatsapp-btn/Whatsapp";
 import Head from "next/head";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { Footer } from "../components/footer/footer";
-import { ServicesSection } from "../components/services-section/services";
 
 export const Homepage = () =>{
     const { content } = useContext(ModalContext);
