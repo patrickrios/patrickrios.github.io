@@ -1,7 +1,11 @@
 {
     "headLine":{
-        "pt-br": "<b className='textHappyGradient'>PROGRAMAÇÃO WEB</b> </br>moderna, rápida e escalável",
-        "eng": "Modern, Fast, and scalable </br><b className='textHappyGradient'>WEB DEVELOPMENT</b>"
+        "pt-br": "PROGRAMAÇÃO WEB",
+        "eng": "WEB DEVELOPMENT"
+    },
+    "tagLine":{
+        "pt-br": "moderna, rápida e escalável",
+        "eng": "modern, fast & scalable"
     },
     "description":{
         "pt-br": "Sou um <b><i>programador</i></b> com paixão por <b><i>design</i></b>, especializado em desenvolvimento <b><i>front-end</i></b>. Hoje, com <b><i>3 anos</i></b> de <b><i>experência</i></b>, sou capaz de criar <b><i>interfaces de usuário</i></b> modernas para <b><i>websites</i></b> e <b><i>aplicativos</i></b>.",

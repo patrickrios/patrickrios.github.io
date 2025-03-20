@@ -29,23 +29,35 @@
 .profile img{
     width: max-content;
 }
-.profile h2{
-    color: var(--primary-text);
+.profileHeadline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:1rem;
+}
+.profileHeadline h2{
+    background: linear-gradient(to right, #20BF55, #01BAEF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size:1.65rem;
-    margin-top:.5rem;
+    line-height:3rem;
     text-align: center;
-    padding:0 2rem;
 }
-.profile h2.lightHeadline{
-    color: var(--gray-20);
-}
-.profile p{
+.profileHeadline p{
+    font-weight:100;
     color: var(--secondary-text);
     text-align: center;
-    font-size:1rem;
-    margin-top:.5rem;
-    line-height: 1.65rem;
-    width:85%;
+}
+.profileHeadline p.light{
+    color: var(--gray-10);
+}
+.taglinePtBr{
+    font-size:1.25rem !important;
+}
+.taglineEng{
+    font-size:1.35rem !important;
 }
 .profile p.lightP{
     color: #3D4B75;
@@ -55,12 +67,6 @@
 }
 .profile p.lightP b{
     color: #3D4B75;
-}
-.titleGradient{
-    background: linear-gradient(to right, #20BF55, #01BAEF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .actionButtons{
     display: flex;
@@ -117,10 +123,20 @@
     color: #f67da6;
 }
 
-@media screen and (min-width:400px) {
-    .profile h2{
-        padding:0 1rem;
+@media screen and (min-width:320px) {
+    .taglinePtBr{
+        font-size:1.5rem !important;
     }
+    .taglineEng{
+        font-size:1.68rem !important;
+    }
+    .profileHeadline h2{
+        font-size:2rem;
+        line-height:3rem;
+    }
+}
+
+@media screen and (min-width:400px) {
     .actionButtons{
         width:70%;
     }
@@ -133,53 +149,41 @@
 }
 
 @media screen and (min-width:600px){
-    .profile h2{
-        padding:0;
-        font-size:2rem;
-    }
-    .profile p{
-        font-size:1rem;
-        margin-top:.5rem;
-        line-height: 1.85rem;
-    }
     .actionButtons{
         width:40%;
     }
-    .profile{
-        margin-top:3rem;
+    .profileHeadline h2{
+        font-size:2.2rem;
     }
-}
-
-@media screen and (min-width:760px) {
-    .profile h2{
-        font-size:2.25rem;
+    .taglinePtBr{
+        font-size:1.65rem !important;
+        transform: translateY(-0.2rem);
     }
-    .profile p{
-        font-size:1.05rem;
-        width:80%;
+    .taglineEng{
+        font-size:1.85rem !important;
     }
 }
 @media screen and (min-width:820px) {
-    .header{
-        padding:3rem 0;
-    }
     .actionButtons{
         width:auto;
         flex-direction: row;
         gap:.5rem;
     }
-    .profile p{
-        font-size:1.05rem;
-        width:80%;
+    .taglinePtBr{
+        font-size:2rem !important;
+        transform: translateY(-0.5rem);
     }
-}
-@media screen and (min-width:860px) {
-    .profile p{
-        width:70%;
+    .taglineEng{
+        font-size:2.2rem !important;
+    }
+    .profileHeadline h2{
+        font-size:2.65rem;
+        line-height:4rem;
     }
 }
 @media screen and (min-width:1100px) {
-    .profile p{
-        width:60%;
+    .header{
+        height: calc(100vh - 80px);
+        padding:0;
     }
 }

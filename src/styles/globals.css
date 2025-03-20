@@ -88,12 +88,6 @@
     color: #A5A4E8;
     font-size:1.5rem;
 }
-.textHappyGradient{
-    background: linear-gradient(to right, #20BF55, #01BAEF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 @media (min-width: 768px){
     .desk-only{
         display: block;

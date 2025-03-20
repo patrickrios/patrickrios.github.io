@@ -50,8 +50,8 @@ export const CloseMenuIcon = ({onClose, styleClass}:CloseMenuProp) =>{
 
 
 interface LogoProps{
-  onClick: () => void;
-  className: string;
+  onClick?: () => void;
+  className?: string;
 }
 
 export const PatrickRiosLogo = ({onClick, className}: LogoProps) => {

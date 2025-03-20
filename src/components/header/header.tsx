@@ -10,6 +10,27 @@ import { socialItems } from "./social-items";
 export const Header = () => {
     const { lightMode } = useContext(ThemeContext);
     const { lang } = useContext(AppContext);
+
+    const PortugueseProfile = () =>{
+        return(
+        <>
+            <h2>{parse(headerText['headLine'][lang])}</h2>
+            <p className={`${css.taglinePtBr} ${lightMode && css.light}`}>
+                {parse(headerText['tagLine'][lang])}
+            </p>
+        </>
+    )}
+
+    const EnglishProfile = () => {
+        return (
+            <>
+                <p className={`${css.taglineEng} ${lightMode && css.light}`}>
+                    {parse(headerText['tagLine'][lang])}
+                </p>
+                <h2>{parse(headerText['headLine'][lang])}</h2>
+            </>
+    )}
+
     return(
         <header className={`${css.header} ${lightMode && css.light} center-container`}>
             <div className={css.profile}>
@@ -18,12 +39,12 @@ export const Header = () => {
                     <source srcSet="/images/profile/profile-photo-260.svg" media="(min-width: 1000px)" />
                     <img src="/images/profile/profile-photo-140.svg" alt="MDN" />
                 </picture>
-                <h2 className={lightMode ? css.lightHeadline : ''}>
-                    {parse(headerText['headLine'][lang])}
-                </h2>
-                <p className={lightMode ? css.lightP : ''}>
-                    {parse(headerText['description'][lang])}
-                </p>
+                <div className={css.profileHeadline}>
+                    { lang === 'eng' ? 
+                        <EnglishProfile/> : 
+                        <PortugueseProfile/>
+                    }
+                </div>
                 <div className={css.actionButtons}>
                     <div className={`${css.getInTouchButton} ${ lightMode ? css.light : ''}`}>
                         {socialItems?.map( link => (
