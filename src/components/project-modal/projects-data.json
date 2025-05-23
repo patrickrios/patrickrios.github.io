@@ -382,8 +382,8 @@
         ],
         "media":[
             {
-                "type": "game",
-                "url": "https://itch.io/embed-upload/11755462?color=222034&autoplay=false"
+                "type": "video",
+                "url": "https://www.youtube.com/embed/HBmWxgkGRLA?si=9bv_3VAnl6FXODM6"
             },
             {
                 "type": "photo", 
@@ -424,6 +424,10 @@
                     "md": "/images/screenshot/kmd/komodora-stickers-720-min.png",
                     "lg": "/images/screenshot/kmd/komodora-stickers-1080-min.png"
                 }
+            },
+            {
+                "type": "game",
+                "url": "https://itch.io/embed-upload/11755462?color=222034&autoplay=false"
             }
         ],
         "techList":[
