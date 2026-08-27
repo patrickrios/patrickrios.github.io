@@ -1,7 +1,15 @@
-export const topMenuItems = [{
+export const topMenuItems = [
+  {
     title:{
-      'pt-br': 'projetos', 
-      'eng': 'projects'
+      'pt-br': 'meus jogos', 
+      'eng': 'my games'
+    },
+    target: 'myGames'
+  },
+  {
+    title:{
+      'pt-br': 'outros projetos', 
+      'eng': 'another projects'
     },
     target: 'projects'
 },{
