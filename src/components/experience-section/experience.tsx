@@ -12,7 +12,7 @@ export const Experience = () => {
         <section className={`${css.experience} ${lightMode?css.light:''}`} id="experience">
             <h3>
                 <Ornament/>
-                EXPERIÊNCIA PROFISSIONAL
+                { lang === "pt-br" ? 'EXPERIÊNCIA PROFISSIONAL' : 'WORK EXPERIENCE'}
                 <Ornament/>
             </h3>
             { history?.map((job, index) =>(

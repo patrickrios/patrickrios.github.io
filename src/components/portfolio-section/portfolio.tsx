@@ -11,10 +11,10 @@ export const Portfolio = () => {
     return(
         <section className={css.portfolio} id="projects">
             <h3 className={`${css.strokeText} ${lightMode ? css.lightTitle : ''}`}>
-                { lang === 'pt-br' ? 'PROJETOS' : 'PROJECTS'}
+                { lang === 'pt-br' ? 'OUTROS PROJETOS' : 'ANTOTHER PROJECTS'}
             </h3>
             <Professional/>
-            <Personal/>
+            {/*<Personal/>*/}
         </section>
     )
 }
