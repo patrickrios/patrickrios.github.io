@@ -26,11 +26,11 @@ export const Header = () => {
                     </p>
                 </div>
                 
-                <div className={css.description}>
-                    <div className={css.textDescription}>
+                <div className={`${css.description} ${lightMode && css.light}`}>
+                    <div className={`${css.textDescription} ${lightMode && css.light}`}>
                         <p>{headerText.description[lang]}</p>
                         <p className={css.stackDesc}>
-                            <Godot/> Godot + <Aseprite/> Aseprite + <img src="/images/icon/cafezito-Sheet-min.png"/> Café
+                            <Godot/> Godot + <Aseprite/> Aseprite + <img src="/images/icon/cafezito-Sheet-min.png"/> {lang == 'pt-br' ? 'Café' : 'Coffee'}
                         </p>
                     </div>
                     <div className={css.actionButtons}>

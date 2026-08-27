@@ -9,6 +9,7 @@ import { WhatsAppButton } from "../components/whatsapp-btn/Whatsapp";
 import Head from "next/head";
 import { ThemeContext } from "../contexts/ThemeContext";
 import { Footer } from "../components/footer/footer";
+import { MyGames } from "../components/my-games-section/MyGames";
 
 export const Homepage = () =>{
     const { content } = useContext(ModalContext);
@@ -21,6 +22,7 @@ export const Homepage = () =>{
             <div id="wrapper" className={lightMode ? 'lightMode' : ''}>
                 <TopMenu/>
                 <Header/>
+                <MyGames/>
                 <Portfolio/>
                 <Experience/>
                 <Contat/>
