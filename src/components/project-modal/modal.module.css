@@ -97,6 +97,9 @@
 .right p{
   color: var(--secondary-text);
   margin-top:1rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size:1.25rem;
+  line-height:1.65rem;
 }
 .right.lightRight p,
 .right.lightRight p b{
