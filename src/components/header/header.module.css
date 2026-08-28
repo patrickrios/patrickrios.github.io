@@ -86,11 +86,11 @@
 .textDescription{
     display: flex;
     flex-direction: column;
-    gap:1.65rem;
+    gap:1.25rem;/*1.65*/
 }
 .textDescription p{
     color: var(--gray-90);
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight:300;
     text-align: center;
     font-family: "Fira sans", sans-serif;
@@ -100,15 +100,29 @@
 }
 .textDescription p.stackDesc{
     font-weight:500;
-    font-size:1.25rem;
+    font-size:1rem;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap:.25rem;
     /*font-family: "Ubuntu", sans-serif;*/
 }
-.textDescription p.stackDesc svg,
-.textDescription p.stackDesc img{
-    margin:0 3px;
+.textDescription p.stackDesc svg{
+    width:28px;
+}
+.textDescription p.stackDesc span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:.25rem;
+    align-items: center;
+}
+.plusIcon{
+    display: none;
+    color:#00DCE3 !important;
+    font-weight: 100;
+    font-size:2rem;
 }
 .actionButtons{
     display: flex;
@@ -176,6 +190,9 @@
         font-size:2rem;
         line-height:3rem;
     }
+    .textDescription p{
+        font-size: 1.45rem;
+    }
     .textDescription p.stackDesc{
         font-size:1.5rem;
     }
@@ -188,6 +205,9 @@
     .textDescription p.stackDesc{
         font-size:1.65rem;
     }
+    .textDescription p.stackDesc svg{
+        width:32px;
+    }
 }
 
 @media screen and (min-width:500px) {
@@ -196,6 +216,9 @@
     }
     .textDescription p.stackDesc{
         font-size:2rem;
+    }
+    .plusIcon{
+        display: block;
     }
 }
 
@@ -208,6 +231,10 @@
     }
     .textDescription p.stackDesc{
         font-size:2.5rem;
+        gap:.45rem;
+    }
+    .textDescription p.stackDesc svg{
+        width:40px;
     }
 }
 @media screen and (min-width:820px) {
@@ -243,7 +270,8 @@
     }
     .textDescription p.stackDesc{
         justify-content: flex-start;
-         font-size:2.65rem;
+        font-size:2.65rem;
+        align-items: center;
     }
 }
 @media screen and (min-width:1100px) {

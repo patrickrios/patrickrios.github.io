@@ -3,9 +3,8 @@ import css from "./header.module.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { AppContext } from "../../contexts/AppContext";
 import headerText from "./header-text.json";
-import parse from "html-react-parser";
 import Link from "next/link";
-import { socialItems, Godot, Aseprite } from "./social-items";
+import { socialItems, Godot, Aseprite, Coffee, Plus } from "./social-items";
 
 export const Header = () => {
     const { lightMode } = useContext(ThemeContext);
@@ -30,7 +29,17 @@ export const Header = () => {
                     <div className={`${css.textDescription} ${lightMode && css.light}`}>
                         <p>{headerText.description[lang]}</p>
                         <p className={css.stackDesc}>
-                            <Godot/> Godot + <Aseprite/> Aseprite + <img src="/images/icon/cafezito-Sheet-min.png"/> {lang == 'pt-br' ? 'Café' : 'Coffee'}
+                            <span>
+                                <Godot/> Godot
+                            </span>
+                            <b className={css.plusIcon}>+</b>
+                            <span>
+                                <Aseprite/> Aseprite
+                            </span>
+                            <b className={css.plusIcon}>+</b>
+                            <span>
+                                <Coffee/> Café
+                            </span>
                         </p>
                     </div>
                     <div className={css.actionButtons}>
